@@ -1,5 +1,7 @@
 from django.db import models
 from django.contrib.auth.models import User
+from django.core.validators import MinValueValidator, MaxValueValidator
+from django.core.exceptions import ValidationError
 
 
 class Genre(models.Model):
@@ -22,9 +24,18 @@ class Movie(models.Model):
     overview = models.TextField(blank=True)
     release_date = models.DateField(null=True, blank=True)
     runtime = models.IntegerField(null=True, blank=True)  # in minutes
-    vote_average = models.FloatField(default=0.0)
-    vote_count = models.IntegerField(default=0)
-    popularity = models.FloatField(default=0.0)
+    vote_average = models.FloatField(
+        default=0.0,
+        validators=[MinValueValidator(0.0), MaxValueValidator(10.0)]
+    )
+    vote_count = models.IntegerField(
+        default=0,
+        validators=[MinValueValidator(0)]
+    )
+    popularity = models.FloatField(
+        default=0.0,
+        validators=[MinValueValidator(0.0)]
+    )
     poster_path = models.CharField(max_length=255, blank=True)
     backdrop_path = models.CharField(max_length=255, blank=True)
     adult = models.BooleanField(default=False)
@@ -67,7 +78,9 @@ class UserMovieRating(models.Model):
     """Model for user movie ratings"""
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     movie = models.ForeignKey(Movie, on_delete=models.CASCADE)
-    rating = models.FloatField()  # 1-10 scale
+    rating = models.FloatField(
+        validators=[MinValueValidator(0.0), MaxValueValidator(10.0)]
+    )  # 0-10 scale
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
     

@@ -1,0 +1,103 @@
+INFO 2025-09-16 19:33:25,415 autoreload 35756 2072 Watching for file changes with StatReloader
+ERROR 2025-09-16 19:33:35,144 log 35756 18396 Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\venv\lib\site-packages\django_redis\cache.py", line 29, in _decorator
+    return method(self, *args, **kwargs)
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\venv\lib\site-packages\django_redis\cache.py", line 99, in _get
+    return self.client.get(key, default=default, version=version, client=client)
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\venv\lib\site-packages\django_redis\client\default.py", line 300, in get
+    raise ConnectionInterrupted(connection=client) from e
+django_redis.exceptions.ConnectionInterrupted: Redis ConnectionError: Error 10061 connecting to localhost:6379. Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\venv\lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\venv\lib\site-packages\django\middleware\cache.py", line 161, in process_request
+    cache_key = get_cache_key(request, self.key_prefix, "GET", cache=self.cache)
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\venv\lib\site-packages\django\utils\cache.py", line 392, in get_cache_key
+    headerlist = cache.get(cache_key)
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\venv\lib\site-packages\django_redis\cache.py", line 92, in get
+    value = self._get(key, default, version, client)
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\venv\lib\site-packages\django_redis\cache.py", line 36, in _decorator
+    raise e.__cause__  # noqa: B904
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\venv\lib\site-packages\django_redis\client\default.py", line 298, in get
+    value = client.get(key)
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\venv\lib\site-packages\redis\commands\core.py", line 1829, in get
+    return self.execute_command("GET", name, keys=[name])
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\venv\lib\site-packages\redis\client.py", line 621, in execute_command
+    return self._execute_command(*args, **options)
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\venv\lib\site-packages\redis\client.py", line 627, in _execute_command
+    conn = self.connection or pool.get_connection()
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\venv\lib\site-packages\redis\utils.py", line 195, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\venv\lib\site-packages\redis\connection.py", line 1533, in get_connection
+    connection.connect()
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\venv\lib\site-packages\redis\connection.py", line 380, in connect
+    self.connect_check_health(check_health=True)
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\venv\lib\site-packages\redis\connection.py", line 397, in connect_check_health
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 10061 connecting to localhost:6379. Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée.
+ERROR 2025-09-16 19:33:35,153 basehttp 35756 18396 "GET / HTTP/1.1" 500 147809
+ERROR 2025-09-16 19:33:39,549 log 35756 18396 Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\venv\lib\site-packages\django_redis\cache.py", line 29, in _decorator
+    return method(self, *args, **kwargs)
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\venv\lib\site-packages\django_redis\cache.py", line 99, in _get
+    return self.client.get(key, default=default, version=version, client=client)
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\venv\lib\site-packages\django_redis\client\default.py", line 300, in get
+    raise ConnectionInterrupted(connection=client) from e
+django_redis.exceptions.ConnectionInterrupted: Redis ConnectionError: Error 10061 connecting to localhost:6379. Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\venv\lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\venv\lib\site-packages\django\middleware\cache.py", line 161, in process_request
+    cache_key = get_cache_key(request, self.key_prefix, "GET", cache=self.cache)
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\venv\lib\site-packages\django\utils\cache.py", line 392, in get_cache_key
+    headerlist = cache.get(cache_key)
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\venv\lib\site-packages\django_redis\cache.py", line 92, in get
+    value = self._get(key, default, version, client)
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\venv\lib\site-packages\django_redis\cache.py", line 36, in _decorator
+    raise e.__cause__  # noqa: B904
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\venv\lib\site-packages\django_redis\client\default.py", line 298, in get
+    value = client.get(key)
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\venv\lib\site-packages\redis\commands\core.py", line 1829, in get
+    return self.execute_command("GET", name, keys=[name])
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\venv\lib\site-packages\redis\client.py", line 621, in execute_command
+    return self._execute_command(*args, **options)
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\venv\lib\site-packages\redis\client.py", line 627, in _execute_command
+    conn = self.connection or pool.get_connection()
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\venv\lib\site-packages\redis\utils.py", line 195, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\venv\lib\site-packages\redis\connection.py", line 1533, in get_connection
+    connection.connect()
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\venv\lib\site-packages\redis\connection.py", line 380, in connect
+    self.connect_check_health(check_health=True)
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\venv\lib\site-packages\redis\connection.py", line 397, in connect_check_health
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 10061 connecting to localhost:6379. Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée.
+ERROR 2025-09-16 19:33:39,553 basehttp 35756 18396 "GET /favicon.ico HTTP/1.1" 500 147597
+INFO 2025-09-16 19:34:36,977 autoreload 35756 2072 C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movies\views.py changed, reloading.
+INFO 2025-09-16 19:34:37,693 autoreload 20940 24960 Watching for file changes with StatReloader
+INFO 2025-09-16 19:35:26,182 autoreload 20940 24960 C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movies\views.py changed, reloading.
+INFO 2025-09-16 19:35:27,160 autoreload 13292 24344 Watching for file changes with StatReloader
+INFO 2025-09-16 19:36:12,265 autoreload 13292 24344 C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movies\views.py changed, reloading.
+INFO 2025-09-16 19:36:12,935 autoreload 13392 34996 Watching for file changes with StatReloader
+INFO 2025-09-16 19:36:32,648 autoreload 13392 34996 C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movies\exceptions.py changed, reloading.
+INFO 2025-09-16 19:36:33,353 autoreload 29800 39488 Watching for file changes with StatReloader
+INFO 2025-09-16 19:36:45,797 autoreload 29800 39488 C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movies\exceptions.py changed, reloading.
+INFO 2025-09-16 19:36:46,722 autoreload 20812 25568 Watching for file changes with StatReloader
+INFO 2025-09-16 19:37:47,061 autoreload 20812 25568 C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movies\views.py changed, reloading.
+INFO 2025-09-16 19:37:48,196 autoreload 40176 9156 Watching for file changes with StatReloader
+INFO 2025-09-16 22:29:30,141 autoreload 40176 9156 C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movie_backend\settings.py changed, reloading.
+INFO 2025-09-16 22:29:32,025 autoreload 17848 31864 Watching for file changes with StatReloader
+INFO 2025-09-16 23:08:37,109 autoreload 17848 31864 C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movies\models.py changed, reloading.
+INFO 2025-09-16 23:08:38,735 autoreload 20016 26620 Watching for file changes with StatReloader

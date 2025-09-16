@@ -5,6 +5,13 @@ from typing import Dict, List, Optional
 from django.conf import settings
 from django.core.cache import cache
 from .models import Movie, Genre
+from .cache_utils import (
+    cache_tmdb_response, 
+    get_cached_tmdb_response, 
+    cache_movie_data, 
+    get_cached_movie_data,
+    cache_result
+)
 
 logger = logging.getLogger(__name__)
 
@@ -30,12 +37,12 @@ class TMDbAPIService:
             return None
     
     def search_movies(self, query: str, page: int = 1) -> Optional[Dict]:
-        """Search for movies by title"""
-        cache_key = f"tmdb_search_{query}_{page}"
-        cached_result = cache.get(cache_key)
-        
-        if cached_result:
-            return cached_result
+        """Search for movies by title with caching"""
+        # Check cache first
+        cache_params = {'query': query, 'page': page}
+        cached_data = get_cached_tmdb_response('search/movie', cache_params)
+        if cached_data:
+            return cached_data
         
         params = {
             'query': query,
@@ -45,57 +52,56 @@ class TMDbAPIService:
         
         result = self._make_request('search/movie', params)
         if result:
-            # Cache for 1 hour
-            cache.set(cache_key, result, 3600)
+            # Cache search results for 15 minutes
+            cache_tmdb_response('search/movie', cache_params, result, timeout=900)
         
         return result
     
     def get_movie_details(self, movie_id: int) -> Optional[Dict]:
-        """Get detailed information about a specific movie"""
-        cache_key = f"tmdb_movie_{movie_id}"
-        cached_result = cache.get(cache_key)
-        
-        if cached_result:
-            return cached_result
+        """Get detailed information about a specific movie with caching"""
+        # Check cache first
+        cached_data = get_cached_movie_data(movie_id)
+        if cached_data:
+            return cached_data
         
         result = self._make_request(f'movie/{movie_id}')
         if result:
-            # Cache for 24 hours
-            cache.set(cache_key, result, 86400)
+            # Cache the response for 1 hour
+            cache_movie_data(movie_id, result, timeout=3600)
         
         return result
     
     def get_popular_movies(self, page: int = 1) -> Optional[Dict]:
-        """Get popular movies"""
-        cache_key = f"tmdb_popular_{page}"
-        cached_result = cache.get(cache_key)
-        
-        if cached_result:
-            return cached_result
+        """Get popular movies with caching"""
+        # Check cache first
+        cache_params = {'page': page}
+        cached_data = get_cached_tmdb_response('movie/popular', cache_params)
+        if cached_data:
+            return cached_data
         
         params = {'page': page}
         result = self._make_request('movie/popular', params)
         
         if result:
-            # Cache for 6 hours
-            cache.set(cache_key, result, 21600)
+            # Cache popular movies for 1 hour
+            cache_tmdb_response('movie/popular', cache_params, result, timeout=3600)
         
         return result
     
     def get_top_rated_movies(self, page: int = 1) -> Optional[Dict]:
-        """Get top rated movies"""
-        cache_key = f"tmdb_top_rated_{page}"
-        cached_result = cache.get(cache_key)
-        
-        if cached_result:
-            return cached_result
+        """Get top rated movies with caching"""
+        # Check cache first
+        cache_params = {'page': page}
+        cached_data = get_cached_tmdb_response('movie/top_rated', cache_params)
+        if cached_data:
+            return cached_data
         
         params = {'page': page}
         result = self._make_request('movie/top_rated', params)
         
         if result:
-            # Cache for 6 hours
-            cache.set(cache_key, result, 21600)
+            # Cache top rated movies for 2 hours (changes less frequently)
+            cache_tmdb_response('movie/top_rated', cache_params, result, timeout=7200)
         
         return result
     

@@ -1,5 +1,5 @@
 from django.urls import path
-from . import views
+from . import views, auth_views, user_views
 
 app_name = 'movies'
 
@@ -22,4 +22,17 @@ urlpatterns = [
     path('ratings/<int:pk>/', views.UserMovieRatingDetailView.as_view(), name='user-rating-detail'),
     path('watchlist/', views.UserMovieWatchlistListCreateView.as_view(), name='user-watchlist'),
     path('watchlist/<int:pk>/', views.UserMovieWatchlistDetailView.as_view(), name='user-watchlist-detail'),
+    
+    # Authentication endpoints
+    path('auth/register/', auth_views.register, name='auth-register'),
+    path('auth/login/', auth_views.login, name='auth-login'),
+    path('auth/logout/', auth_views.logout, name='auth-logout'),
+    path('auth/profile/', auth_views.profile, name='auth-profile'),
+    path('auth/refresh/', auth_views.refresh_token, name='auth-refresh'),
+    
+    # User-specific endpoints
+    path('user/stats/', user_views.user_stats, name='user-stats'),
+    path('user/recommendations/', user_views.recommended_for_user, name='user-recommendations'),
+    path('user/movie/<int:movie_id>/status/', user_views.check_movie_status, name='check-movie-status'),
+    path('user/watchlist/bulk-add/', user_views.bulk_add_to_watchlist, name='bulk-add-watchlist'),
 ]

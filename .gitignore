@@ -1,0 +1,25 @@
+@"
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+*.pyo
+*.pyd
+
+# Envs & secrets
+.env
+.venv/
+venv/
+
+# Django
+db.sqlite3
+staticfiles/
+media/
+local_settings.py
+
+# Editors/OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+"@ | Set-Content .gitignore

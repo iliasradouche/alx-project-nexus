@@ -215,6 +215,9 @@ docker-compose logs -f
 - **Rate Limiting** to prevent abuse
 - **Environment Variables** for sensitive configuration
 
+## 🤝 Contributing
+
+We welcome contributions! Please see our [Contributing Guidelines](CONTRIBUTING.md) for details.
 
 ### Development Setup
 1. Fork the repository
@@ -224,6 +227,10 @@ docker-compose logs -f
 5. Ensure all tests pass
 6. Submit a pull request
 
+### Collaboration Channels
+- **Discord**: `#ProDevProjectNexus`
+- **Issues**: GitHub Issues for bug reports and feature requests
+- **Discussions**: GitHub Discussions for general questions
 
 ## 📚 Learning Resources
 
@@ -234,6 +241,10 @@ docker-compose logs -f
 - **Performance Optimization**: Caching strategies and scalability patterns
 - **DevOps Practices**: Docker, CI/CD, and deployment strategies
 
+### Additional Projects
+- **E-commerce API**: Complete online store backend
+- **Social Media Backend**: User interactions and content management
+- **Real-time Chat**: WebSocket implementation with Django Channels
 
 ## 🎓 Learning Outcomes
 
@@ -248,7 +259,16 @@ By exploring this repository, you'll gain expertise in:
 ✅ **Testing Strategies** and quality assurance  
 ✅ **Documentation** and API specifications  
 
+## 📄 License
 
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 📞 Support & Contact
+
+- **Issues**: [GitHub Issues](https://github.com/your-username/alx-project-nexus/issues)
+- **Discussions**: [GitHub Discussions](https://github.com/your-username/alx-project-nexus/discussions)
+- **Discord**: `#ProDevProjectNexus`
+- **Email**: [your-email@example.com](mailto:your-email@example.com)
 
 ---
 

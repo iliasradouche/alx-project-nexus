@@ -222,6 +222,35 @@ class CachedTMDbRateLimiter:
         except Exception as e:
             logger.error(f"Cache error recording request: {e}")
             return True  # Allow request if cache fails
+    
+    def wait_if_needed(self, priority='medium', max_wait=30):
+        """Wait if needed before making request"""
+        can_proceed, message = self.can_make_request(priority)
+        
+        if can_proceed:
+            return True
+        
+        # Simple wait strategy for cached version
+        wait_time = min(2, max_wait)  # Wait 2 seconds or max_wait, whichever is smaller
+        time.sleep(wait_time)
+        
+        # Check again after waiting
+        can_proceed, _ = self.can_make_request(priority)
+        return can_proceed
+    
+    def record_success(self):
+        """Record successful request"""
+        # For cached version, this is handled in make_request
+        pass
+    
+    def record_error(self, error_type='general'):
+        """Record error for backoff calculation"""
+        try:
+            error_key = self._get_cache_key('errors')
+            current_errors = cache.get(error_key, 0)
+            cache.set(error_key, current_errors + 1, timeout=300)  # 5 minute timeout
+        except Exception as e:
+            logger.error(f"Cache error recording error: {e}")
 
 
 # Choose rate limiter based on cache backend

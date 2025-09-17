@@ -36,11 +36,12 @@ schema_view = get_schema_view(
 )
 
 urlpatterns = [
-    # Root redirect to API documentation
+    # Root redirect to Swagger UI
     path('', lambda request: redirect('schema-swagger-ui'), name='root-redirect'),
     
     path('admin/', admin.site.urls),
     path('api/movies/', include('movies.urls')),
+    path('api/auth/', include('movies.auth_urls')),  # Add auth endpoints at /api/auth/
     
     # API Documentation
     re_path(r'^swagger(?P<format>\.json|\.yaml)$', schema_view.without_ui(cache_timeout=0), name='schema-json'),

@@ -23,12 +23,7 @@ urlpatterns = [
     path('watchlist/', views.UserMovieWatchlistListCreateView.as_view(), name='user-watchlist'),
     path('watchlist/<int:pk>/', views.UserMovieWatchlistDetailView.as_view(), name='user-watchlist-detail'),
     
-    # Authentication endpoints
-    path('auth/register/', auth_views.register, name='auth-register'),
-    path('auth/login/', auth_views.login, name='auth-login'),
-    path('auth/logout/', auth_views.logout, name='auth-logout'),
-    path('auth/profile/', auth_views.profile, name='auth-profile'),
-    path('auth/refresh/', auth_views.refresh_token, name='auth-refresh'),
+    # Authentication endpoints moved to auth_urls.py
     
     # User-specific endpoints
     path('user/stats/', user_views.user_stats, name='user-stats'),

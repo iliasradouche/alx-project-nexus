@@ -511,3 +511,1775 @@ ERROR 2025-09-17 14:12:31,584 views 27812 30620 Error in UserMovieRatingDetailVi
 ERROR 2025-09-17 14:12:31,585 views 27812 30620 Error in UserMovieWatchlistDetailView.get_queryset: Field 'id' expected a number but got <django.contrib.auth.models.AnonymousUser object at 0x000002395CFF2AD0>.
 INFO 2025-09-17 14:12:31,675 basehttp 27812 30620 "GET /swagger/?format=openapi HTTP/1.1" 200 21692
 INFO 2025-09-17 14:12:31,730 basehttp 27812 30620 "GET /static/drf-yasg/swagger-ui-dist/favicon-32x32.png HTTP/1.1" 200 628
+INFO 2025-09-17 14:18:25,595 basehttp 27812 29636 "GET /swagger/?ide_webview_request_time=1758115105530 HTTP/1.1" 200 1671
+ERROR 2025-09-17 14:18:26,016 views 27812 29636 Error in UserMovieRatingDetailView.get_queryset: Field 'id' expected a number but got <django.contrib.auth.models.AnonymousUser object at 0x000002395CFF2BF0>.
+ERROR 2025-09-17 14:18:26,020 views 27812 29636 Error in UserMovieWatchlistDetailView.get_queryset: Field 'id' expected a number but got <django.contrib.auth.models.AnonymousUser object at 0x000002395CFF2BF0>.
+ERROR 2025-09-17 14:18:26,023 views 27812 29636 Error in UserMovieRatingDetailView.get_queryset: Field 'id' expected a number but got <django.contrib.auth.models.AnonymousUser object at 0x000002395CFF2BF0>.
+ERROR 2025-09-17 14:18:26,024 views 27812 29636 Error in UserMovieRatingDetailView.get_queryset: Field 'id' expected a number but got <django.contrib.auth.models.AnonymousUser object at 0x000002395CFF2BF0>.
+ERROR 2025-09-17 14:18:26,027 views 27812 29636 Error in UserMovieRatingDetailView.get_queryset: Field 'id' expected a number but got <django.contrib.auth.models.AnonymousUser object at 0x000002395CFF2BF0>.
+ERROR 2025-09-17 14:18:26,028 views 27812 29636 Error in UserMovieWatchlistDetailView.get_queryset: Field 'id' expected a number but got <django.contrib.auth.models.AnonymousUser object at 0x000002395CFF2BF0>.
+INFO 2025-09-17 14:18:26,150 basehttp 27812 29636 "GET /swagger/?format=openapi&ide_webview_request_time=1758115105530 HTTP/1.1" 200 21692
+WARNING 2025-09-17 14:18:26,419 log 27812 29636 Not Found: /@vite/client
+WARNING 2025-09-17 14:18:26,424 basehttp 27812 29636 "GET /@vite/client HTTP/1.1" 404 3091
+INFO 2025-09-17 14:24:01,173 autoreload 27812 10804 C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movies\services.py changed, reloading.
+INFO 2025-09-17 14:24:03,403 autoreload 35116 35620 Watching for file changes with StatReloader
+INFO 2025-09-17 14:24:57,540 autoreload 35116 35620 C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movies\views.py changed, reloading.
+INFO 2025-09-17 14:24:59,897 autoreload 4460 9392 Watching for file changes with StatReloader
+INFO 2025-09-17 14:50:33,496 basehttp 4460 38344 "GET /swagger/ HTTP/1.1" 200 1671
+ERROR 2025-09-17 14:50:33,887 views 4460 38344 Error in UserMovieRatingDetailView.get_queryset: Field 'id' expected a number but got <django.contrib.auth.models.AnonymousUser object at 0x000001A1DAE61150>.
+ERROR 2025-09-17 14:50:33,888 views 4460 38344 Error in UserMovieWatchlistDetailView.get_queryset: Field 'id' expected a number but got <django.contrib.auth.models.AnonymousUser object at 0x000001A1DAE61150>.
+ERROR 2025-09-17 14:50:33,889 views 4460 38344 Error in UserMovieRatingDetailView.get_queryset: Field 'id' expected a number but got <django.contrib.auth.models.AnonymousUser object at 0x000001A1DAE61150>.
+ERROR 2025-09-17 14:50:33,890 views 4460 38344 Error in UserMovieRatingDetailView.get_queryset: Field 'id' expected a number but got <django.contrib.auth.models.AnonymousUser object at 0x000001A1DAE61150>.
+ERROR 2025-09-17 14:50:33,890 views 4460 38344 Error in UserMovieRatingDetailView.get_queryset: Field 'id' expected a number but got <django.contrib.auth.models.AnonymousUser object at 0x000001A1DAE61150>.
+ERROR 2025-09-17 14:50:33,891 views 4460 38344 Error in UserMovieWatchlistDetailView.get_queryset: Field 'id' expected a number but got <django.contrib.auth.models.AnonymousUser object at 0x000001A1DAE61150>.
+INFO 2025-09-17 14:50:33,927 basehttp 4460 38344 "GET /swagger/?format=openapi HTTP/1.1" 200 21692
+INFO 2025-09-17 14:51:01,039 middleware 4460 38344 Incoming request: GET /api/movies/genres/
+ERROR 2025-09-17 14:51:01,067 exceptions 4460 38344 API Exception: Invalid page.
+Traceback (most recent call last):
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\pagination.py", line 211, in paginate_queryset
+    self.page = paginator.page(page_number)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\django\core\paginator.py", line 89, in page
+    number = self.validate_number(number)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\django\core\paginator.py", line 71, in validate_number
+    raise EmptyPage(self.error_messages["no_results"])
+django.core.paginator.EmptyPage: That page contains no results
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movies\views.py", line 288, in get
+    return super().get(request, *args, **kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\generics.py", line 203, in get
+    return self.list(request, *args, **kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\mixins.py", line 40, in list
+    page = self.paginate_queryset(queryset)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\generics.py", line 175, in paginate_queryset
+    return self.paginator.paginate_queryset(queryset, self.request, view=self)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\pagination.py", line 216, in paginate_queryset
+    raise NotFound(msg)
+rest_framework.exceptions.NotFound: Invalid page.
+INFO 2025-09-17 14:51:01,089 middleware 4460 38344 Response: GET /api/movies/genres/ - 404
+WARNING 2025-09-17 14:51:01,098 log 4460 38344 Not Found: /api/movies/genres/
+WARNING 2025-09-17 14:51:01,099 basehttp 4460 38344 "GET /api/movies/genres/?page=2 HTTP/1.1" 404 110
+INFO 2025-09-17 14:51:36,404 middleware 4460 38344 Incoming request: POST /api/movies/search/
+ERROR 2025-09-17 14:51:36,405 exceptions 4460 38344 API Exception: Authentication credentials were not provided.
+Traceback (most recent call last):
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\views.py", line 503, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\views.py", line 421, in initial
+    self.check_permissions(request)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\views.py", line 339, in check_permissions
+    self.permission_denied(
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\views.py", line 180, in permission_denied
+    raise exceptions.NotAuthenticated()
+rest_framework.exceptions.NotAuthenticated: Authentication credentials were not provided.
+INFO 2025-09-17 14:51:36,405 middleware 4460 38344 Response: POST /api/movies/search/ - 401
+WARNING 2025-09-17 14:51:36,406 log 4460 38344 Unauthorized: /api/movies/search/
+WARNING 2025-09-17 14:51:36,407 basehttp 4460 38344 "POST /api/movies/search/ HTTP/1.1" 401 150
+INFO 2025-09-17 14:52:13,463 middleware 4460 38344 Incoming request: POST /api/movies/auth/register/
+INFO 2025-09-17 14:52:14,119 middleware 4460 38344 Response: POST /api/movies/auth/register/ - 201
+INFO 2025-09-17 14:52:14,121 basehttp 4460 38344 "POST /api/movies/auth/register/ HTTP/1.1" 201 640
+INFO 2025-09-17 14:52:47,794 middleware 4460 38344 Incoming request: POST /api/movies/auth/login/
+INFO 2025-09-17 14:52:48,318 middleware 4460 38344 Response: POST /api/movies/auth/login/ - 200
+INFO 2025-09-17 14:52:48,320 basehttp 4460 38344 "POST /api/movies/auth/login/ HTTP/1.1" 200 628
+INFO 2025-09-17 14:53:10,825 middleware 4460 40752 Incoming request: POST /api/movies/search/
+ERROR 2025-09-17 14:53:10,826 exceptions 4460 40752 API Exception: Authentication credentials were not provided.
+Traceback (most recent call last):
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\views.py", line 503, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\views.py", line 421, in initial
+    self.check_permissions(request)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\views.py", line 339, in check_permissions
+    self.permission_denied(
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\views.py", line 180, in permission_denied
+    raise exceptions.NotAuthenticated()
+rest_framework.exceptions.NotAuthenticated: Authentication credentials were not provided.
+INFO 2025-09-17 14:53:10,827 middleware 4460 40752 Response: POST /api/movies/search/ - 401
+WARNING 2025-09-17 14:53:10,827 log 4460 40752 Unauthorized: /api/movies/search/
+WARNING 2025-09-17 14:53:10,828 basehttp 4460 40752 "POST /api/movies/search/ HTTP/1.1" 401 150
+INFO 2025-09-17 14:53:45,822 middleware 4460 40752 Incoming request: POST /api/movies/search/
+ERROR 2025-09-17 14:53:45,822 exceptions 4460 40752 API Exception: Authentication credentials were not provided.
+Traceback (most recent call last):
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\views.py", line 503, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\views.py", line 421, in initial
+    self.check_permissions(request)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\views.py", line 339, in check_permissions
+    self.permission_denied(
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\views.py", line 180, in permission_denied
+    raise exceptions.NotAuthenticated()
+rest_framework.exceptions.NotAuthenticated: Authentication credentials were not provided.
+INFO 2025-09-17 14:53:45,823 middleware 4460 40752 Response: POST /api/movies/search/ - 401
+WARNING 2025-09-17 14:53:45,824 log 4460 40752 Unauthorized: /api/movies/search/
+WARNING 2025-09-17 14:53:45,825 basehttp 4460 40752 "POST /api/movies/search/ HTTP/1.1" 401 150
+INFO 2025-09-17 14:54:16,705 middleware 4460 40752 Incoming request: POST /api/movies/search/
+ERROR 2025-09-17 14:54:16,706 exceptions 4460 40752 API Exception: Authentication credentials were not provided.
+Traceback (most recent call last):
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\views.py", line 503, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\views.py", line 421, in initial
+    self.check_permissions(request)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\views.py", line 339, in check_permissions
+    self.permission_denied(
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\views.py", line 180, in permission_denied
+    raise exceptions.NotAuthenticated()
+rest_framework.exceptions.NotAuthenticated: Authentication credentials were not provided.
+INFO 2025-09-17 14:54:16,708 middleware 4460 40752 Response: POST /api/movies/search/ - 401
+WARNING 2025-09-17 14:54:16,708 log 4460 40752 Unauthorized: /api/movies/search/
+WARNING 2025-09-17 14:54:16,710 basehttp 4460 40752 "POST /api/movies/search/ HTTP/1.1" 401 150
+INFO 2025-09-17 14:54:50,742 middleware 4460 40752 Incoming request: GET /api/movies/popular/
+ERROR 2025-09-17 14:54:50,743 views 4460 40752 TMDb API error in popular_movies: 'CachedTMDbRateLimiter' object has no attribute 'wait_if_needed'
+ERROR 2025-09-17 14:54:50,744 exceptions 4460 40752 API Exception: Failed to fetch popular movies from TMDb API
+Traceback (most recent call last):
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movies\views.py", line 425, in popular_movies
+    popular_data = tmdb_service.get_popular_movies(page)
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movies\services.py", line 103, in get_popular_movies
+    result = self._make_request('movie/popular', params)
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movies\services.py", line 32, in _make_request
+    if not rate_limiter.wait_if_needed(priority=priority, max_wait=30):
+AttributeError: 'CachedTMDbRateLimiter' object has no attribute 'wait_if_needed'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movies\cache_utils.py", line 46, in wrapper
+    result = func(*args, **kwargs)
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movies\views.py", line 428, in popular_movies
+    raise TMDbAPIException("Failed to fetch popular movies from TMDb API")
+movies.exceptions.TMDbAPIException: Failed to fetch popular movies from TMDb API
+INFO 2025-09-17 14:54:50,749 middleware 4460 40752 Response: GET /api/movies/popular/ - 503
+ERROR 2025-09-17 14:54:50,749 log 4460 40752 Service Unavailable: /api/movies/popular/
+ERROR 2025-09-17 14:54:50,751 basehttp 4460 40752 "GET /api/movies/popular/ HTTP/1.1" 503 147
+INFO 2025-09-17 15:40:12,551 autoreload 28676 13928 Watching for file changes with StatReloader
+INFO 2025-09-17 15:40:22,400 basehttp 28676 16592 "GET /?ide_webview_request_time=1758120022171 HTTP/1.1" 302 0
+INFO 2025-09-17 15:40:22,431 basehttp 28676 16592 "GET /swagger/ HTTP/1.1" 200 1671
+ERROR 2025-09-17 15:40:22,747 views 28676 16592 Error in UserMovieRatingDetailView.get_queryset: Field 'id' expected a number but got <django.contrib.auth.models.AnonymousUser object at 0x0000025AEA267F10>.
+ERROR 2025-09-17 15:40:22,748 views 28676 16592 Error in UserMovieWatchlistDetailView.get_queryset: Field 'id' expected a number but got <django.contrib.auth.models.AnonymousUser object at 0x0000025AEA267F10>.
+ERROR 2025-09-17 15:40:22,748 views 28676 16592 Error in UserMovieRatingDetailView.get_queryset: Field 'id' expected a number but got <django.contrib.auth.models.AnonymousUser object at 0x0000025AEA267F10>.
+ERROR 2025-09-17 15:40:22,749 views 28676 16592 Error in UserMovieRatingDetailView.get_queryset: Field 'id' expected a number but got <django.contrib.auth.models.AnonymousUser object at 0x0000025AEA267F10>.
+ERROR 2025-09-17 15:40:22,749 views 28676 16592 Error in UserMovieRatingDetailView.get_queryset: Field 'id' expected a number but got <django.contrib.auth.models.AnonymousUser object at 0x0000025AEA267F10>.
+ERROR 2025-09-17 15:40:22,750 views 28676 16592 Error in UserMovieWatchlistDetailView.get_queryset: Field 'id' expected a number but got <django.contrib.auth.models.AnonymousUser object at 0x0000025AEA267F10>.
+INFO 2025-09-17 15:40:22,791 basehttp 28676 16592 "GET /swagger/?format=openapi HTTP/1.1" 200 21692
+WARNING 2025-09-17 15:40:22,965 log 28676 16592 Not Found: /@vite/client
+WARNING 2025-09-17 15:40:22,966 basehttp 28676 16592 "GET /@vite/client HTTP/1.1" 404 3091
+INFO 2025-09-17 15:43:38,096 basehttp 28676 12352 "GET /?ide_webview_request_time=1758120218064 HTTP/1.1" 302 0
+WARNING 2025-09-17 15:43:38,665 log 28676 12352 Not Found: /@vite/client
+WARNING 2025-09-17 15:43:38,666 basehttp 28676 12352 "GET /@vite/client HTTP/1.1" 404 3091
+INFO 2025-09-17 15:43:42,660 middleware 28676 5192 Incoming request: GET /api/movies/
+INFO 2025-09-17 15:43:42,716 middleware 28676 5192 Response: GET /api/movies/ - 200
+INFO 2025-09-17 15:43:42,718 basehttp 28676 5192 "GET /api/movies/?limit=12 HTTP/1.1" 200 182
+INFO 2025-09-17 15:43:42,729 middleware 28676 5192 Incoming request: GET /api/movies/
+INFO 2025-09-17 15:43:42,732 middleware 28676 5192 Response: GET /api/movies/ - 200
+INFO 2025-09-17 15:43:42,734 basehttp 28676 5192 "GET /api/movies/?limit=12 HTTP/1.1" 200 182
+WARNING 2025-09-17 15:43:45,157 log 28676 31940 Not Found: /favicon.ico
+WARNING 2025-09-17 15:43:45,158 basehttp 28676 31940 "GET /favicon.ico HTTP/1.1" 404 3088
+INFO 2025-09-17 15:44:48,204 middleware 28676 20928 Incoming request: GET /api/movies/
+INFO 2025-09-17 15:44:48,209 middleware 28676 20928 Response: GET /api/movies/ - 200
+INFO 2025-09-17 15:44:48,210 basehttp 28676 20928 "GET /api/movies/?limit=12 HTTP/1.1" 200 182
+WARNING 2025-09-17 15:44:48,222 log 28676 13972 Not Found: /@vite/client
+WARNING 2025-09-17 15:44:48,222 basehttp 28676 13972 "GET /@vite/client HTTP/1.1" 404 3091
+INFO 2025-09-17 15:45:04,542 middleware 28676 20844 Incoming request: GET /api/movies/
+INFO 2025-09-17 15:45:04,547 middleware 28676 20844 Response: GET /api/movies/ - 200
+INFO 2025-09-17 15:45:04,549 basehttp 28676 20844 "GET /api/movies/?limit=12 HTTP/1.1" 200 182
+INFO 2025-09-17 15:45:09,881 middleware 28676 18608 Incoming request: GET /api/movies/
+INFO 2025-09-17 15:45:09,895 middleware 28676 18608 Response: GET /api/movies/ - 200
+INFO 2025-09-17 15:45:09,902 basehttp 28676 18608 "GET /api/movies/?limit=12 HTTP/1.1" 200 182
+INFO 2025-09-17 15:45:09,914 middleware 28676 18608 Incoming request: GET /api/movies/
+INFO 2025-09-17 15:45:09,922 middleware 28676 18608 Response: GET /api/movies/ - 200
+INFO 2025-09-17 15:45:09,923 basehttp 28676 18608 "GET /api/movies/?limit=12 HTTP/1.1" 200 182
+INFO 2025-09-17 15:45:25,028 autoreload 28676 13928 C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movie_backend\settings.py changed, reloading.
+INFO 2025-09-17 15:45:26,150 autoreload 25192 10416 Watching for file changes with StatReloader
+INFO 2025-09-17 15:45:35,483 middleware 25192 11736 Incoming request: GET /api/movies/
+INFO 2025-09-17 15:45:35,494 middleware 25192 11736 Response: GET /api/movies/ - 200
+INFO 2025-09-17 15:45:35,496 basehttp 25192 11736 "GET /api/movies/?limit=12 HTTP/1.1" 200 182
+WARNING 2025-09-17 15:45:35,514 log 25192 39436 Not Found: /@vite/client
+WARNING 2025-09-17 15:45:35,514 basehttp 25192 39436 "GET /@vite/client HTTP/1.1" 404 3091
+INFO 2025-09-17 15:45:49,505 autoreload 18084 28360 Watching for file changes with StatReloader
+INFO 2025-09-17 15:46:03,855 middleware 18084 40188 Incoming request: GET /api/movies/
+INFO 2025-09-17 15:46:03,864 middleware 18084 40188 Response: GET /api/movies/ - 200
+INFO 2025-09-17 15:46:03,866 basehttp 18084 40188 "GET /api/movies/?limit=12 HTTP/1.1" 200 182
+INFO 2025-09-17 15:46:21,004 middleware 18084 40188 Incoming request: GET /api/movies/search/
+ERROR 2025-09-17 15:46:21,006 exceptions 18084 40188 API Exception: Authentication credentials were not provided.
+Traceback (most recent call last):
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\views.py", line 503, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\views.py", line 421, in initial
+    self.check_permissions(request)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\views.py", line 339, in check_permissions
+    self.permission_denied(
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\views.py", line 180, in permission_denied
+    raise exceptions.NotAuthenticated()
+rest_framework.exceptions.NotAuthenticated: Authentication credentials were not provided.
+INFO 2025-09-17 15:46:21,008 middleware 18084 40188 Response: GET /api/movies/search/ - 401
+WARNING 2025-09-17 15:46:21,010 log 18084 40188 Unauthorized: /api/movies/search/
+WARNING 2025-09-17 15:46:21,010 basehttp 18084 40188 "GET /api/movies/search/?q=jdj HTTP/1.1" 401 150
+INFO 2025-09-17 15:46:39,833 basehttp 18084 40188 "OPTIONS /api/auth/register/ HTTP/1.1" 200 0
+INFO 2025-09-17 15:46:39,850 middleware 18084 40188 Incoming request: POST /api/auth/register/
+INFO 2025-09-17 15:46:39,861 middleware 18084 40188 Response: POST /api/auth/register/ - 404
+WARNING 2025-09-17 15:46:39,862 log 18084 40188 Not Found: /api/auth/register/
+WARNING 2025-09-17 15:46:39,863 basehttp 18084 40188 "POST /api/auth/register/ HTTP/1.1" 404 3110
+INFO 2025-09-17 15:47:46,230 autoreload 18084 28360 C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movie_backend\urls.py changed, reloading.
+INFO 2025-09-17 15:47:47,381 autoreload 30308 30208 Watching for file changes with StatReloader
+INFO 2025-09-17 15:48:19,335 autoreload 37748 24544 Watching for file changes with StatReloader
+INFO 2025-09-17 15:48:37,723 autoreload 37748 24544 C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movie_backend\urls.py changed, reloading.
+INFO 2025-09-17 15:48:38,663 autoreload 36732 1908 Watching for file changes with StatReloader
+INFO 2025-09-17 15:48:46,172 autoreload 36732 1908 C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movies\urls.py changed, reloading.
+INFO 2025-09-17 15:48:46,952 autoreload 12984 35024 Watching for file changes with StatReloader
+INFO 2025-09-17 15:49:14,132 autoreload 7528 24024 Watching for file changes with StatReloader
+INFO 2025-09-17 15:49:37,659 basehttp 7528 27944 "GET /?ide_webview_request_time=1758120577603 HTTP/1.1" 302 0
+INFO 2025-09-17 15:49:37,680 basehttp 7528 27944 "GET /swagger/ HTTP/1.1" 200 1671
+ERROR 2025-09-17 15:49:37,820 views 7528 27944 Error in UserMovieRatingDetailView.get_queryset: Field 'id' expected a number but got <django.contrib.auth.models.AnonymousUser object at 0x000001DF2F07C1C0>.
+ERROR 2025-09-17 15:49:37,821 views 7528 27944 Error in UserMovieWatchlistDetailView.get_queryset: Field 'id' expected a number but got <django.contrib.auth.models.AnonymousUser object at 0x000001DF2F07C1C0>.
+ERROR 2025-09-17 15:49:37,821 views 7528 27944 Error in UserMovieRatingDetailView.get_queryset: Field 'id' expected a number but got <django.contrib.auth.models.AnonymousUser object at 0x000001DF2F07C1C0>.
+ERROR 2025-09-17 15:49:37,823 views 7528 27944 Error in UserMovieRatingDetailView.get_queryset: Field 'id' expected a number but got <django.contrib.auth.models.AnonymousUser object at 0x000001DF2F07C1C0>.
+ERROR 2025-09-17 15:49:37,823 views 7528 27944 Error in UserMovieRatingDetailView.get_queryset: Field 'id' expected a number but got <django.contrib.auth.models.AnonymousUser object at 0x000001DF2F07C1C0>.
+ERROR 2025-09-17 15:49:37,823 views 7528 27944 Error in UserMovieWatchlistDetailView.get_queryset: Field 'id' expected a number but got <django.contrib.auth.models.AnonymousUser object at 0x000001DF2F07C1C0>.
+INFO 2025-09-17 15:49:37,885 basehttp 7528 27944 "GET /swagger/?format=openapi HTTP/1.1" 200 21616
+WARNING 2025-09-17 15:49:37,928 log 7528 37520 Not Found: /@vite/client
+WARNING 2025-09-17 15:49:37,929 basehttp 7528 37520 "GET /@vite/client HTTP/1.1" 404 3243
+INFO 2025-09-17 15:49:49,072 middleware 7528 9248 Incoming request: POST /api/auth/register/
+INFO 2025-09-17 15:49:49,696 middleware 7528 9248 Response: POST /api/auth/register/ - 201
+INFO 2025-09-17 15:49:49,699 basehttp 7528 9248 "POST /api/auth/register/ HTTP/1.1" 201 683
+INFO 2025-09-17 15:49:49,735 basehttp 7528 9248 "OPTIONS /api/movies/recommendations/ HTTP/1.1" 200 0
+INFO 2025-09-17 15:49:49,751 middleware 7528 9248 Incoming request: GET /api/movies/recommendations/
+INFO 2025-09-17 15:49:49,753 basehttp 7528 12636 "OPTIONS /api/user/watchlist/ HTTP/1.1" 200 0
+INFO 2025-09-17 15:49:49,769 middleware 7528 12636 Incoming request: GET /api/user/watchlist/
+INFO 2025-09-17 15:49:49,779 basehttp 7528 16372 "OPTIONS /api/user/watchlist/ HTTP/1.1" 200 0
+INFO 2025-09-17 15:49:49,785 middleware 7528 9248 Response: GET /api/movies/recommendations/ - 404
+INFO 2025-09-17 15:49:49,786 basehttp 7528 37752 "OPTIONS /api/movies/recommendations/ HTTP/1.1" 200 0
+WARNING 2025-09-17 15:49:49,787 log 7528 9248 Not Found: /api/movies/recommendations/
+INFO 2025-09-17 15:49:49,790 middleware 7528 12636 Response: GET /api/user/watchlist/ - 404
+WARNING 2025-09-17 15:49:49,791 log 7528 12636 Not Found: /api/user/watchlist/
+WARNING 2025-09-17 15:49:49,792 basehttp 7528 9248 "GET /api/movies/recommendations/ HTTP/1.1" 404 7404
+WARNING 2025-09-17 15:49:49,792 basehttp 7528 12636 "GET /api/user/watchlist/ HTTP/1.1" 404 3264
+INFO 2025-09-17 15:49:49,804 middleware 7528 16372 Incoming request: GET /api/user/watchlist/
+INFO 2025-09-17 15:49:49,804 middleware 7528 37752 Incoming request: GET /api/movies/recommendations/
+INFO 2025-09-17 15:49:49,810 middleware 7528 16372 Response: GET /api/user/watchlist/ - 404
+INFO 2025-09-17 15:49:49,817 middleware 7528 37752 Response: GET /api/movies/recommendations/ - 404
+WARNING 2025-09-17 15:49:49,818 log 7528 16372 Not Found: /api/user/watchlist/
+WARNING 2025-09-17 15:49:49,819 log 7528 37752 Not Found: /api/movies/recommendations/
+WARNING 2025-09-17 15:49:49,819 basehttp 7528 16372 "GET /api/user/watchlist/ HTTP/1.1" 404 3264
+WARNING 2025-09-17 15:49:49,820 basehttp 7528 37752 "GET /api/movies/recommendations/ HTTP/1.1" 404 7404
+INFO 2025-09-17 15:49:59,314 basehttp 7528 37752 "OPTIONS /api/movies/?limit=12 HTTP/1.1" 200 0
+INFO 2025-09-17 15:49:59,315 basehttp 7528 16372 "OPTIONS /api/movies/?limit=12 HTTP/1.1" 200 0
+INFO 2025-09-17 15:50:01,447 middleware 7528 16372 Incoming request: GET /api/user/watchlist/
+INFO 2025-09-17 15:50:01,447 middleware 7528 37752 Incoming request: GET /api/movies/recommendations/
+INFO 2025-09-17 15:50:01,453 middleware 7528 16372 Response: GET /api/user/watchlist/ - 404
+WARNING 2025-09-17 15:50:01,454 log 7528 16372 Not Found: /api/user/watchlist/
+INFO 2025-09-17 15:50:01,460 middleware 7528 37752 Response: GET /api/movies/recommendations/ - 404
+WARNING 2025-09-17 15:50:01,461 log 7528 37752 Not Found: /api/movies/recommendations/
+WARNING 2025-09-17 15:50:01,461 basehttp 7528 16372 "GET /api/user/watchlist/ HTTP/1.1" 404 3264
+WARNING 2025-09-17 15:50:01,463 basehttp 7528 37752 "GET /api/movies/recommendations/ HTTP/1.1" 404 7404
+INFO 2025-09-17 15:50:01,468 middleware 7528 9248 Incoming request: GET /api/user/watchlist/
+INFO 2025-09-17 15:50:01,475 middleware 7528 9248 Response: GET /api/user/watchlist/ - 404
+WARNING 2025-09-17 15:50:01,475 log 7528 9248 Not Found: /api/user/watchlist/
+WARNING 2025-09-17 15:50:01,476 basehttp 7528 9248 "GET /api/user/watchlist/ HTTP/1.1" 404 3264
+INFO 2025-09-17 15:50:01,485 middleware 7528 9248 Incoming request: GET /api/movies/recommendations/
+INFO 2025-09-17 15:50:01,493 middleware 7528 9248 Response: GET /api/movies/recommendations/ - 404
+WARNING 2025-09-17 15:50:01,493 log 7528 9248 Not Found: /api/movies/recommendations/
+WARNING 2025-09-17 15:50:01,494 basehttp 7528 9248 "GET /api/movies/recommendations/ HTTP/1.1" 404 7404
+INFO 2025-09-17 15:51:17,171 basehttp 7528 12636 "OPTIONS /api/movies/watchlist/ HTTP/1.1" 200 0
+INFO 2025-09-17 15:51:17,172 basehttp 7528 9248 "OPTIONS /api/movies/undefined/recommendations/ HTTP/1.1" 200 0
+INFO 2025-09-17 15:51:17,172 basehttp 7528 16372 "OPTIONS /api/movies/undefined/recommendations/ HTTP/1.1" 200 0
+INFO 2025-09-17 15:51:17,173 basehttp 7528 37752 "OPTIONS /api/movies/watchlist/ HTTP/1.1" 200 0
+INFO 2025-09-17 15:51:17,200 middleware 7528 9248 Incoming request: GET /api/movies/undefined/recommendations/
+INFO 2025-09-17 15:51:17,201 middleware 7528 12636 Incoming request: GET /api/movies/watchlist/
+ERROR 2025-09-17 15:51:17,203 exceptions 7528 12636 API Exception: {'detail': ErrorDetail(string='Given token not valid for any token type', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid'), 'messages': [{'token_class': ErrorDetail(string='AccessToken', code='token_not_valid'), 'token_type': ErrorDetail(string='access', code='token_not_valid'), 'message': ErrorDetail(string='Token is invalid', code='token_not_valid')}]}
+Traceback (most recent call last):
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\views.py", line 503, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\views.py", line 420, in initial
+    self.perform_authentication(request)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\views.py", line 330, in perform_authentication
+    request.user
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\request.py", line 232, in user
+    self._authenticate()
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\request.py", line 385, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework_simplejwt\authentication.py", line 49, in authenticate
+    validated_token = self.get_validated_token(raw_token)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework_simplejwt\authentication.py", line 113, in get_validated_token
+    raise InvalidToken(
+rest_framework_simplejwt.exceptions.InvalidToken: {'detail': ErrorDetail(string='Given token not valid for any token type', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid'), 'messages': [{'token_class': ErrorDetail(string='AccessToken', code='token_not_valid'), 'token_type': ErrorDetail(string='access', code='token_not_valid'), 'message': ErrorDetail(string='Token is invalid', code='token_not_valid')}]}
+INFO 2025-09-17 15:51:17,211 middleware 7528 9248 Response: GET /api/movies/undefined/recommendations/ - 404
+INFO 2025-09-17 15:51:17,220 middleware 7528 12636 Response: GET /api/movies/watchlist/ - 401
+WARNING 2025-09-17 15:51:17,221 log 7528 9248 Not Found: /api/movies/undefined/recommendations/
+WARNING 2025-09-17 15:51:17,222 log 7528 12636 Unauthorized: /api/movies/watchlist/
+WARNING 2025-09-17 15:51:17,224 basehttp 7528 9248 "GET /api/movies/undefined/recommendations/ HTTP/1.1" 404 7434
+WARNING 2025-09-17 15:51:17,224 basehttp 7528 12636 "GET /api/movies/watchlist/ HTTP/1.1" 401 146
+INFO 2025-09-17 15:51:17,236 middleware 7528 12636 Incoming request: GET /api/movies/watchlist/
+INFO 2025-09-17 15:51:17,237 middleware 7528 16372 Incoming request: GET /api/movies/undefined/recommendations/
+ERROR 2025-09-17 15:51:17,295 exceptions 7528 12636 API Exception: {'detail': ErrorDetail(string='Given token not valid for any token type', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid'), 'messages': [{'token_class': ErrorDetail(string='AccessToken', code='token_not_valid'), 'token_type': ErrorDetail(string='access', code='token_not_valid'), 'message': ErrorDetail(string='Token is invalid', code='token_not_valid')}]}
+Traceback (most recent call last):
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\views.py", line 503, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\views.py", line 420, in initial
+    self.perform_authentication(request)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\views.py", line 330, in perform_authentication
+    request.user
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\request.py", line 232, in user
+    self._authenticate()
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\request.py", line 385, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework_simplejwt\authentication.py", line 49, in authenticate
+    validated_token = self.get_validated_token(raw_token)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework_simplejwt\authentication.py", line 113, in get_validated_token
+    raise InvalidToken(
+rest_framework_simplejwt.exceptions.InvalidToken: {'detail': ErrorDetail(string='Given token not valid for any token type', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid'), 'messages': [{'token_class': ErrorDetail(string='AccessToken', code='token_not_valid'), 'token_type': ErrorDetail(string='access', code='token_not_valid'), 'message': ErrorDetail(string='Token is invalid', code='token_not_valid')}]}
+INFO 2025-09-17 15:51:17,384 middleware 7528 16372 Response: GET /api/movies/undefined/recommendations/ - 404
+INFO 2025-09-17 15:51:17,385 middleware 7528 12636 Response: GET /api/movies/watchlist/ - 401
+WARNING 2025-09-17 15:51:17,385 log 7528 16372 Not Found: /api/movies/undefined/recommendations/
+WARNING 2025-09-17 15:51:17,385 log 7528 12636 Unauthorized: /api/movies/watchlist/
+WARNING 2025-09-17 15:51:17,386 basehttp 7528 16372 "GET /api/movies/undefined/recommendations/ HTTP/1.1" 404 7434
+WARNING 2025-09-17 15:51:17,389 basehttp 7528 12636 "GET /api/movies/watchlist/ HTTP/1.1" 401 146
+WARNING 2025-09-17 15:51:46,720 log 7528 37520 Not Found: /@vite/client
+WARNING 2025-09-17 15:51:46,721 basehttp 7528 37520 "GET /@vite/client HTTP/1.1" 404 3243
+INFO 2025-09-17 15:51:51,015 basehttp 7528 9248 "OPTIONS /api/auth/login/ HTTP/1.1" 200 0
+INFO 2025-09-17 15:51:51,026 middleware 7528 9248 Incoming request: POST /api/auth/login/
+INFO 2025-09-17 15:51:51,339 middleware 7528 9248 Response: POST /api/auth/login/ - 401
+WARNING 2025-09-17 15:51:51,339 log 7528 9248 Unauthorized: /api/auth/login/
+WARNING 2025-09-17 15:51:51,341 basehttp 7528 9248 "POST /api/auth/login/ HTTP/1.1" 401 31
+INFO 2025-09-17 15:51:58,177 middleware 7528 9248 Incoming request: POST /api/auth/login/
+INFO 2025-09-17 15:51:58,724 middleware 7528 9248 Response: POST /api/auth/login/ - 200
+INFO 2025-09-17 15:51:58,726 basehttp 7528 9248 "POST /api/auth/login/ HTTP/1.1" 200 671
+INFO 2025-09-17 15:51:58,764 middleware 7528 9248 Incoming request: GET /api/movies/undefined/recommendations/
+INFO 2025-09-17 15:51:58,765 middleware 7528 37752 Incoming request: GET /api/movies/watchlist/
+ERROR 2025-09-17 15:51:58,768 exceptions 7528 37752 API Exception: {'detail': ErrorDetail(string='Given token not valid for any token type', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid'), 'messages': [{'token_class': ErrorDetail(string='AccessToken', code='token_not_valid'), 'token_type': ErrorDetail(string='access', code='token_not_valid'), 'message': ErrorDetail(string='Token is invalid', code='token_not_valid')}]}
+Traceback (most recent call last):
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\views.py", line 503, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\views.py", line 420, in initial
+    self.perform_authentication(request)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\views.py", line 330, in perform_authentication
+    request.user
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\request.py", line 232, in user
+    self._authenticate()
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\request.py", line 385, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework_simplejwt\authentication.py", line 49, in authenticate
+    validated_token = self.get_validated_token(raw_token)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework_simplejwt\authentication.py", line 113, in get_validated_token
+    raise InvalidToken(
+rest_framework_simplejwt.exceptions.InvalidToken: {'detail': ErrorDetail(string='Given token not valid for any token type', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid'), 'messages': [{'token_class': ErrorDetail(string='AccessToken', code='token_not_valid'), 'token_type': ErrorDetail(string='access', code='token_not_valid'), 'message': ErrorDetail(string='Token is invalid', code='token_not_valid')}]}
+INFO 2025-09-17 15:51:58,775 middleware 7528 9248 Response: GET /api/movies/undefined/recommendations/ - 404
+INFO 2025-09-17 15:51:58,776 middleware 7528 37752 Response: GET /api/movies/watchlist/ - 401
+WARNING 2025-09-17 15:51:58,777 log 7528 9248 Not Found: /api/movies/undefined/recommendations/
+WARNING 2025-09-17 15:51:58,778 log 7528 37752 Unauthorized: /api/movies/watchlist/
+WARNING 2025-09-17 15:51:58,778 basehttp 7528 37752 "GET /api/movies/watchlist/ HTTP/1.1" 401 146
+WARNING 2025-09-17 15:51:58,779 basehttp 7528 9248 "GET /api/movies/undefined/recommendations/ HTTP/1.1" 404 7434
+INFO 2025-09-17 15:51:58,786 middleware 7528 27504 Incoming request: GET /api/movies/undefined/recommendations/
+INFO 2025-09-17 15:51:58,788 middleware 7528 37752 Incoming request: GET /api/movies/watchlist/
+ERROR 2025-09-17 15:51:58,791 exceptions 7528 37752 API Exception: {'detail': ErrorDetail(string='Given token not valid for any token type', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid'), 'messages': [{'token_class': ErrorDetail(string='AccessToken', code='token_not_valid'), 'token_type': ErrorDetail(string='access', code='token_not_valid'), 'message': ErrorDetail(string='Token is invalid', code='token_not_valid')}]}
+Traceback (most recent call last):
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\views.py", line 503, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\views.py", line 420, in initial
+    self.perform_authentication(request)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\views.py", line 330, in perform_authentication
+    request.user
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\request.py", line 232, in user
+    self._authenticate()
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\request.py", line 385, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework_simplejwt\authentication.py", line 49, in authenticate
+    validated_token = self.get_validated_token(raw_token)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework_simplejwt\authentication.py", line 113, in get_validated_token
+    raise InvalidToken(
+rest_framework_simplejwt.exceptions.InvalidToken: {'detail': ErrorDetail(string='Given token not valid for any token type', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid'), 'messages': [{'token_class': ErrorDetail(string='AccessToken', code='token_not_valid'), 'token_type': ErrorDetail(string='access', code='token_not_valid'), 'message': ErrorDetail(string='Token is invalid', code='token_not_valid')}]}
+INFO 2025-09-17 15:51:58,796 middleware 7528 27504 Response: GET /api/movies/undefined/recommendations/ - 404
+INFO 2025-09-17 15:51:58,798 middleware 7528 37752 Response: GET /api/movies/watchlist/ - 401
+WARNING 2025-09-17 15:51:58,798 log 7528 27504 Not Found: /api/movies/undefined/recommendations/
+WARNING 2025-09-17 15:51:58,799 log 7528 37752 Unauthorized: /api/movies/watchlist/
+WARNING 2025-09-17 15:51:58,799 basehttp 7528 27504 "GET /api/movies/undefined/recommendations/ HTTP/1.1" 404 7434
+WARNING 2025-09-17 15:51:58,800 basehttp 7528 37752 "GET /api/movies/watchlist/ HTTP/1.1" 401 146
+INFO 2025-09-17 15:52:05,013 middleware 7528 27504 Incoming request: GET /api/movies/
+INFO 2025-09-17 15:52:05,018 middleware 7528 27504 Response: GET /api/movies/ - 200
+INFO 2025-09-17 15:52:05,021 basehttp 7528 27504 "GET /api/movies/?limit=12 HTTP/1.1" 200 182
+INFO 2025-09-17 15:52:12,403 middleware 7528 27504 Incoming request: POST /api/auth/login/
+INFO 2025-09-17 15:52:12,946 middleware 7528 27504 Response: POST /api/auth/login/ - 401
+WARNING 2025-09-17 15:52:12,948 log 7528 27504 Unauthorized: /api/auth/login/
+WARNING 2025-09-17 15:52:12,949 basehttp 7528 27504 "POST /api/auth/login/ HTTP/1.1" 401 31
+INFO 2025-09-17 15:52:19,106 middleware 7528 27504 Incoming request: POST /api/auth/login/
+INFO 2025-09-17 15:52:19,653 middleware 7528 27504 Response: POST /api/auth/login/ - 200
+INFO 2025-09-17 15:52:19,654 basehttp 7528 27504 "POST /api/auth/login/ HTTP/1.1" 200 671
+INFO 2025-09-17 15:52:19,692 middleware 7528 37752 Incoming request: GET /api/movies/undefined/recommendations/
+INFO 2025-09-17 15:52:19,693 middleware 7528 27504 Incoming request: GET /api/movies/watchlist/
+INFO 2025-09-17 15:52:19,707 middleware 7528 37752 Response: GET /api/movies/undefined/recommendations/ - 404
+ERROR 2025-09-17 15:52:19,708 exceptions 7528 27504 API Exception: {'detail': ErrorDetail(string='Given token not valid for any token type', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid'), 'messages': [{'token_class': ErrorDetail(string='AccessToken', code='token_not_valid'), 'token_type': ErrorDetail(string='access', code='token_not_valid'), 'message': ErrorDetail(string='Token is invalid', code='token_not_valid')}]}
+Traceback (most recent call last):
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\views.py", line 503, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\views.py", line 420, in initial
+    self.perform_authentication(request)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\views.py", line 330, in perform_authentication
+    request.user
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\request.py", line 232, in user
+    self._authenticate()
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\request.py", line 385, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework_simplejwt\authentication.py", line 49, in authenticate
+    validated_token = self.get_validated_token(raw_token)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework_simplejwt\authentication.py", line 113, in get_validated_token
+    raise InvalidToken(
+rest_framework_simplejwt.exceptions.InvalidToken: {'detail': ErrorDetail(string='Given token not valid for any token type', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid'), 'messages': [{'token_class': ErrorDetail(string='AccessToken', code='token_not_valid'), 'token_type': ErrorDetail(string='access', code='token_not_valid'), 'message': ErrorDetail(string='Token is invalid', code='token_not_valid')}]}
+WARNING 2025-09-17 15:52:19,711 log 7528 37752 Not Found: /api/movies/undefined/recommendations/
+INFO 2025-09-17 15:52:19,715 middleware 7528 27504 Response: GET /api/movies/watchlist/ - 401
+WARNING 2025-09-17 15:52:19,716 basehttp 7528 37752 "GET /api/movies/undefined/recommendations/ HTTP/1.1" 404 7434
+WARNING 2025-09-17 15:52:19,718 log 7528 27504 Unauthorized: /api/movies/watchlist/
+WARNING 2025-09-17 15:52:19,719 basehttp 7528 27504 "GET /api/movies/watchlist/ HTTP/1.1" 401 146
+INFO 2025-09-17 15:52:19,727 middleware 7528 9248 Incoming request: GET /api/movies/undefined/recommendations/
+INFO 2025-09-17 15:52:19,734 middleware 7528 9248 Response: GET /api/movies/undefined/recommendations/ - 404
+INFO 2025-09-17 15:52:19,735 middleware 7528 27504 Incoming request: GET /api/movies/watchlist/
+WARNING 2025-09-17 15:52:19,735 log 7528 9248 Not Found: /api/movies/undefined/recommendations/
+ERROR 2025-09-17 15:52:19,736 exceptions 7528 27504 API Exception: {'detail': ErrorDetail(string='Given token not valid for any token type', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid'), 'messages': [{'token_class': ErrorDetail(string='AccessToken', code='token_not_valid'), 'token_type': ErrorDetail(string='access', code='token_not_valid'), 'message': ErrorDetail(string='Token is invalid', code='token_not_valid')}]}
+Traceback (most recent call last):
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\views.py", line 503, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\views.py", line 420, in initial
+    self.perform_authentication(request)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\views.py", line 330, in perform_authentication
+    request.user
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\request.py", line 232, in user
+    self._authenticate()
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\request.py", line 385, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework_simplejwt\authentication.py", line 49, in authenticate
+    validated_token = self.get_validated_token(raw_token)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework_simplejwt\authentication.py", line 113, in get_validated_token
+    raise InvalidToken(
+rest_framework_simplejwt.exceptions.InvalidToken: {'detail': ErrorDetail(string='Given token not valid for any token type', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid'), 'messages': [{'token_class': ErrorDetail(string='AccessToken', code='token_not_valid'), 'token_type': ErrorDetail(string='access', code='token_not_valid'), 'message': ErrorDetail(string='Token is invalid', code='token_not_valid')}]}
+WARNING 2025-09-17 15:52:19,738 basehttp 7528 9248 "GET /api/movies/undefined/recommendations/ HTTP/1.1" 404 7434
+INFO 2025-09-17 15:52:19,738 middleware 7528 27504 Response: GET /api/movies/watchlist/ - 401
+WARNING 2025-09-17 15:52:19,739 log 7528 27504 Unauthorized: /api/movies/watchlist/
+WARNING 2025-09-17 15:52:19,739 basehttp 7528 27504 "GET /api/movies/watchlist/ HTTP/1.1" 401 146
+INFO 2025-09-17 15:52:58,442 middleware 7528 24844 Incoming request: GET /api/movies/
+INFO 2025-09-17 15:52:58,449 middleware 7528 24844 Response: GET /api/movies/ - 200
+INFO 2025-09-17 15:52:58,450 basehttp 7528 24844 "GET /api/movies/?limit=12 HTTP/1.1" 200 182
+WARNING 2025-09-17 15:52:58,467 log 7528 18740 Not Found: /@vite/client
+WARNING 2025-09-17 15:52:58,467 basehttp 7528 18740 "GET /@vite/client HTTP/1.1" 404 3243
+INFO 2025-09-17 15:53:18,102 middleware 7528 29056 Incoming request: POST /api/auth/login/
+INFO 2025-09-17 15:53:18,696 middleware 7528 29056 Response: POST /api/auth/login/ - 200
+INFO 2025-09-17 15:53:18,697 basehttp 7528 29056 "POST /api/auth/login/ HTTP/1.1" 200 671
+INFO 2025-09-17 15:53:18,734 middleware 7528 29056 Incoming request: GET /api/movies/watchlist/
+ERROR 2025-09-17 15:53:18,740 exceptions 7528 29056 API Exception: {'detail': ErrorDetail(string='Given token not valid for any token type', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid'), 'messages': [{'token_class': ErrorDetail(string='AccessToken', code='token_not_valid'), 'token_type': ErrorDetail(string='access', code='token_not_valid'), 'message': ErrorDetail(string='Token is invalid', code='token_not_valid')}]}
+Traceback (most recent call last):
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\views.py", line 503, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\views.py", line 420, in initial
+    self.perform_authentication(request)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\views.py", line 330, in perform_authentication
+    request.user
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\request.py", line 232, in user
+    self._authenticate()
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\request.py", line 385, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework_simplejwt\authentication.py", line 49, in authenticate
+    validated_token = self.get_validated_token(raw_token)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework_simplejwt\authentication.py", line 113, in get_validated_token
+    raise InvalidToken(
+rest_framework_simplejwt.exceptions.InvalidToken: {'detail': ErrorDetail(string='Given token not valid for any token type', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid'), 'messages': [{'token_class': ErrorDetail(string='AccessToken', code='token_not_valid'), 'token_type': ErrorDetail(string='access', code='token_not_valid'), 'message': ErrorDetail(string='Token is invalid', code='token_not_valid')}]}
+INFO 2025-09-17 15:53:18,741 middleware 7528 2244 Incoming request: GET /api/movies/undefined/recommendations/
+INFO 2025-09-17 15:53:18,744 middleware 7528 29056 Response: GET /api/movies/watchlist/ - 401
+INFO 2025-09-17 15:53:18,751 middleware 7528 2244 Response: GET /api/movies/undefined/recommendations/ - 404
+WARNING 2025-09-17 15:53:18,753 log 7528 29056 Unauthorized: /api/movies/watchlist/
+WARNING 2025-09-17 15:53:18,754 log 7528 2244 Not Found: /api/movies/undefined/recommendations/
+WARNING 2025-09-17 15:53:18,755 basehttp 7528 29056 "GET /api/movies/watchlist/ HTTP/1.1" 401 146
+WARNING 2025-09-17 15:53:18,755 basehttp 7528 2244 "GET /api/movies/undefined/recommendations/ HTTP/1.1" 404 7434
+INFO 2025-09-17 15:53:18,762 middleware 7528 8664 Incoming request: GET /api/movies/undefined/recommendations/
+INFO 2025-09-17 15:53:18,766 middleware 7528 29056 Incoming request: GET /api/movies/watchlist/
+INFO 2025-09-17 15:53:18,770 middleware 7528 8664 Response: GET /api/movies/undefined/recommendations/ - 404
+ERROR 2025-09-17 15:53:18,772 exceptions 7528 29056 API Exception: {'detail': ErrorDetail(string='Given token not valid for any token type', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid'), 'messages': [{'token_class': ErrorDetail(string='AccessToken', code='token_not_valid'), 'token_type': ErrorDetail(string='access', code='token_not_valid'), 'message': ErrorDetail(string='Token is invalid', code='token_not_valid')}]}
+Traceback (most recent call last):
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\views.py", line 503, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\views.py", line 420, in initial
+    self.perform_authentication(request)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\views.py", line 330, in perform_authentication
+    request.user
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\request.py", line 232, in user
+    self._authenticate()
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\request.py", line 385, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework_simplejwt\authentication.py", line 49, in authenticate
+    validated_token = self.get_validated_token(raw_token)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework_simplejwt\authentication.py", line 113, in get_validated_token
+    raise InvalidToken(
+rest_framework_simplejwt.exceptions.InvalidToken: {'detail': ErrorDetail(string='Given token not valid for any token type', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid'), 'messages': [{'token_class': ErrorDetail(string='AccessToken', code='token_not_valid'), 'token_type': ErrorDetail(string='access', code='token_not_valid'), 'message': ErrorDetail(string='Token is invalid', code='token_not_valid')}]}
+WARNING 2025-09-17 15:53:18,774 log 7528 8664 Not Found: /api/movies/undefined/recommendations/
+WARNING 2025-09-17 15:53:18,775 basehttp 7528 8664 "GET /api/movies/undefined/recommendations/ HTTP/1.1" 404 7434
+INFO 2025-09-17 15:53:18,776 middleware 7528 29056 Response: GET /api/movies/watchlist/ - 401
+WARNING 2025-09-17 15:53:18,777 log 7528 29056 Unauthorized: /api/movies/watchlist/
+WARNING 2025-09-17 15:53:18,778 basehttp 7528 29056 "GET /api/movies/watchlist/ HTTP/1.1" 401 146
+WARNING 2025-09-17 15:54:25,194 log 7528 39160 Not Found: /@vite/client
+WARNING 2025-09-17 15:54:25,195 basehttp 7528 39160 "GET /@vite/client HTTP/1.1" 404 3243
+WARNING 2025-09-17 15:54:26,833 log 7528 8656 Not Found: /@vite/client
+WARNING 2025-09-17 15:54:26,833 basehttp 7528 8656 "GET /@vite/client HTTP/1.1" 404 3243
+INFO 2025-09-17 15:56:29,523 middleware 7528 29056 Incoming request: POST /api/auth/login/
+INFO 2025-09-17 15:56:30,167 middleware 7528 29056 Response: POST /api/auth/login/ - 200
+INFO 2025-09-17 15:56:30,168 basehttp 7528 29056 "POST /api/auth/login/ HTTP/1.1" 200 671
+INFO 2025-09-17 15:56:30,207 middleware 7528 29056 Incoming request: GET /api/movies/watchlist/
+INFO 2025-09-17 15:56:30,208 middleware 7528 8664 Incoming request: GET /api/movies/undefined/recommendations/
+INFO 2025-09-17 15:56:30,221 middleware 7528 8664 Response: GET /api/movies/undefined/recommendations/ - 404
+WARNING 2025-09-17 15:56:30,231 log 7528 8664 Not Found: /api/movies/undefined/recommendations/
+WARNING 2025-09-17 15:56:30,234 basehttp 7528 8664 "GET /api/movies/undefined/recommendations/ HTTP/1.1" 404 7434
+INFO 2025-09-17 15:56:30,239 middleware 7528 29056 Response: GET /api/movies/watchlist/ - 200
+INFO 2025-09-17 15:56:30,242 basehttp 7528 29056 "GET /api/movies/watchlist/ HTTP/1.1" 200 182
+INFO 2025-09-17 15:56:30,247 middleware 7528 2244 Incoming request: GET /api/movies/undefined/recommendations/
+INFO 2025-09-17 15:56:30,254 middleware 7528 2244 Response: GET /api/movies/undefined/recommendations/ - 404
+WARNING 2025-09-17 15:56:30,255 log 7528 2244 Not Found: /api/movies/undefined/recommendations/
+WARNING 2025-09-17 15:56:30,255 basehttp 7528 2244 "GET /api/movies/undefined/recommendations/ HTTP/1.1" 404 7434
+INFO 2025-09-17 15:56:37,434 basehttp 7528 2244 "OPTIONS /api/auth/logout/ HTTP/1.1" 200 0
+INFO 2025-09-17 15:56:37,444 middleware 7528 2244 Incoming request: POST /api/auth/logout/
+INFO 2025-09-17 15:56:37,448 middleware 7528 2244 Response: POST /api/auth/logout/ - 400
+WARNING 2025-09-17 15:56:37,449 log 7528 2244 Bad Request: /api/auth/logout/
+WARNING 2025-09-17 15:56:37,451 basehttp 7528 2244 "POST /api/auth/logout/ HTTP/1.1" 400 37
+INFO 2025-09-17 15:56:56,176 basehttp 7528 39160 "GET /swagger/ HTTP/1.1" 200 1671
+ERROR 2025-09-17 15:56:56,673 views 7528 39160 Error in UserMovieRatingDetailView.get_queryset: Field 'id' expected a number but got <django.contrib.auth.models.AnonymousUser object at 0x000001DF2EE27910>.
+ERROR 2025-09-17 15:56:56,675 views 7528 39160 Error in UserMovieWatchlistDetailView.get_queryset: Field 'id' expected a number but got <django.contrib.auth.models.AnonymousUser object at 0x000001DF2EE27910>.
+ERROR 2025-09-17 15:56:56,677 views 7528 39160 Error in UserMovieRatingDetailView.get_queryset: Field 'id' expected a number but got <django.contrib.auth.models.AnonymousUser object at 0x000001DF2EE27910>.
+ERROR 2025-09-17 15:56:56,679 views 7528 39160 Error in UserMovieRatingDetailView.get_queryset: Field 'id' expected a number but got <django.contrib.auth.models.AnonymousUser object at 0x000001DF2EE27910>.
+ERROR 2025-09-17 15:56:56,679 views 7528 39160 Error in UserMovieRatingDetailView.get_queryset: Field 'id' expected a number but got <django.contrib.auth.models.AnonymousUser object at 0x000001DF2EE27910>.
+ERROR 2025-09-17 15:56:56,680 views 7528 39160 Error in UserMovieWatchlistDetailView.get_queryset: Field 'id' expected a number but got <django.contrib.auth.models.AnonymousUser object at 0x000001DF2EE27910>.
+INFO 2025-09-17 15:56:56,718 basehttp 7528 39160 "GET /swagger/?format=openapi HTTP/1.1" 200 21616
+WARNING 2025-09-17 15:56:56,734 log 7528 9408 Not Found: /@vite/client
+WARNING 2025-09-17 15:56:56,739 basehttp 7528 9408 "GET /@vite/client HTTP/1.1" 404 3243
+INFO 2025-09-17 15:57:06,604 middleware 7528 2244 Incoming request: GET /api/movies/
+INFO 2025-09-17 15:57:06,611 middleware 7528 2244 Response: GET /api/movies/ - 200
+INFO 2025-09-17 15:57:06,613 basehttp 7528 2244 "GET /api/movies/?limit=12 HTTP/1.1" 200 1942
+WARNING 2025-09-17 15:57:06,979 log 7528 34712 Not Found: /main.b5cd8ca0a8a6b84fe8ec.hot-update.json
+WARNING 2025-09-17 15:57:06,980 basehttp 7528 34712 "GET /main.b5cd8ca0a8a6b84fe8ec.hot-update.json HTTP/1.1" 404 3330
+INFO 2025-09-17 15:57:13,531 middleware 7528 2244 Incoming request: GET /api/movies/5/
+ERROR 2025-09-17 15:57:13,533 views 7528 2244 Unexpected error in MovieDetailView: No Movie matches the given query.
+ERROR 2025-09-17 15:57:13,534 exceptions 7528 2244 API Exception: Movie not found
+Traceback (most recent call last):
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\django\shortcuts.py", line 90, in get_object_or_404
+    return queryset.get(*args, **kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\django\db\models\query.py", line 633, in get
+    raise self.model.DoesNotExist(
+movies.models.Movie.DoesNotExist: Movie matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movies\views.py", line 255, in get_object
+    movie = super().get_object()
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\generics.py", line 100, in get_object
+    obj = get_object_or_404(queryset, **filter_kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\generics.py", line 19, in get_object_or_404
+    return _get_object_or_404(queryset, *filter_args, **filter_kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\django\shortcuts.py", line 92, in get_object_or_404
+    raise Http404(
+django.http.response.Http404: No Movie matches the given query.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movies\views.py", line 240, in get
+    return super().get(request, *args, **kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\generics.py", line 212, in get
+    return self.retrieve(request, *args, **kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\mixins.py", line 54, in retrieve
+    instance = self.get_object()
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movies\views.py", line 270, in get_object
+    raise MovieNotFoundException("Movie not found")
+movies.exceptions.MovieNotFoundException: Movie not found
+INFO 2025-09-17 15:57:13,550 middleware 7528 2244 Response: GET /api/movies/5/ - 404
+WARNING 2025-09-17 15:57:13,551 log 7528 2244 Not Found: /api/movies/5/
+WARNING 2025-09-17 15:57:13,551 basehttp 7528 2244 "GET /api/movies/5/ HTTP/1.1" 404 113
+INFO 2025-09-17 15:57:13,560 middleware 7528 29056 Incoming request: GET /api/movies/5/
+ERROR 2025-09-17 15:57:13,562 views 7528 29056 Unexpected error in MovieDetailView: No Movie matches the given query.
+ERROR 2025-09-17 15:57:13,562 exceptions 7528 29056 API Exception: Movie not found
+Traceback (most recent call last):
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\django\shortcuts.py", line 90, in get_object_or_404
+    return queryset.get(*args, **kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\django\db\models\query.py", line 633, in get
+    raise self.model.DoesNotExist(
+movies.models.Movie.DoesNotExist: Movie matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movies\views.py", line 255, in get_object
+    movie = super().get_object()
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\generics.py", line 100, in get_object
+    obj = get_object_or_404(queryset, **filter_kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\generics.py", line 19, in get_object_or_404
+    return _get_object_or_404(queryset, *filter_args, **filter_kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\django\shortcuts.py", line 92, in get_object_or_404
+    raise Http404(
+django.http.response.Http404: No Movie matches the given query.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movies\views.py", line 240, in get
+    return super().get(request, *args, **kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\generics.py", line 212, in get
+    return self.retrieve(request, *args, **kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\mixins.py", line 54, in retrieve
+    instance = self.get_object()
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movies\views.py", line 270, in get_object
+    raise MovieNotFoundException("Movie not found")
+movies.exceptions.MovieNotFoundException: Movie not found
+INFO 2025-09-17 15:57:13,564 middleware 7528 29056 Response: GET /api/movies/5/ - 404
+WARNING 2025-09-17 15:57:13,565 log 7528 29056 Not Found: /api/movies/5/
+WARNING 2025-09-17 15:57:13,565 basehttp 7528 29056 "GET /api/movies/5/ HTTP/1.1" 404 113
+INFO 2025-09-17 15:57:44,968 autoreload 7528 24024 C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movies\utils\rate_limiter.py changed, reloading.
+INFO 2025-09-17 15:57:45,738 autoreload 10260 11184 Watching for file changes with StatReloader
+ERROR 2025-09-17 15:58:04,827 services 30096 23804 Failed to create/update movie 1100842: NOT NULL constraint failed: movies_movie.backdrop_path
+ERROR 2025-09-17 15:58:04,842 services 30096 23804 Failed to create/update movie 1354441: NOT NULL constraint failed: movies_movie.backdrop_path
+WARNING 2025-09-17 15:58:36,756 log 10260 25020 Not Found: /@vite/client
+WARNING 2025-09-17 15:58:36,757 basehttp 10260 25020 "GET /@vite/client HTTP/1.1" 404 3243
+INFO 2025-09-17 15:59:06,494 middleware 10260 28972 Incoming request: GET /api/movies/3/
+ERROR 2025-09-17 15:59:06,499 views 10260 28972 Unexpected error in MovieDetailView: No Movie matches the given query.
+ERROR 2025-09-17 15:59:06,499 exceptions 10260 28972 API Exception: Movie not found
+Traceback (most recent call last):
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\django\shortcuts.py", line 90, in get_object_or_404
+    return queryset.get(*args, **kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\django\db\models\query.py", line 633, in get
+    raise self.model.DoesNotExist(
+movies.models.Movie.DoesNotExist: Movie matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movies\views.py", line 255, in get_object
+    movie = super().get_object()
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\generics.py", line 100, in get_object
+    obj = get_object_or_404(queryset, **filter_kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\generics.py", line 19, in get_object_or_404
+    return _get_object_or_404(queryset, *filter_args, **filter_kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\django\shortcuts.py", line 92, in get_object_or_404
+    raise Http404(
+django.http.response.Http404: No Movie matches the given query.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movies\views.py", line 240, in get
+    return super().get(request, *args, **kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\generics.py", line 212, in get
+    return self.retrieve(request, *args, **kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\mixins.py", line 54, in retrieve
+    instance = self.get_object()
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movies\views.py", line 270, in get_object
+    raise MovieNotFoundException("Movie not found")
+movies.exceptions.MovieNotFoundException: Movie not found
+INFO 2025-09-17 15:59:06,504 middleware 10260 28972 Response: GET /api/movies/3/ - 404
+WARNING 2025-09-17 15:59:06,505 log 10260 28972 Not Found: /api/movies/3/
+WARNING 2025-09-17 15:59:06,506 basehttp 10260 28972 "GET /api/movies/3/ HTTP/1.1" 404 113
+INFO 2025-09-17 15:59:06,518 middleware 10260 28984 Incoming request: GET /api/movies/3/
+ERROR 2025-09-17 15:59:06,522 views 10260 28984 Unexpected error in MovieDetailView: No Movie matches the given query.
+ERROR 2025-09-17 15:59:06,522 exceptions 10260 28984 API Exception: Movie not found
+Traceback (most recent call last):
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\django\shortcuts.py", line 90, in get_object_or_404
+    return queryset.get(*args, **kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\django\db\models\query.py", line 633, in get
+    raise self.model.DoesNotExist(
+movies.models.Movie.DoesNotExist: Movie matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movies\views.py", line 255, in get_object
+    movie = super().get_object()
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\generics.py", line 100, in get_object
+    obj = get_object_or_404(queryset, **filter_kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\generics.py", line 19, in get_object_or_404
+    return _get_object_or_404(queryset, *filter_args, **filter_kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\django\shortcuts.py", line 92, in get_object_or_404
+    raise Http404(
+django.http.response.Http404: No Movie matches the given query.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movies\views.py", line 240, in get
+    return super().get(request, *args, **kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\generics.py", line 212, in get
+    return self.retrieve(request, *args, **kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\mixins.py", line 54, in retrieve
+    instance = self.get_object()
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movies\views.py", line 270, in get_object
+    raise MovieNotFoundException("Movie not found")
+movies.exceptions.MovieNotFoundException: Movie not found
+INFO 2025-09-17 15:59:06,523 middleware 10260 28984 Response: GET /api/movies/3/ - 404
+WARNING 2025-09-17 15:59:06,524 log 10260 28984 Not Found: /api/movies/3/
+WARNING 2025-09-17 15:59:06,525 basehttp 10260 28984 "GET /api/movies/3/ HTTP/1.1" 404 113
+INFO 2025-09-17 16:00:20,177 middleware 10260 28984 Incoming request: POST /api/auth/login/
+INFO 2025-09-17 16:00:20,875 middleware 10260 28984 Response: POST /api/auth/login/ - 200
+INFO 2025-09-17 16:00:20,877 basehttp 10260 28984 "POST /api/auth/login/ HTTP/1.1" 200 671
+INFO 2025-09-17 16:00:20,911 middleware 10260 28984 Incoming request: GET /api/movies/undefined/recommendations/
+INFO 2025-09-17 16:00:20,921 middleware 10260 28984 Response: GET /api/movies/undefined/recommendations/ - 404
+WARNING 2025-09-17 16:00:20,922 log 10260 28984 Not Found: /api/movies/undefined/recommendations/
+WARNING 2025-09-17 16:00:20,922 basehttp 10260 28984 "GET /api/movies/undefined/recommendations/ HTTP/1.1" 404 7434
+INFO 2025-09-17 16:00:20,934 middleware 10260 28972 Incoming request: GET /api/movies/undefined/recommendations/
+INFO 2025-09-17 16:00:20,941 middleware 10260 28972 Response: GET /api/movies/undefined/recommendations/ - 404
+WARNING 2025-09-17 16:00:20,942 log 10260 28972 Not Found: /api/movies/undefined/recommendations/
+WARNING 2025-09-17 16:00:20,942 basehttp 10260 28972 "GET /api/movies/undefined/recommendations/ HTTP/1.1" 404 7434
+INFO 2025-09-17 16:00:30,496 basehttp 10260 28984 "OPTIONS /api/movies/3/ HTTP/1.1" 200 0
+INFO 2025-09-17 16:00:30,496 basehttp 10260 28972 "OPTIONS /api/movies/3/ HTTP/1.1" 200 0
+INFO 2025-09-17 16:00:30,508 middleware 10260 28984 Incoming request: GET /api/movies/3/
+ERROR 2025-09-17 16:00:30,511 views 10260 28984 Unexpected error in MovieDetailView: No Movie matches the given query.
+ERROR 2025-09-17 16:00:30,512 exceptions 10260 28984 API Exception: Movie not found
+Traceback (most recent call last):
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\django\shortcuts.py", line 90, in get_object_or_404
+    return queryset.get(*args, **kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\django\db\models\query.py", line 633, in get
+    raise self.model.DoesNotExist(
+movies.models.Movie.DoesNotExist: Movie matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movies\views.py", line 255, in get_object
+    movie = super().get_object()
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\generics.py", line 100, in get_object
+    obj = get_object_or_404(queryset, **filter_kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\generics.py", line 19, in get_object_or_404
+    return _get_object_or_404(queryset, *filter_args, **filter_kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\django\shortcuts.py", line 92, in get_object_or_404
+    raise Http404(
+django.http.response.Http404: No Movie matches the given query.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movies\views.py", line 240, in get
+    return super().get(request, *args, **kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\generics.py", line 212, in get
+    return self.retrieve(request, *args, **kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\mixins.py", line 54, in retrieve
+    instance = self.get_object()
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movies\views.py", line 270, in get_object
+    raise MovieNotFoundException("Movie not found")
+movies.exceptions.MovieNotFoundException: Movie not found
+INFO 2025-09-17 16:00:30,515 middleware 10260 28984 Response: GET /api/movies/3/ - 404
+WARNING 2025-09-17 16:00:30,515 log 10260 28984 Not Found: /api/movies/3/
+WARNING 2025-09-17 16:00:30,516 basehttp 10260 28984 "GET /api/movies/3/ HTTP/1.1" 404 113
+INFO 2025-09-17 16:00:30,527 middleware 10260 28972 Incoming request: GET /api/movies/3/
+ERROR 2025-09-17 16:00:30,532 views 10260 28972 Unexpected error in MovieDetailView: No Movie matches the given query.
+ERROR 2025-09-17 16:00:30,534 exceptions 10260 28972 API Exception: Movie not found
+Traceback (most recent call last):
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\django\shortcuts.py", line 90, in get_object_or_404
+    return queryset.get(*args, **kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\django\db\models\query.py", line 633, in get
+    raise self.model.DoesNotExist(
+movies.models.Movie.DoesNotExist: Movie matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movies\views.py", line 255, in get_object
+    movie = super().get_object()
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\generics.py", line 100, in get_object
+    obj = get_object_or_404(queryset, **filter_kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\generics.py", line 19, in get_object_or_404
+    return _get_object_or_404(queryset, *filter_args, **filter_kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\django\shortcuts.py", line 92, in get_object_or_404
+    raise Http404(
+django.http.response.Http404: No Movie matches the given query.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movies\views.py", line 240, in get
+    return super().get(request, *args, **kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\generics.py", line 212, in get
+    return self.retrieve(request, *args, **kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\mixins.py", line 54, in retrieve
+    instance = self.get_object()
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movies\views.py", line 270, in get_object
+    raise MovieNotFoundException("Movie not found")
+movies.exceptions.MovieNotFoundException: Movie not found
+INFO 2025-09-17 16:00:30,537 middleware 10260 28972 Response: GET /api/movies/3/ - 404
+WARNING 2025-09-17 16:00:30,538 log 10260 28972 Not Found: /api/movies/3/
+WARNING 2025-09-17 16:00:30,539 basehttp 10260 28972 "GET /api/movies/3/ HTTP/1.1" 404 113
+INFO 2025-09-17 16:01:40,651 basehttp 10260 8088 "OPTIONS /api/movies/?page_size=12 HTTP/1.1" 200 0
+INFO 2025-09-17 16:01:40,660 middleware 10260 8088 Incoming request: GET /api/movies/
+INFO 2025-09-17 16:01:40,679 middleware 10260 8088 Response: GET /api/movies/ - 200
+INFO 2025-09-17 16:01:40,683 basehttp 10260 8088 "GET /api/movies/?page_size=12 HTTP/1.1" 200 7766
+INFO 2025-09-17 16:01:50,707 basehttp 10260 8088 "OPTIONS /api/movies/17/ HTTP/1.1" 200 0
+INFO 2025-09-17 16:01:50,710 basehttp 10260 29644 "OPTIONS /api/movies/17/ HTTP/1.1" 200 0
+INFO 2025-09-17 16:01:50,716 middleware 10260 8088 Incoming request: GET /api/movies/17/
+ERROR 2025-09-17 16:01:50,719 views 10260 8088 Unexpected error in MovieDetailView: No Movie matches the given query.
+ERROR 2025-09-17 16:01:50,719 exceptions 10260 8088 API Exception: Movie not found
+Traceback (most recent call last):
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\django\shortcuts.py", line 90, in get_object_or_404
+    return queryset.get(*args, **kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\django\db\models\query.py", line 633, in get
+    raise self.model.DoesNotExist(
+movies.models.Movie.DoesNotExist: Movie matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movies\views.py", line 255, in get_object
+    movie = super().get_object()
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\generics.py", line 100, in get_object
+    obj = get_object_or_404(queryset, **filter_kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\generics.py", line 19, in get_object_or_404
+    return _get_object_or_404(queryset, *filter_args, **filter_kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\django\shortcuts.py", line 92, in get_object_or_404
+    raise Http404(
+django.http.response.Http404: No Movie matches the given query.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movies\views.py", line 240, in get
+    return super().get(request, *args, **kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\generics.py", line 212, in get
+    return self.retrieve(request, *args, **kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\mixins.py", line 54, in retrieve
+    instance = self.get_object()
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movies\views.py", line 270, in get_object
+    raise MovieNotFoundException("Movie not found")
+movies.exceptions.MovieNotFoundException: Movie not found
+INFO 2025-09-17 16:01:50,722 middleware 10260 8088 Response: GET /api/movies/17/ - 404
+WARNING 2025-09-17 16:01:50,724 log 10260 8088 Not Found: /api/movies/17/
+WARNING 2025-09-17 16:01:50,725 basehttp 10260 8088 "GET /api/movies/17/ HTTP/1.1" 404 114
+INFO 2025-09-17 16:01:50,733 middleware 10260 29644 Incoming request: GET /api/movies/17/
+ERROR 2025-09-17 16:01:50,739 views 10260 29644 Unexpected error in MovieDetailView: No Movie matches the given query.
+ERROR 2025-09-17 16:01:50,739 exceptions 10260 29644 API Exception: Movie not found
+Traceback (most recent call last):
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\django\shortcuts.py", line 90, in get_object_or_404
+    return queryset.get(*args, **kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\django\db\models\query.py", line 633, in get
+    raise self.model.DoesNotExist(
+movies.models.Movie.DoesNotExist: Movie matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movies\views.py", line 255, in get_object
+    movie = super().get_object()
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\generics.py", line 100, in get_object
+    obj = get_object_or_404(queryset, **filter_kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\generics.py", line 19, in get_object_or_404
+    return _get_object_or_404(queryset, *filter_args, **filter_kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\django\shortcuts.py", line 92, in get_object_or_404
+    raise Http404(
+django.http.response.Http404: No Movie matches the given query.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movies\views.py", line 240, in get
+    return super().get(request, *args, **kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\generics.py", line 212, in get
+    return self.retrieve(request, *args, **kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\mixins.py", line 54, in retrieve
+    instance = self.get_object()
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movies\views.py", line 270, in get_object
+    raise MovieNotFoundException("Movie not found")
+movies.exceptions.MovieNotFoundException: Movie not found
+INFO 2025-09-17 16:01:50,742 middleware 10260 29644 Response: GET /api/movies/17/ - 404
+WARNING 2025-09-17 16:01:50,742 log 10260 29644 Not Found: /api/movies/17/
+WARNING 2025-09-17 16:01:50,742 basehttp 10260 29644 "GET /api/movies/17/ HTTP/1.1" 404 114
+INFO 2025-09-17 16:02:01,740 basehttp 10260 25020 "GET /swagger/ HTTP/1.1" 200 1671
+INFO 2025-09-17 16:02:02,703 middleware 10260 21860 Incoming request: GET /api/movies/
+INFO 2025-09-17 16:02:02,717 middleware 10260 21860 Response: GET /api/movies/ - 200
+INFO 2025-09-17 16:02:02,719 basehttp 10260 21860 "GET /api/movies/?page_size=12 HTTP/1.1" 200 7766
+WARNING 2025-09-17 16:02:02,736 log 10260 6732 Not Found: /@vite/client
+WARNING 2025-09-17 16:02:02,737 basehttp 10260 6732 "GET /@vite/client HTTP/1.1" 404 3243
+INFO 2025-09-17 16:02:07,251 middleware 10260 21860 Incoming request: GET /api/movies/17/
+ERROR 2025-09-17 16:02:07,252 views 10260 21860 Unexpected error in MovieDetailView: No Movie matches the given query.
+ERROR 2025-09-17 16:02:07,253 exceptions 10260 21860 API Exception: Movie not found
+Traceback (most recent call last):
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\django\shortcuts.py", line 90, in get_object_or_404
+    return queryset.get(*args, **kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\django\db\models\query.py", line 633, in get
+    raise self.model.DoesNotExist(
+movies.models.Movie.DoesNotExist: Movie matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movies\views.py", line 255, in get_object
+    movie = super().get_object()
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\generics.py", line 100, in get_object
+    obj = get_object_or_404(queryset, **filter_kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\generics.py", line 19, in get_object_or_404
+    return _get_object_or_404(queryset, *filter_args, **filter_kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\django\shortcuts.py", line 92, in get_object_or_404
+    raise Http404(
+django.http.response.Http404: No Movie matches the given query.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movies\views.py", line 240, in get
+    return super().get(request, *args, **kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\generics.py", line 212, in get
+    return self.retrieve(request, *args, **kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\mixins.py", line 54, in retrieve
+    instance = self.get_object()
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movies\views.py", line 270, in get_object
+    raise MovieNotFoundException("Movie not found")
+movies.exceptions.MovieNotFoundException: Movie not found
+INFO 2025-09-17 16:02:07,254 middleware 10260 21860 Response: GET /api/movies/17/ - 404
+WARNING 2025-09-17 16:02:07,255 log 10260 21860 Not Found: /api/movies/17/
+WARNING 2025-09-17 16:02:07,255 basehttp 10260 21860 "GET /api/movies/17/ HTTP/1.1" 404 114
+INFO 2025-09-17 16:02:07,266 middleware 10260 28796 Incoming request: GET /api/movies/17/
+ERROR 2025-09-17 16:02:07,268 views 10260 28796 Unexpected error in MovieDetailView: No Movie matches the given query.
+ERROR 2025-09-17 16:02:07,268 exceptions 10260 28796 API Exception: Movie not found
+Traceback (most recent call last):
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\django\shortcuts.py", line 90, in get_object_or_404
+    return queryset.get(*args, **kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\django\db\models\query.py", line 633, in get
+    raise self.model.DoesNotExist(
+movies.models.Movie.DoesNotExist: Movie matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movies\views.py", line 255, in get_object
+    movie = super().get_object()
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\generics.py", line 100, in get_object
+    obj = get_object_or_404(queryset, **filter_kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\generics.py", line 19, in get_object_or_404
+    return _get_object_or_404(queryset, *filter_args, **filter_kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\django\shortcuts.py", line 92, in get_object_or_404
+    raise Http404(
+django.http.response.Http404: No Movie matches the given query.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movies\views.py", line 240, in get
+    return super().get(request, *args, **kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\generics.py", line 212, in get
+    return self.retrieve(request, *args, **kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\mixins.py", line 54, in retrieve
+    instance = self.get_object()
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movies\views.py", line 270, in get_object
+    raise MovieNotFoundException("Movie not found")
+movies.exceptions.MovieNotFoundException: Movie not found
+INFO 2025-09-17 16:02:07,270 middleware 10260 28796 Response: GET /api/movies/17/ - 404
+WARNING 2025-09-17 16:02:07,271 log 10260 28796 Not Found: /api/movies/17/
+WARNING 2025-09-17 16:02:07,272 basehttp 10260 28796 "GET /api/movies/17/ HTTP/1.1" 404 114
+INFO 2025-09-17 16:02:20,977 middleware 10260 28796 Incoming request: GET /api/movies/17/
+ERROR 2025-09-17 16:02:20,979 views 10260 28796 Unexpected error in MovieDetailView: No Movie matches the given query.
+ERROR 2025-09-17 16:02:20,979 exceptions 10260 28796 API Exception: Movie not found
+Traceback (most recent call last):
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\django\shortcuts.py", line 90, in get_object_or_404
+    return queryset.get(*args, **kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\django\db\models\query.py", line 633, in get
+    raise self.model.DoesNotExist(
+movies.models.Movie.DoesNotExist: Movie matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movies\views.py", line 255, in get_object
+    movie = super().get_object()
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\generics.py", line 100, in get_object
+    obj = get_object_or_404(queryset, **filter_kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\generics.py", line 19, in get_object_or_404
+    return _get_object_or_404(queryset, *filter_args, **filter_kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\django\shortcuts.py", line 92, in get_object_or_404
+    raise Http404(
+django.http.response.Http404: No Movie matches the given query.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movies\views.py", line 240, in get
+    return super().get(request, *args, **kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\generics.py", line 212, in get
+    return self.retrieve(request, *args, **kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\mixins.py", line 54, in retrieve
+    instance = self.get_object()
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movies\views.py", line 270, in get_object
+    raise MovieNotFoundException("Movie not found")
+movies.exceptions.MovieNotFoundException: Movie not found
+INFO 2025-09-17 16:02:20,981 middleware 10260 28796 Response: GET /api/movies/17/ - 404
+WARNING 2025-09-17 16:02:20,983 log 10260 28796 Not Found: /api/movies/17/
+WARNING 2025-09-17 16:02:20,985 basehttp 10260 28796 "GET /api/movies/17/ HTTP/1.1" 404 114
+INFO 2025-09-17 16:02:20,996 middleware 10260 21860 Incoming request: GET /api/movies/17/
+ERROR 2025-09-17 16:02:21,016 views 10260 21860 Unexpected error in MovieDetailView: No Movie matches the given query.
+ERROR 2025-09-17 16:02:21,022 exceptions 10260 21860 API Exception: Movie not found
+Traceback (most recent call last):
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\django\shortcuts.py", line 90, in get_object_or_404
+    return queryset.get(*args, **kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\django\db\models\query.py", line 633, in get
+    raise self.model.DoesNotExist(
+movies.models.Movie.DoesNotExist: Movie matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movies\views.py", line 255, in get_object
+    movie = super().get_object()
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\generics.py", line 100, in get_object
+    obj = get_object_or_404(queryset, **filter_kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\generics.py", line 19, in get_object_or_404
+    return _get_object_or_404(queryset, *filter_args, **filter_kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\django\shortcuts.py", line 92, in get_object_or_404
+    raise Http404(
+django.http.response.Http404: No Movie matches the given query.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movies\views.py", line 240, in get
+    return super().get(request, *args, **kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\generics.py", line 212, in get
+    return self.retrieve(request, *args, **kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\mixins.py", line 54, in retrieve
+    instance = self.get_object()
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movies\views.py", line 270, in get_object
+    raise MovieNotFoundException("Movie not found")
+movies.exceptions.MovieNotFoundException: Movie not found
+INFO 2025-09-17 16:02:21,023 middleware 10260 21860 Response: GET /api/movies/17/ - 404
+WARNING 2025-09-17 16:02:21,024 log 10260 21860 Not Found: /api/movies/17/
+WARNING 2025-09-17 16:02:21,025 basehttp 10260 21860 "GET /api/movies/17/ HTTP/1.1" 404 114
+INFO 2025-09-17 16:02:36,426 basehttp 10260 29644 "OPTIONS /api/movies/search/?q=war+of+the+worlds HTTP/1.1" 200 0
+INFO 2025-09-17 16:02:36,433 middleware 10260 29644 Incoming request: GET /api/movies/search/
+ERROR 2025-09-17 16:02:36,436 exceptions 10260 29644 API Exception: Method "GET" not allowed.
+Traceback (most recent call last):
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\views.py", line 173, in http_method_not_allowed
+    raise exceptions.MethodNotAllowed(request.method)
+rest_framework.exceptions.MethodNotAllowed: Method "GET" not allowed.
+INFO 2025-09-17 16:02:36,437 middleware 10260 29644 Response: GET /api/movies/search/ - 405
+WARNING 2025-09-17 16:02:36,438 log 10260 29644 Method Not Allowed: /api/movies/search/
+WARNING 2025-09-17 16:02:36,439 basehttp 10260 29644 "GET /api/movies/search/?q=war+of+the+worlds HTTP/1.1" 405 133
+INFO 2025-09-17 16:02:54,567 middleware 10260 8088 Incoming request: GET /api/movies/watchlist/
+INFO 2025-09-17 16:02:54,569 middleware 10260 29644 Incoming request: GET /api/movies/undefined/recommendations/
+INFO 2025-09-17 16:02:54,579 middleware 10260 29644 Response: GET /api/movies/undefined/recommendations/ - 404
+WARNING 2025-09-17 16:02:54,580 log 10260 29644 Not Found: /api/movies/undefined/recommendations/
+WARNING 2025-09-17 16:02:54,581 basehttp 10260 29644 "GET /api/movies/undefined/recommendations/ HTTP/1.1" 404 7434
+INFO 2025-09-17 16:02:54,583 middleware 10260 8088 Response: GET /api/movies/watchlist/ - 200
+INFO 2025-09-17 16:02:54,585 basehttp 10260 8088 "GET /api/movies/watchlist/ HTTP/1.1" 200 182
+INFO 2025-09-17 16:02:54,596 middleware 10260 10764 Incoming request: GET /api/movies/undefined/recommendations/
+INFO 2025-09-17 16:02:54,604 middleware 10260 10764 Response: GET /api/movies/undefined/recommendations/ - 404
+WARNING 2025-09-17 16:02:54,605 log 10260 10764 Not Found: /api/movies/undefined/recommendations/
+WARNING 2025-09-17 16:02:54,606 basehttp 10260 10764 "GET /api/movies/undefined/recommendations/ HTTP/1.1" 404 7434
+ERROR 2025-09-17 16:03:52,388 views 10260 25020 Error in UserMovieRatingDetailView.get_queryset: Field 'id' expected a number but got <django.contrib.auth.models.AnonymousUser object at 0x000001F50E5AC430>.
+ERROR 2025-09-17 16:03:52,389 views 10260 25020 Error in UserMovieWatchlistDetailView.get_queryset: Field 'id' expected a number but got <django.contrib.auth.models.AnonymousUser object at 0x000001F50E5AC430>.
+ERROR 2025-09-17 16:03:52,390 views 10260 25020 Error in UserMovieRatingDetailView.get_queryset: Field 'id' expected a number but got <django.contrib.auth.models.AnonymousUser object at 0x000001F50E5AC430>.
+ERROR 2025-09-17 16:03:52,391 views 10260 25020 Error in UserMovieRatingDetailView.get_queryset: Field 'id' expected a number but got <django.contrib.auth.models.AnonymousUser object at 0x000001F50E5AC430>.
+ERROR 2025-09-17 16:03:52,391 views 10260 25020 Error in UserMovieRatingDetailView.get_queryset: Field 'id' expected a number but got <django.contrib.auth.models.AnonymousUser object at 0x000001F50E5AC430>.
+ERROR 2025-09-17 16:03:52,391 views 10260 25020 Error in UserMovieWatchlistDetailView.get_queryset: Field 'id' expected a number but got <django.contrib.auth.models.AnonymousUser object at 0x000001F50E5AC430>.
+INFO 2025-09-17 16:03:52,424 basehttp 10260 25020 "GET /swagger/?format=openapi HTTP/1.1" 200 21616
+WARNING 2025-09-17 16:03:52,527 log 10260 25020 Not Found: /@vite/client
+WARNING 2025-09-17 16:03:52,530 basehttp 10260 25020 "GET /@vite/client HTTP/1.1" 404 3243
+INFO 2025-09-17 16:03:55,649 middleware 10260 21860 Incoming request: GET /api/movies/17/
+ERROR 2025-09-17 16:03:55,650 views 10260 21860 Unexpected error in MovieDetailView: No Movie matches the given query.
+ERROR 2025-09-17 16:03:55,651 exceptions 10260 21860 API Exception: Movie not found
+Traceback (most recent call last):
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\django\shortcuts.py", line 90, in get_object_or_404
+    return queryset.get(*args, **kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\django\db\models\query.py", line 633, in get
+    raise self.model.DoesNotExist(
+movies.models.Movie.DoesNotExist: Movie matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movies\views.py", line 255, in get_object
+    movie = super().get_object()
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\generics.py", line 100, in get_object
+    obj = get_object_or_404(queryset, **filter_kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\generics.py", line 19, in get_object_or_404
+    return _get_object_or_404(queryset, *filter_args, **filter_kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\django\shortcuts.py", line 92, in get_object_or_404
+    raise Http404(
+django.http.response.Http404: No Movie matches the given query.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movies\views.py", line 240, in get
+    return super().get(request, *args, **kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\generics.py", line 212, in get
+    return self.retrieve(request, *args, **kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\mixins.py", line 54, in retrieve
+    instance = self.get_object()
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movies\views.py", line 270, in get_object
+    raise MovieNotFoundException("Movie not found")
+movies.exceptions.MovieNotFoundException: Movie not found
+INFO 2025-09-17 16:03:55,654 middleware 10260 21860 Response: GET /api/movies/17/ - 404
+WARNING 2025-09-17 16:03:55,655 log 10260 21860 Not Found: /api/movies/17/
+WARNING 2025-09-17 16:03:55,656 basehttp 10260 21860 "GET /api/movies/17/ HTTP/1.1" 404 114
+INFO 2025-09-17 16:03:55,666 middleware 10260 28796 Incoming request: GET /api/movies/17/
+ERROR 2025-09-17 16:03:55,669 views 10260 28796 Unexpected error in MovieDetailView: No Movie matches the given query.
+ERROR 2025-09-17 16:03:55,671 exceptions 10260 28796 API Exception: Movie not found
+Traceback (most recent call last):
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\django\shortcuts.py", line 90, in get_object_or_404
+    return queryset.get(*args, **kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\django\db\models\query.py", line 633, in get
+    raise self.model.DoesNotExist(
+movies.models.Movie.DoesNotExist: Movie matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movies\views.py", line 255, in get_object
+    movie = super().get_object()
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\generics.py", line 100, in get_object
+    obj = get_object_or_404(queryset, **filter_kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\generics.py", line 19, in get_object_or_404
+    return _get_object_or_404(queryset, *filter_args, **filter_kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\django\shortcuts.py", line 92, in get_object_or_404
+    raise Http404(
+django.http.response.Http404: No Movie matches the given query.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movies\views.py", line 240, in get
+    return super().get(request, *args, **kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\generics.py", line 212, in get
+    return self.retrieve(request, *args, **kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\mixins.py", line 54, in retrieve
+    instance = self.get_object()
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movies\views.py", line 270, in get_object
+    raise MovieNotFoundException("Movie not found")
+movies.exceptions.MovieNotFoundException: Movie not found
+INFO 2025-09-17 16:03:55,672 middleware 10260 28796 Response: GET /api/movies/17/ - 404
+WARNING 2025-09-17 16:03:55,673 log 10260 28796 Not Found: /api/movies/17/
+WARNING 2025-09-17 16:03:55,674 basehttp 10260 28796 "GET /api/movies/17/ HTTP/1.1" 404 114
+WARNING 2025-09-17 16:03:55,702 log 10260 31880 Not Found: /@vite/client
+WARNING 2025-09-17 16:03:55,703 basehttp 10260 31880 "GET /@vite/client HTTP/1.1" 404 3243
+INFO 2025-09-17 16:04:09,823 basehttp 10260 10764 "OPTIONS /api/movies/755898/ HTTP/1.1" 200 0
+INFO 2025-09-17 16:04:09,823 basehttp 10260 29644 "OPTIONS /api/movies/755898/ HTTP/1.1" 200 0
+INFO 2025-09-17 16:04:09,836 middleware 10260 10764 Incoming request: GET /api/movies/755898/
+INFO 2025-09-17 16:04:09,844 middleware 10260 10764 Response: GET /api/movies/755898/ - 200
+INFO 2025-09-17 16:04:09,846 basehttp 10260 10764 "GET /api/movies/755898/ HTTP/1.1" 200 923
+INFO 2025-09-17 16:04:13,454 middleware 10260 10764 Incoming request: POST /api/movies/watchlist/
+ERROR 2025-09-17 16:04:13,458 views 10260 10764 Error adding movie to watchlist: 'movie'
+ERROR 2025-09-17 16:04:13,458 exceptions 10260 10764 API Exception: Failed to add movie to watchlist
+Traceback (most recent call last):
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movies\views.py", line 793, in perform_create
+    movie = serializer.validated_data['movie']
+KeyError: 'movie'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movies\views.py", line 779, in post
+    return super().post(request, *args, **kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\generics.py", line 246, in post
+    return self.create(request, *args, **kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movies\views.py", line 808, in perform_create
+    raise MovieNotFoundException("Failed to add movie to watchlist")
+movies.exceptions.MovieNotFoundException: Failed to add movie to watchlist
+INFO 2025-09-17 16:04:13,460 middleware 10260 10764 Response: POST /api/movies/watchlist/ - 404
+WARNING 2025-09-17 16:04:13,460 log 10260 10764 Not Found: /api/movies/watchlist/
+WARNING 2025-09-17 16:04:13,461 basehttp 10260 10764 "POST /api/movies/watchlist/ HTTP/1.1" 404 138
+INFO 2025-09-17 16:04:40,291 basehttp 10260 29644 "OPTIONS /api/movies/1078605/ HTTP/1.1" 200 0
+INFO 2025-09-17 16:04:40,291 basehttp 10260 10764 "OPTIONS /api/movies/1078605/ HTTP/1.1" 200 0
+INFO 2025-09-17 16:04:40,308 middleware 10260 10764 Incoming request: GET /api/movies/1078605/
+INFO 2025-09-17 16:04:40,314 middleware 10260 10764 Response: GET /api/movies/1078605/ - 200
+INFO 2025-09-17 16:04:40,316 basehttp 10260 10764 "GET /api/movies/1078605/ HTTP/1.1" 200 766
+INFO 2025-09-17 16:04:42,288 basehttp 10260 10764 "OPTIONS /api/movies/ratings/ HTTP/1.1" 200 0
+INFO 2025-09-17 16:04:42,301 middleware 10260 10764 Incoming request: POST /api/movies/ratings/
+ERROR 2025-09-17 16:04:42,305 views 10260 10764 Error creating movie rating: 'movie'
+ERROR 2025-09-17 16:04:42,307 exceptions 10260 10764 API Exception: Failed to create movie rating
+Traceback (most recent call last):
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movies\views.py", line 665, in perform_create
+    movie = serializer.validated_data['movie']
+KeyError: 'movie'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movies\views.py", line 651, in post
+    return super().post(request, *args, **kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\generics.py", line 246, in post
+    return self.create(request, *args, **kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movies\views.py", line 682, in perform_create
+    raise InvalidRatingException("Failed to create movie rating")
+movies.exceptions.InvalidRatingException: Failed to create movie rating
+INFO 2025-09-17 16:04:42,310 middleware 10260 10764 Response: POST /api/movies/ratings/ - 400
+WARNING 2025-09-17 16:04:42,311 log 10260 10764 Bad Request: /api/movies/ratings/
+WARNING 2025-09-17 16:04:42,312 basehttp 10260 10764 "POST /api/movies/ratings/ HTTP/1.1" 400 132
+INFO 2025-09-17 16:04:46,211 basehttp 10260 10764 "OPTIONS /api/movies/1311031/ HTTP/1.1" 200 0
+INFO 2025-09-17 16:04:46,211 basehttp 10260 29644 "OPTIONS /api/movies/1311031/ HTTP/1.1" 200 0
+INFO 2025-09-17 16:04:46,220 middleware 10260 10764 Incoming request: GET /api/movies/1311031/
+INFO 2025-09-17 16:04:46,225 middleware 10260 10764 Response: GET /api/movies/1311031/ - 200
+INFO 2025-09-17 16:04:46,228 basehttp 10260 10764 "GET /api/movies/1311031/ HTTP/1.1" 200 922
+INFO 2025-09-17 16:05:34,067 middleware 10260 28796 Incoming request: GET /api/movies/17/
+ERROR 2025-09-17 16:05:34,070 views 10260 28796 Unexpected error in MovieDetailView: No Movie matches the given query.
+ERROR 2025-09-17 16:05:34,070 exceptions 10260 28796 API Exception: Movie not found
+Traceback (most recent call last):
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\django\shortcuts.py", line 90, in get_object_or_404
+    return queryset.get(*args, **kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\django\db\models\query.py", line 633, in get
+    raise self.model.DoesNotExist(
+movies.models.Movie.DoesNotExist: Movie matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movies\views.py", line 255, in get_object
+    movie = super().get_object()
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\generics.py", line 100, in get_object
+    obj = get_object_or_404(queryset, **filter_kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\generics.py", line 19, in get_object_or_404
+    return _get_object_or_404(queryset, *filter_args, **filter_kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\django\shortcuts.py", line 92, in get_object_or_404
+    raise Http404(
+django.http.response.Http404: No Movie matches the given query.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movies\views.py", line 240, in get
+    return super().get(request, *args, **kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\generics.py", line 212, in get
+    return self.retrieve(request, *args, **kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\mixins.py", line 54, in retrieve
+    instance = self.get_object()
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movies\views.py", line 270, in get_object
+    raise MovieNotFoundException("Movie not found")
+movies.exceptions.MovieNotFoundException: Movie not found
+INFO 2025-09-17 16:05:34,072 middleware 10260 28796 Response: GET /api/movies/17/ - 404
+WARNING 2025-09-17 16:05:34,072 log 10260 28796 Not Found: /api/movies/17/
+WARNING 2025-09-17 16:05:34,074 basehttp 10260 28796 "GET /api/movies/17/ HTTP/1.1" 404 114
+INFO 2025-09-17 16:05:39,329 middleware 10260 28796 Incoming request: GET /api/movies/1038392/
+INFO 2025-09-17 16:05:39,334 middleware 10260 28796 Response: GET /api/movies/1038392/ - 200
+INFO 2025-09-17 16:05:39,335 basehttp 10260 28796 "GET /api/movies/1038392/ HTTP/1.1" 200 752
+INFO 2025-09-17 16:05:53,744 middleware 10260 10764 Incoming request: POST /api/movies/watchlist/
+ERROR 2025-09-17 16:05:53,747 views 10260 10764 Error adding movie to watchlist: 'movie'
+ERROR 2025-09-17 16:05:53,747 exceptions 10260 10764 API Exception: Failed to add movie to watchlist
+Traceback (most recent call last):
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movies\views.py", line 793, in perform_create
+    movie = serializer.validated_data['movie']
+KeyError: 'movie'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movies\views.py", line 779, in post
+    return super().post(request, *args, **kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\generics.py", line 246, in post
+    return self.create(request, *args, **kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movies\views.py", line 808, in perform_create
+    raise MovieNotFoundException("Failed to add movie to watchlist")
+movies.exceptions.MovieNotFoundException: Failed to add movie to watchlist
+INFO 2025-09-17 16:05:53,748 middleware 10260 10764 Response: POST /api/movies/watchlist/ - 404
+WARNING 2025-09-17 16:05:53,748 log 10260 10764 Not Found: /api/movies/watchlist/
+WARNING 2025-09-17 16:05:53,749 basehttp 10260 10764 "POST /api/movies/watchlist/ HTTP/1.1" 404 138
+INFO 2025-09-17 16:06:07,139 middleware 10260 10764 Incoming request: POST /api/movies/watchlist/
+ERROR 2025-09-17 16:06:07,142 views 10260 10764 Error adding movie to watchlist: 'movie'
+ERROR 2025-09-17 16:06:07,142 exceptions 10260 10764 API Exception: Failed to add movie to watchlist
+Traceback (most recent call last):
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movies\views.py", line 793, in perform_create
+    movie = serializer.validated_data['movie']
+KeyError: 'movie'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movies\views.py", line 779, in post
+    return super().post(request, *args, **kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\generics.py", line 246, in post
+    return self.create(request, *args, **kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movies\views.py", line 808, in perform_create
+    raise MovieNotFoundException("Failed to add movie to watchlist")
+movies.exceptions.MovieNotFoundException: Failed to add movie to watchlist
+INFO 2025-09-17 16:06:07,144 middleware 10260 10764 Response: POST /api/movies/watchlist/ - 404
+WARNING 2025-09-17 16:06:07,144 log 10260 10764 Not Found: /api/movies/watchlist/
+WARNING 2025-09-17 16:06:07,145 basehttp 10260 10764 "POST /api/movies/watchlist/ HTTP/1.1" 404 138
+WARNING 2025-09-17 16:06:08,275 log 10260 24144 Not Found: /@vite/client
+WARNING 2025-09-17 16:06:08,276 basehttp 10260 24144 "GET /@vite/client HTTP/1.1" 404 3243
+INFO 2025-09-17 16:06:50,987 middleware 10260 28796 Incoming request: GET /api/movies/1311031/
+INFO 2025-09-17 16:06:50,993 middleware 10260 28796 Response: GET /api/movies/1311031/ - 200
+INFO 2025-09-17 16:06:50,995 basehttp 10260 28796 "GET /api/movies/1311031/ HTTP/1.1" 200 922
+INFO 2025-09-17 16:06:59,387 middleware 10260 10764 Incoming request: POST /api/movies/watchlist/
+ERROR 2025-09-17 16:06:59,388 views 10260 10764 Error adding movie to watchlist: 'movie'
+ERROR 2025-09-17 16:06:59,389 exceptions 10260 10764 API Exception: Failed to add movie to watchlist
+Traceback (most recent call last):
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movies\views.py", line 793, in perform_create
+    movie = serializer.validated_data['movie']
+KeyError: 'movie'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movies\views.py", line 779, in post
+    return super().post(request, *args, **kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\generics.py", line 246, in post
+    return self.create(request, *args, **kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movies\views.py", line 808, in perform_create
+    raise MovieNotFoundException("Failed to add movie to watchlist")
+movies.exceptions.MovieNotFoundException: Failed to add movie to watchlist
+INFO 2025-09-17 16:06:59,390 middleware 10260 10764 Response: POST /api/movies/watchlist/ - 404
+WARNING 2025-09-17 16:06:59,391 log 10260 10764 Not Found: /api/movies/watchlist/
+WARNING 2025-09-17 16:06:59,391 basehttp 10260 10764 "POST /api/movies/watchlist/ HTTP/1.1" 404 138
+INFO 2025-09-17 16:07:06,202 middleware 10260 28796 Incoming request: GET /api/movies/
+INFO 2025-09-17 16:07:06,212 middleware 10260 28796 Response: GET /api/movies/ - 200
+INFO 2025-09-17 16:07:06,214 basehttp 10260 28796 "GET /api/movies/?page_size=12 HTTP/1.1" 200 7766
+WARNING 2025-09-17 16:07:06,228 log 10260 31956 Not Found: /@vite/client
+WARNING 2025-09-17 16:07:06,229 basehttp 10260 31956 "GET /@vite/client HTTP/1.1" 404 3243
+INFO 2025-09-17 16:07:16,265 middleware 10260 10764 Incoming request: POST /api/movies/watchlist/
+ERROR 2025-09-17 16:07:16,267 views 10260 10764 Error adding movie to watchlist: 'movie'
+ERROR 2025-09-17 16:07:16,268 exceptions 10260 10764 API Exception: Failed to add movie to watchlist
+Traceback (most recent call last):
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movies\views.py", line 793, in perform_create
+    movie = serializer.validated_data['movie']
+KeyError: 'movie'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movies\views.py", line 779, in post
+    return super().post(request, *args, **kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\generics.py", line 246, in post
+    return self.create(request, *args, **kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movies\views.py", line 808, in perform_create
+    raise MovieNotFoundException("Failed to add movie to watchlist")
+movies.exceptions.MovieNotFoundException: Failed to add movie to watchlist
+INFO 2025-09-17 16:07:16,269 middleware 10260 10764 Response: POST /api/movies/watchlist/ - 404
+WARNING 2025-09-17 16:07:16,269 log 10260 10764 Not Found: /api/movies/watchlist/
+WARNING 2025-09-17 16:07:16,286 basehttp 10260 10764 "POST /api/movies/watchlist/ HTTP/1.1" 404 138
+INFO 2025-09-17 16:07:17,964 middleware 10260 10764 Incoming request: GET /api/movies/
+INFO 2025-09-17 16:07:17,972 middleware 10260 10764 Response: GET /api/movies/ - 200
+INFO 2025-09-17 16:07:17,973 basehttp 10260 10764 "GET /api/movies/?page_size=12 HTTP/1.1" 200 7766
+INFO 2025-09-17 16:07:19,313 middleware 10260 10764 Incoming request: GET /api/movies/undefined/recommendations/
+INFO 2025-09-17 16:07:19,318 middleware 10260 10764 Response: GET /api/movies/undefined/recommendations/ - 404
+WARNING 2025-09-17 16:07:19,319 log 10260 10764 Not Found: /api/movies/undefined/recommendations/
+WARNING 2025-09-17 16:07:19,320 basehttp 10260 10764 "GET /api/movies/undefined/recommendations/ HTTP/1.1" 404 7434
+INFO 2025-09-17 16:07:19,327 middleware 10260 29644 Incoming request: GET /api/movies/undefined/recommendations/
+INFO 2025-09-17 16:07:19,332 middleware 10260 29644 Response: GET /api/movies/undefined/recommendations/ - 404
+WARNING 2025-09-17 16:07:19,333 log 10260 29644 Not Found: /api/movies/undefined/recommendations/
+WARNING 2025-09-17 16:07:19,334 basehttp 10260 29644 "GET /api/movies/undefined/recommendations/ HTTP/1.1" 404 7434
+INFO 2025-09-17 16:07:23,552 autoreload 10260 11184 C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movies\serializers.py changed, reloading.
+INFO 2025-09-17 16:07:24,315 autoreload 25588 15116 Watching for file changes with StatReloader
+WARNING 2025-09-17 16:07:29,982 log 25588 28260 Not Found: /@vite/client
+WARNING 2025-09-17 16:07:29,984 basehttp 25588 28260 "GET /@vite/client HTTP/1.1" 404 3243
+INFO 2025-09-17 16:07:42,316 basehttp 25588 9248 "OPTIONS /api/movies/1051486/ HTTP/1.1" 200 0
+INFO 2025-09-17 16:07:42,317 basehttp 25588 14292 "OPTIONS /api/movies/1051486/ HTTP/1.1" 200 0
+INFO 2025-09-17 16:07:42,325 middleware 25588 9248 Incoming request: GET /api/movies/1051486/
+INFO 2025-09-17 16:07:42,350 middleware 25588 9248 Response: GET /api/movies/1051486/ - 200
+INFO 2025-09-17 16:07:42,352 basehttp 25588 9248 "GET /api/movies/1051486/ HTTP/1.1" 200 1219
+INFO 2025-09-17 16:07:43,623 middleware 25588 9248 Incoming request: POST /api/movies/watchlist/
+ERROR 2025-09-17 16:07:43,625 views 25588 9248 Error adding movie to watchlist: 'movie'
+ERROR 2025-09-17 16:07:43,625 exceptions 25588 9248 API Exception: Failed to add movie to watchlist
+Traceback (most recent call last):
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movies\views.py", line 793, in perform_create
+    movie = serializer.validated_data['movie']
+KeyError: 'movie'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movies\views.py", line 779, in post
+    return super().post(request, *args, **kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\generics.py", line 246, in post
+    return self.create(request, *args, **kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movies\views.py", line 808, in perform_create
+    raise MovieNotFoundException("Failed to add movie to watchlist")
+movies.exceptions.MovieNotFoundException: Failed to add movie to watchlist
+INFO 2025-09-17 16:07:43,636 middleware 25588 9248 Response: POST /api/movies/watchlist/ - 404
+WARNING 2025-09-17 16:07:43,636 log 25588 9248 Not Found: /api/movies/watchlist/
+WARNING 2025-09-17 16:07:43,637 basehttp 25588 9248 "POST /api/movies/watchlist/ HTTP/1.1" 404 138
+INFO 2025-09-17 16:07:53,240 middleware 25588 9248 Incoming request: POST /api/movies/watchlist/
+ERROR 2025-09-17 16:07:53,242 views 25588 9248 Error adding movie to watchlist: 'movie'
+ERROR 2025-09-17 16:07:53,242 exceptions 25588 9248 API Exception: Failed to add movie to watchlist
+Traceback (most recent call last):
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movies\views.py", line 793, in perform_create
+    movie = serializer.validated_data['movie']
+KeyError: 'movie'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movies\views.py", line 779, in post
+    return super().post(request, *args, **kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\generics.py", line 246, in post
+    return self.create(request, *args, **kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movies\views.py", line 808, in perform_create
+    raise MovieNotFoundException("Failed to add movie to watchlist")
+movies.exceptions.MovieNotFoundException: Failed to add movie to watchlist
+INFO 2025-09-17 16:07:53,243 middleware 25588 9248 Response: POST /api/movies/watchlist/ - 404
+WARNING 2025-09-17 16:07:53,244 log 25588 9248 Not Found: /api/movies/watchlist/
+WARNING 2025-09-17 16:07:53,244 basehttp 25588 9248 "POST /api/movies/watchlist/ HTTP/1.1" 404 138
+INFO 2025-09-17 16:08:12,127 autoreload 25588 15116 C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movies\views.py changed, reloading.
+INFO 2025-09-17 16:08:12,769 autoreload 25644 11800 Watching for file changes with StatReloader
+WARNING 2025-09-17 16:08:17,727 log 25644 864 Not Found: /@vite/client
+WARNING 2025-09-17 16:08:17,728 basehttp 25644 864 "GET /@vite/client HTTP/1.1" 404 3243
+INFO 2025-09-17 16:08:22,796 middleware 25644 33720 Incoming request: POST /api/movies/watchlist/
+INFO 2025-09-17 16:08:22,833 middleware 25644 33720 Response: POST /api/movies/watchlist/ - 201
+INFO 2025-09-17 16:08:22,834 basehttp 25644 33720 "POST /api/movies/watchlist/ HTTP/1.1" 201 661
+INFO 2025-09-17 16:08:25,068 middleware 25644 33720 Incoming request: GET /api/movies/watchlist/
+INFO 2025-09-17 16:08:25,070 middleware 25644 38032 Incoming request: GET /api/movies/undefined/recommendations/
+INFO 2025-09-17 16:08:25,079 middleware 25644 38032 Response: GET /api/movies/undefined/recommendations/ - 404
+WARNING 2025-09-17 16:08:25,080 log 25644 38032 Not Found: /api/movies/undefined/recommendations/
+WARNING 2025-09-17 16:08:25,082 basehttp 25644 38032 "GET /api/movies/undefined/recommendations/ HTTP/1.1" 404 7434
+INFO 2025-09-17 16:08:25,088 middleware 25644 33720 Response: GET /api/movies/watchlist/ - 200
+INFO 2025-09-17 16:08:25,090 middleware 25644 18444 Incoming request: GET /api/movies/undefined/recommendations/
+INFO 2025-09-17 16:08:25,090 basehttp 25644 33720 "GET /api/movies/watchlist/ HTTP/1.1" 200 843
+INFO 2025-09-17 16:08:25,095 middleware 25644 18444 Response: GET /api/movies/undefined/recommendations/ - 404
+WARNING 2025-09-17 16:08:25,097 log 25644 18444 Not Found: /api/movies/undefined/recommendations/
+WARNING 2025-09-17 16:08:25,098 basehttp 25644 18444 "GET /api/movies/undefined/recommendations/ HTTP/1.1" 404 7434
+INFO 2025-09-17 16:08:33,427 autoreload 25644 11800 C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movies\serializers.py changed, reloading.
+INFO 2025-09-17 16:08:34,130 autoreload 28268 8476 Watching for file changes with StatReloader
+INFO 2025-09-17 16:08:34,957 basehttp 28268 18220 "OPTIONS /api/movies/undefined/ HTTP/1.1" 200 0
+INFO 2025-09-17 16:08:34,957 basehttp 28268 14980 "OPTIONS /api/movies/undefined/ HTTP/1.1" 200 0
+INFO 2025-09-17 16:08:34,966 middleware 28268 14980 Incoming request: GET /api/movies/undefined/
+INFO 2025-09-17 16:08:34,975 middleware 28268 14980 Response: GET /api/movies/undefined/ - 404
+WARNING 2025-09-17 16:08:34,977 log 28268 14980 Not Found: /api/movies/undefined/
+WARNING 2025-09-17 16:08:34,977 basehttp 28268 14980 "GET /api/movies/undefined/ HTTP/1.1" 404 7386
+INFO 2025-09-17 16:08:34,988 middleware 28268 18220 Incoming request: GET /api/movies/undefined/
+INFO 2025-09-17 16:08:34,991 middleware 28268 18220 Response: GET /api/movies/undefined/ - 404
+WARNING 2025-09-17 16:08:34,991 log 28268 18220 Not Found: /api/movies/undefined/
+WARNING 2025-09-17 16:08:34,993 basehttp 28268 18220 "GET /api/movies/undefined/ HTTP/1.1" 404 7386
+INFO 2025-09-17 16:08:36,283 middleware 28268 18220 Incoming request: GET /api/movies/undefined/recommendations/
+INFO 2025-09-17 16:08:36,289 middleware 28268 18220 Response: GET /api/movies/undefined/recommendations/ - 404
+WARNING 2025-09-17 16:08:36,290 log 28268 18220 Not Found: /api/movies/undefined/recommendations/
+WARNING 2025-09-17 16:08:36,291 basehttp 28268 18220 "GET /api/movies/undefined/recommendations/ HTTP/1.1" 404 7434
+INFO 2025-09-17 16:08:36,297 middleware 28268 14980 Incoming request: GET /api/movies/undefined/recommendations/
+INFO 2025-09-17 16:08:36,301 middleware 28268 14980 Response: GET /api/movies/undefined/recommendations/ - 404
+WARNING 2025-09-17 16:08:36,302 log 28268 14980 Not Found: /api/movies/undefined/recommendations/
+WARNING 2025-09-17 16:08:36,302 basehttp 28268 14980 "GET /api/movies/undefined/recommendations/ HTTP/1.1" 404 7434
+INFO 2025-09-17 16:08:40,048 middleware 28268 14980 Incoming request: POST /api/movies/ratings/
+ERROR 2025-09-17 16:08:40,060 views 28268 14980 Error creating movie rating: 'movie'
+ERROR 2025-09-17 16:08:40,061 exceptions 28268 14980 API Exception: Failed to create movie rating
+Traceback (most recent call last):
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movies\views.py", line 665, in perform_create
+    movie = serializer.validated_data['movie']
+KeyError: 'movie'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movies\views.py", line 651, in post
+    return super().post(request, *args, **kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\generics.py", line 246, in post
+    return self.create(request, *args, **kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movies\views.py", line 682, in perform_create
+    raise InvalidRatingException("Failed to create movie rating")
+movies.exceptions.InvalidRatingException: Failed to create movie rating
+INFO 2025-09-17 16:08:40,062 middleware 28268 14980 Response: POST /api/movies/ratings/ - 400
+WARNING 2025-09-17 16:08:40,063 log 28268 14980 Bad Request: /api/movies/ratings/
+WARNING 2025-09-17 16:08:40,064 basehttp 28268 14980 "POST /api/movies/ratings/ HTTP/1.1" 400 132
+WARNING 2025-09-17 16:09:09,638 log 28268 31300 Not Found: /@vite/client
+WARNING 2025-09-17 16:09:09,640 basehttp 28268 31300 "GET /@vite/client HTTP/1.1" 404 3243
+INFO 2025-09-17 16:09:42,380 autoreload 28268 8476 C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movies\views.py changed, reloading.
+INFO 2025-09-17 16:09:43,131 autoreload 15980 18512 Watching for file changes with StatReloader
+WARNING 2025-09-17 16:09:51,365 log 15980 18196 Not Found: /@vite/client
+WARNING 2025-09-17 16:09:51,365 basehttp 15980 18196 "GET /@vite/client HTTP/1.1" 404 3243
+INFO 2025-09-17 16:10:36,205 middleware 15980 20248 Incoming request: POST /api/movies/watchlist/
+INFO 2025-09-17 16:10:36,248 middleware 15980 20248 Response: POST /api/movies/watchlist/ - 201
+INFO 2025-09-17 16:10:36,250 basehttp 15980 20248 "POST /api/movies/watchlist/ HTTP/1.1" 201 710
+INFO 2025-09-17 16:10:37,939 basehttp 15980 20248 "OPTIONS /api/movies/watchlist/7/ HTTP/1.1" 200 0
+INFO 2025-09-17 16:10:37,949 middleware 15980 20248 Incoming request: DELETE /api/movies/watchlist/7/
+ERROR 2025-09-17 16:10:37,953 views 15980 20248 Error retrieving watchlist item: No UserMovieWatchlist matches the given query.
+ERROR 2025-09-17 16:10:37,953 exceptions 15980 20248 API Exception: Watchlist item not found
+Traceback (most recent call last):
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\django\shortcuts.py", line 90, in get_object_or_404
+    return queryset.get(*args, **kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\django\db\models\query.py", line 633, in get
+    raise self.model.DoesNotExist(
+movies.models.UserMovieWatchlist.DoesNotExist: UserMovieWatchlist matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movies\views.py", line 827, in get_object
+    return super().get_object()
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\generics.py", line 100, in get_object
+    obj = get_object_or_404(queryset, **filter_kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\generics.py", line 19, in get_object_or_404
+    return _get_object_or_404(queryset, *filter_args, **filter_kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\django\shortcuts.py", line 92, in get_object_or_404
+    raise Http404(
+django.http.response.Http404: No UserMovieWatchlist matches the given query.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movies\views.py", line 816, in delete
+    return super().delete(request, *args, **kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\generics.py", line 275, in delete
+    return self.destroy(request, *args, **kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\mixins.py", line 90, in destroy
+    instance = self.get_object()
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movies\views.py", line 833, in get_object
+    raise MovieNotFoundException("Watchlist item not found")
+movies.exceptions.MovieNotFoundException: Watchlist item not found
+INFO 2025-09-17 16:10:37,991 middleware 15980 20248 Response: DELETE /api/movies/watchlist/7/ - 404
+WARNING 2025-09-17 16:10:37,993 log 15980 20248 Not Found: /api/movies/watchlist/7/
+WARNING 2025-09-17 16:10:37,994 basehttp 15980 20248 "DELETE /api/movies/watchlist/7/ HTTP/1.1" 404 132
+INFO 2025-09-17 16:31:03,996 basehttp 15980 26956 "OPTIONS /api/auth/login/ HTTP/1.1" 200 0
+INFO 2025-09-17 16:31:04,007 middleware 15980 26956 Incoming request: POST /api/auth/login/
+INFO 2025-09-17 16:31:04,687 middleware 15980 26956 Response: POST /api/auth/login/ - 200
+INFO 2025-09-17 16:31:04,689 basehttp 15980 26956 "POST /api/auth/login/ HTTP/1.1" 200 671
+INFO 2025-09-17 16:31:04,728 basehttp 15980 26956 "OPTIONS /api/movies/undefined/recommendations/ HTTP/1.1" 200 0
+INFO 2025-09-17 16:31:04,733 basehttp 15980 15316 "OPTIONS /api/movies/watchlist/ HTTP/1.1" 200 0
+INFO 2025-09-17 16:31:04,735 basehttp 15980 10584 "OPTIONS /api/movies/undefined/recommendations/ HTTP/1.1" 200 0
+INFO 2025-09-17 16:31:04,736 basehttp 15980 11940 "OPTIONS /api/movies/watchlist/ HTTP/1.1" 200 0
+INFO 2025-09-17 16:31:04,738 middleware 15980 26956 Incoming request: GET /api/movies/undefined/recommendations/
+INFO 2025-09-17 16:31:04,748 middleware 15980 26956 Response: GET /api/movies/undefined/recommendations/ - 404
+INFO 2025-09-17 16:31:04,749 middleware 15980 10584 Incoming request: GET /api/movies/watchlist/
+WARNING 2025-09-17 16:31:04,750 log 15980 26956 Not Found: /api/movies/undefined/recommendations/
+WARNING 2025-09-17 16:31:04,753 basehttp 15980 26956 "GET /api/movies/undefined/recommendations/ HTTP/1.1" 404 7434
+INFO 2025-09-17 16:31:04,763 middleware 15980 10584 Response: GET /api/movies/watchlist/ - 200
+INFO 2025-09-17 16:31:04,764 middleware 15980 11940 Incoming request: GET /api/movies/undefined/recommendations/
+INFO 2025-09-17 16:31:04,769 middleware 15980 11940 Response: GET /api/movies/undefined/recommendations/ - 404
+WARNING 2025-09-17 16:31:04,770 log 15980 11940 Not Found: /api/movies/undefined/recommendations/
+INFO 2025-09-17 16:31:04,770 basehttp 15980 10584 "GET /api/movies/watchlist/ HTTP/1.1" 200 1554
+WARNING 2025-09-17 16:31:04,771 basehttp 15980 11940 "GET /api/movies/undefined/recommendations/ HTTP/1.1" 404 7434
+INFO 2025-09-17 16:31:08,800 basehttp 15980 10584 "OPTIONS /api/movies/undefined/ HTTP/1.1" 200 0
+INFO 2025-09-17 16:31:08,801 basehttp 15980 11940 "OPTIONS /api/movies/undefined/ HTTP/1.1" 200 0
+INFO 2025-09-17 16:31:08,809 middleware 15980 11940 Incoming request: GET /api/movies/undefined/
+INFO 2025-09-17 16:31:08,816 middleware 15980 11940 Response: GET /api/movies/undefined/ - 404
+WARNING 2025-09-17 16:31:08,817 log 15980 11940 Not Found: /api/movies/undefined/
+WARNING 2025-09-17 16:31:08,818 basehttp 15980 11940 "GET /api/movies/undefined/ HTTP/1.1" 404 7386
+INFO 2025-09-17 16:31:08,828 middleware 15980 10584 Incoming request: GET /api/movies/undefined/
+INFO 2025-09-17 16:31:08,834 middleware 15980 10584 Response: GET /api/movies/undefined/ - 404
+WARNING 2025-09-17 16:31:08,834 log 15980 10584 Not Found: /api/movies/undefined/
+WARNING 2025-09-17 16:31:08,834 basehttp 15980 10584 "GET /api/movies/undefined/ HTTP/1.1" 404 7386
+INFO 2025-09-17 16:31:14,263 middleware 15980 10584 Incoming request: GET /api/movies/undefined/recommendations/
+INFO 2025-09-17 16:31:14,270 middleware 15980 10584 Response: GET /api/movies/undefined/recommendations/ - 404
+WARNING 2025-09-17 16:31:14,270 log 15980 10584 Not Found: /api/movies/undefined/recommendations/
+WARNING 2025-09-17 16:31:14,271 basehttp 15980 10584 "GET /api/movies/undefined/recommendations/ HTTP/1.1" 404 7434
+INFO 2025-09-17 16:31:14,279 middleware 15980 11940 Incoming request: GET /api/movies/undefined/recommendations/
+INFO 2025-09-17 16:31:14,285 middleware 15980 11940 Response: GET /api/movies/undefined/recommendations/ - 404
+WARNING 2025-09-17 16:31:14,286 log 15980 11940 Not Found: /api/movies/undefined/recommendations/
+WARNING 2025-09-17 16:31:14,286 basehttp 15980 11940 "GET /api/movies/undefined/recommendations/ HTTP/1.1" 404 7434
+INFO 2025-09-17 16:33:50,643 basehttp 15980 30952 "OPTIONS /api/movies/?page_size=12&page=1 HTTP/1.1" 200 0
+INFO 2025-09-17 16:33:50,643 basehttp 15980 6160 "OPTIONS /api/movies/?page_size=12&page=1 HTTP/1.1" 200 0
+INFO 2025-09-17 16:33:50,651 middleware 15980 30952 Incoming request: GET /api/movies/
+INFO 2025-09-17 16:33:50,663 middleware 15980 30952 Response: GET /api/movies/ - 200
+INFO 2025-09-17 16:33:50,666 basehttp 15980 30952 "GET /api/movies/?page_size=12&page=1 HTTP/1.1" 200 7766
+INFO 2025-09-17 16:36:14,692 middleware 15980 10036 Incoming request: GET /api/movies/undefined/recommendations/
+INFO 2025-09-17 16:36:14,694 middleware 15980 15620 Incoming request: GET /api/movies/watchlist/
+INFO 2025-09-17 16:36:14,705 middleware 15980 10036 Response: GET /api/movies/undefined/recommendations/ - 404
+WARNING 2025-09-17 16:36:14,708 log 15980 10036 Not Found: /api/movies/undefined/recommendations/
+WARNING 2025-09-17 16:36:14,709 basehttp 15980 10036 "GET /api/movies/undefined/recommendations/ HTTP/1.1" 404 7434
+INFO 2025-09-17 16:36:14,721 middleware 15980 15620 Response: GET /api/movies/watchlist/ - 200
+INFO 2025-09-17 16:36:14,724 basehttp 15980 15620 "GET /api/movies/watchlist/ HTTP/1.1" 200 1554
+INFO 2025-09-17 16:36:38,557 basehttp 15980 30952 "OPTIONS /api/movies/1369679/ HTTP/1.1" 200 0
+INFO 2025-09-17 16:36:38,558 basehttp 15980 6160 "OPTIONS /api/movies/1369679/ HTTP/1.1" 200 0
+INFO 2025-09-17 16:36:38,567 middleware 15980 30952 Incoming request: GET /api/movies/1369679/
+INFO 2025-09-17 16:36:38,575 middleware 15980 30952 Response: GET /api/movies/1369679/ - 200
+INFO 2025-09-17 16:36:38,576 basehttp 15980 30952 "GET /api/movies/1369679/ HTTP/1.1" 200 1041
+INFO 2025-09-17 16:36:43,239 middleware 15980 6160 Incoming request: GET /api/movies/undefined/recommendations/
+INFO 2025-09-17 16:36:43,240 middleware 15980 30952 Incoming request: GET /api/movies/watchlist/
+INFO 2025-09-17 16:36:43,249 middleware 15980 6160 Response: GET /api/movies/undefined/recommendations/ - 404
+WARNING 2025-09-17 16:36:43,253 log 15980 6160 Not Found: /api/movies/undefined/recommendations/
+WARNING 2025-09-17 16:36:43,256 basehttp 15980 6160 "GET /api/movies/undefined/recommendations/ HTTP/1.1" 404 7434
+INFO 2025-09-17 16:36:43,262 middleware 15980 30952 Response: GET /api/movies/watchlist/ - 200
+INFO 2025-09-17 16:36:43,263 basehttp 15980 30952 "GET /api/movies/watchlist/ HTTP/1.1" 200 1554
+INFO 2025-09-17 16:36:43,271 middleware 15980 22808 Incoming request: GET /api/movies/undefined/recommendations/
+INFO 2025-09-17 16:36:43,279 middleware 15980 22808 Response: GET /api/movies/undefined/recommendations/ - 404
+WARNING 2025-09-17 16:36:43,280 log 15980 22808 Not Found: /api/movies/undefined/recommendations/
+WARNING 2025-09-17 16:36:43,282 basehttp 15980 22808 "GET /api/movies/undefined/recommendations/ HTTP/1.1" 404 7434
+INFO 2025-09-17 16:36:43,705 middleware 15980 15620 Incoming request: GET /api/movies/undefined/recommendations/
+INFO 2025-09-17 16:36:43,711 middleware 15980 15620 Response: GET /api/movies/undefined/recommendations/ - 404
+WARNING 2025-09-17 16:36:43,712 log 15980 15620 Not Found: /api/movies/undefined/recommendations/
+WARNING 2025-09-17 16:36:43,713 basehttp 15980 15620 "GET /api/movies/undefined/recommendations/ HTTP/1.1" 404 7434
+INFO 2025-09-17 16:36:43,882 middleware 15980 22808 Incoming request: GET /api/movies/undefined/recommendations/
+INFO 2025-09-17 16:36:43,888 middleware 15980 22808 Response: GET /api/movies/undefined/recommendations/ - 404
+WARNING 2025-09-17 16:36:43,889 log 15980 22808 Not Found: /api/movies/undefined/recommendations/
+WARNING 2025-09-17 16:36:43,890 basehttp 15980 22808 "GET /api/movies/undefined/recommendations/ HTTP/1.1" 404 7434
+INFO 2025-09-17 16:37:02,659 middleware 15980 22808 Incoming request: GET /api/movies/755898/
+INFO 2025-09-17 16:37:02,668 middleware 15980 22808 Response: GET /api/movies/755898/ - 200
+INFO 2025-09-17 16:37:02,669 basehttp 15980 22808 "GET /api/movies/755898/ HTTP/1.1" 200 923
+INFO 2025-09-17 16:37:08,033 middleware 15980 22808 Incoming request: GET /api/movies/undefined/recommendations/
+INFO 2025-09-17 16:37:08,038 middleware 15980 22808 Response: GET /api/movies/undefined/recommendations/ - 404
+WARNING 2025-09-17 16:37:08,039 log 15980 22808 Not Found: /api/movies/undefined/recommendations/
+WARNING 2025-09-17 16:37:08,040 basehttp 15980 22808 "GET /api/movies/undefined/recommendations/ HTTP/1.1" 404 7434
+INFO 2025-09-17 16:37:08,052 middleware 15980 30952 Incoming request: GET /api/movies/undefined/recommendations/
+INFO 2025-09-17 16:37:08,058 middleware 15980 30952 Response: GET /api/movies/undefined/recommendations/ - 404
+WARNING 2025-09-17 16:37:08,059 log 15980 30952 Not Found: /api/movies/undefined/recommendations/
+WARNING 2025-09-17 16:37:08,060 basehttp 15980 30952 "GET /api/movies/undefined/recommendations/ HTTP/1.1" 404 7434
+INFO 2025-09-17 16:37:31,956 basehttp 15980 30952 "OPTIONS /api/movies/?page_size=12&page=2 HTTP/1.1" 200 0
+INFO 2025-09-17 16:37:31,963 middleware 15980 30952 Incoming request: GET /api/movies/
+INFO 2025-09-17 16:37:31,972 middleware 15980 30952 Response: GET /api/movies/ - 200
+INFO 2025-09-17 16:37:31,973 basehttp 15980 30952 "GET /api/movies/?page_size=12&page=2 HTTP/1.1" 200 8046
+INFO 2025-09-17 16:37:35,388 middleware 15980 30952 Incoming request: GET /api/movies/undefined/recommendations/
+INFO 2025-09-17 16:37:35,397 middleware 15980 30952 Response: GET /api/movies/undefined/recommendations/ - 404
+WARNING 2025-09-17 16:37:35,398 log 15980 30952 Not Found: /api/movies/undefined/recommendations/
+WARNING 2025-09-17 16:37:35,399 basehttp 15980 30952 "GET /api/movies/undefined/recommendations/ HTTP/1.1" 404 7434
+INFO 2025-09-17 16:37:35,406 middleware 15980 22808 Incoming request: GET /api/movies/undefined/recommendations/
+INFO 2025-09-17 16:37:35,414 middleware 15980 22808 Response: GET /api/movies/undefined/recommendations/ - 404
+WARNING 2025-09-17 16:37:35,415 log 15980 22808 Not Found: /api/movies/undefined/recommendations/
+WARNING 2025-09-17 16:37:35,416 basehttp 15980 22808 "GET /api/movies/undefined/recommendations/ HTTP/1.1" 404 7434
+INFO 2025-09-17 16:37:42,397 basehttp 15980 22808 "OPTIONS /api/movies/search/?q=alone HTTP/1.1" 200 0
+INFO 2025-09-17 16:37:42,405 middleware 15980 22808 Incoming request: GET /api/movies/search/
+ERROR 2025-09-17 16:37:42,409 exceptions 15980 22808 API Exception: Method "GET" not allowed.
+Traceback (most recent call last):
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\views.py", line 173, in http_method_not_allowed
+    raise exceptions.MethodNotAllowed(request.method)
+rest_framework.exceptions.MethodNotAllowed: Method "GET" not allowed.
+INFO 2025-09-17 16:37:42,410 middleware 15980 22808 Response: GET /api/movies/search/ - 405
+WARNING 2025-09-17 16:37:42,410 log 15980 22808 Method Not Allowed: /api/movies/search/
+WARNING 2025-09-17 16:37:42,412 basehttp 15980 22808 "GET /api/movies/search/?q=alone HTTP/1.1" 405 133
+INFO 2025-09-17 16:38:08,336 autoreload 15980 18512 C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movies\views.py changed, reloading.
+INFO 2025-09-17 16:38:09,747 autoreload 6212 7520 Watching for file changes with StatReloader
+INFO 2025-09-17 16:38:38,710 middleware 6212 11572 Incoming request: GET /api/movies/undefined/recommendations/
+INFO 2025-09-17 16:38:38,731 middleware 6212 11572 Response: GET /api/movies/undefined/recommendations/ - 404
+WARNING 2025-09-17 16:38:38,734 log 6212 11572 Not Found: /api/movies/undefined/recommendations/
+WARNING 2025-09-17 16:38:38,735 basehttp 6212 11572 "GET /api/movies/undefined/recommendations/ HTTP/1.1" 404 7434
+INFO 2025-09-17 16:38:38,744 middleware 6212 468 Incoming request: GET /api/movies/undefined/recommendations/
+INFO 2025-09-17 16:38:38,749 middleware 6212 468 Response: GET /api/movies/undefined/recommendations/ - 404
+WARNING 2025-09-17 16:38:38,751 log 6212 468 Not Found: /api/movies/undefined/recommendations/
+WARNING 2025-09-17 16:38:38,752 basehttp 6212 468 "GET /api/movies/undefined/recommendations/ HTTP/1.1" 404 7434
+INFO 2025-09-17 16:38:39,650 middleware 6212 32972 Incoming request: GET /api/movies/undefined/recommendations/
+INFO 2025-09-17 16:38:39,653 middleware 6212 27020 Incoming request: GET /api/movies/1051486/
+INFO 2025-09-17 16:38:39,658 middleware 6212 32972 Response: GET /api/movies/undefined/recommendations/ - 404
+WARNING 2025-09-17 16:38:39,660 log 6212 32972 Not Found: /api/movies/undefined/recommendations/
+WARNING 2025-09-17 16:38:39,661 basehttp 6212 32972 "GET /api/movies/undefined/recommendations/ HTTP/1.1" 404 7434
+INFO 2025-09-17 16:38:39,670 middleware 6212 38232 Incoming request: GET /api/movies/undefined/recommendations/
+INFO 2025-09-17 16:38:39,678 middleware 6212 38232 Response: GET /api/movies/undefined/recommendations/ - 404
+WARNING 2025-09-17 16:38:39,680 log 6212 38232 Not Found: /api/movies/undefined/recommendations/
+WARNING 2025-09-17 16:38:39,684 basehttp 6212 38232 "GET /api/movies/undefined/recommendations/ HTTP/1.1" 404 7434
+INFO 2025-09-17 16:38:39,703 middleware 6212 27020 Response: GET /api/movies/1051486/ - 200
+INFO 2025-09-17 16:38:39,706 basehttp 6212 27020 "GET /api/movies/1051486/ HTTP/1.1" 200 1219
+INFO 2025-09-17 16:38:59,206 basehttp 6212 468 "OPTIONS /api/movies/user/recommendations/ HTTP/1.1" 200 0
+INFO 2025-09-17 16:38:59,214 middleware 6212 468 Incoming request: GET /api/movies/user/recommendations/
+INFO 2025-09-17 16:38:59,218 middleware 6212 468 Response: GET /api/movies/user/recommendations/ - 200
+INFO 2025-09-17 16:38:59,220 basehttp 6212 468 "GET /api/movies/user/recommendations/ HTTP/1.1" 200 106
+INFO 2025-09-17 16:38:59,644 basehttp 6212 27020 "OPTIONS /api/movies/user/recommendations/ HTTP/1.1" 200 0
+INFO 2025-09-17 16:38:59,654 middleware 6212 27020 Incoming request: GET /api/movies/user/recommendations/
+INFO 2025-09-17 16:38:59,656 middleware 6212 27020 Response: GET /api/movies/user/recommendations/ - 200
+INFO 2025-09-17 16:38:59,657 basehttp 6212 27020 "GET /api/movies/user/recommendations/ HTTP/1.1" 200 106
+INFO 2025-09-17 16:39:38,785 middleware 6212 27020 Incoming request: GET /api/movies/
+INFO 2025-09-17 16:39:38,795 middleware 6212 27020 Response: GET /api/movies/ - 200
+INFO 2025-09-17 16:39:38,797 basehttp 6212 27020 "GET /api/movies/?page_size=12&page=1 HTTP/1.1" 200 7766
+INFO 2025-09-17 16:39:58,967 basehttp 6212 27020 "OPTIONS /api/movies/search/ HTTP/1.1" 200 0
+INFO 2025-09-17 16:39:58,978 middleware 6212 27020 Incoming request: POST /api/movies/search/
+ERROR 2025-09-17 16:39:59,237 services 6212 27020 Failed to create/update movie 1286955: NOT NULL constraint failed: movies_movie.poster_path
+ERROR 2025-09-17 16:39:59,287 services 6212 27020 Failed to create/update movie 307156: NOT NULL constraint failed: movies_movie.backdrop_path
+ERROR 2025-09-17 16:39:59,324 services 6212 27020 Failed to create/update movie 1086069: NOT NULL constraint failed: movies_movie.poster_path
+ERROR 2025-09-17 16:39:59,327 services 6212 27020 Failed to create/update movie 441956: NOT NULL constraint failed: movies_movie.backdrop_path
+ERROR 2025-09-17 16:39:59,331 services 6212 27020 Failed to create/update movie 951376: NOT NULL constraint failed: movies_movie.backdrop_path
+ERROR 2025-09-17 16:39:59,334 services 6212 27020 Failed to create/update movie 444057: NOT NULL constraint failed: movies_movie.poster_path
+ERROR 2025-09-17 16:39:59,338 services 6212 27020 Failed to create/update movie 1042951: NOT NULL constraint failed: movies_movie.backdrop_path
+ERROR 2025-09-17 16:39:59,360 services 6212 27020 Failed to create/update movie 706333: NOT NULL constraint failed: movies_movie.backdrop_path
+ERROR 2025-09-17 16:39:59,362 services 6212 27020 Failed to create/update movie 811816: NOT NULL constraint failed: movies_movie.backdrop_path
+ERROR 2025-09-17 16:39:59,390 services 6212 27020 Failed to create/update movie 708047: NOT NULL constraint failed: movies_movie.backdrop_path
+ERROR 2025-09-17 16:39:59,443 services 6212 27020 Failed to create/update movie 622960: NOT NULL constraint failed: movies_movie.backdrop_path
+ERROR 2025-09-17 16:39:59,447 services 6212 27020 Failed to create/update movie 638898: NOT NULL constraint failed: movies_movie.poster_path
+INFO 2025-09-17 16:39:59,448 middleware 6212 27020 Response: POST /api/movies/search/ - 200
+INFO 2025-09-17 16:39:59,450 basehttp 6212 27020 "POST /api/movies/search/ HTTP/1.1" 200 4494
+INFO 2025-09-17 16:40:10,736 middleware 6212 27020 Incoming request: POST /api/movies/search/
+ERROR 2025-09-17 16:40:11,008 services 6212 27020 Failed to create/update movie 508902: NOT NULL constraint failed: movies_movie.backdrop_path
+ERROR 2025-09-17 16:40:11,154 services 6212 27020 Failed to create/update movie 1445997: NOT NULL constraint failed: movies_movie.backdrop_path
+ERROR 2025-09-17 16:40:11,453 services 6212 27020 Failed to create/update movie 1354441: NOT NULL constraint failed: movies_movie.backdrop_path
+INFO 2025-09-17 16:40:11,577 middleware 6212 27020 Response: POST /api/movies/search/ - 200
+INFO 2025-09-17 16:40:11,579 basehttp 6212 27020 "POST /api/movies/search/ HTTP/1.1" 200 10079
+INFO 2025-09-17 16:42:37,652 basehttp 6212 38232 "OPTIONS /api/movies/?page_size=10&page=1 HTTP/1.1" 200 0
+INFO 2025-09-17 16:42:37,652 basehttp 6212 27020 "OPTIONS /api/movies/?page_size=10&page=1 HTTP/1.1" 200 0
+INFO 2025-09-17 16:42:37,662 middleware 6212 27020 Incoming request: GET /api/movies/
+INFO 2025-09-17 16:42:37,674 middleware 6212 27020 Response: GET /api/movies/ - 200
+INFO 2025-09-17 16:42:37,675 basehttp 6212 27020 "GET /api/movies/?page_size=10&page=1 HTTP/1.1" 200 6261
+INFO 2025-09-17 16:43:11,962 middleware 6212 27020 Incoming request: GET /api/movies/watchlist/
+INFO 2025-09-17 16:43:11,971 middleware 6212 27020 Response: GET /api/movies/watchlist/ - 200
+INFO 2025-09-17 16:43:11,972 basehttp 6212 27020 "GET /api/movies/watchlist/ HTTP/1.1" 200 1554
+INFO 2025-09-17 16:43:15,924 middleware 6212 27020 Incoming request: GET /api/movies/755898/
+INFO 2025-09-17 16:43:15,931 middleware 6212 27020 Response: GET /api/movies/755898/ - 200
+INFO 2025-09-17 16:43:15,932 basehttp 6212 27020 "GET /api/movies/755898/ HTTP/1.1" 200 923
+INFO 2025-09-17 16:45:14,651 middleware 6212 27020 Incoming request: GET /api/movies/1051486/
+INFO 2025-09-17 16:45:14,659 middleware 6212 27020 Response: GET /api/movies/1051486/ - 200
+INFO 2025-09-17 16:45:14,662 basehttp 6212 27020 "GET /api/movies/1051486/ HTTP/1.1" 200 1219
+INFO 2025-09-17 16:45:42,323 middleware 6212 27020 Incoming request: POST /api/movies/ratings/
+INFO 2025-09-17 16:45:42,352 middleware 6212 27020 Response: POST /api/movies/ratings/ - 201
+INFO 2025-09-17 16:45:42,354 basehttp 6212 27020 "POST /api/movies/ratings/ HTTP/1.1" 201 768
+INFO 2025-09-17 16:45:43,841 middleware 6212 27020 Incoming request: POST /api/movies/ratings/
+INFO 2025-09-17 16:45:43,876 middleware 6212 27020 Response: POST /api/movies/ratings/ - 201
+INFO 2025-09-17 16:45:43,879 basehttp 6212 27020 "POST /api/movies/ratings/ HTTP/1.1" 201 768
+INFO 2025-09-17 16:45:44,770 middleware 6212 27020 Incoming request: POST /api/movies/ratings/
+INFO 2025-09-17 16:45:44,795 middleware 6212 27020 Response: POST /api/movies/ratings/ - 201
+INFO 2025-09-17 16:45:44,797 basehttp 6212 27020 "POST /api/movies/ratings/ HTTP/1.1" 201 768
+INFO 2025-09-17 16:45:50,984 middleware 6212 27020 Incoming request: GET /api/movies/
+INFO 2025-09-17 16:45:50,996 middleware 6212 27020 Response: GET /api/movies/ - 200
+INFO 2025-09-17 16:45:50,999 basehttp 6212 27020 "GET /api/movies/?page_size=12&page=1 HTTP/1.1" 200 7767
+INFO 2025-09-17 16:48:09,559 middleware 6212 27020 Incoming request: GET /api/movies/
+INFO 2025-09-17 16:48:09,573 middleware 6212 27020 Response: GET /api/movies/ - 200
+INFO 2025-09-17 16:48:09,574 basehttp 6212 27020 "GET /api/movies/?page_size=10&page=1 HTTP/1.1" 200 6261
+INFO 2025-09-17 16:49:31,587 middleware 6212 27020 Incoming request: GET /api/movies/user/recommendations/
+INFO 2025-09-17 16:49:31,588 middleware 6212 25484 Incoming request: GET /api/movies/watchlist/
+INFO 2025-09-17 16:49:31,594 middleware 6212 27020 Response: GET /api/movies/user/recommendations/ - 200
+INFO 2025-09-17 16:49:31,595 basehttp 6212 27020 "GET /api/movies/user/recommendations/ HTTP/1.1" 200 106
+INFO 2025-09-17 16:49:31,609 middleware 6212 25484 Response: GET /api/movies/watchlist/ - 200
+INFO 2025-09-17 16:49:31,610 basehttp 6212 25484 "GET /api/movies/watchlist/ HTTP/1.1" 200 1554
+INFO 2025-09-17 16:50:25,498 autoreload 6212 7520 C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movies\serializers.py changed, reloading.
+INFO 2025-09-17 16:50:26,392 autoreload 27784 14984 Watching for file changes with StatReloader
+INFO 2025-09-17 16:51:06,664 middleware 27784 864 Incoming request: GET /api/movies/1051486/
+INFO 2025-09-17 16:51:06,711 middleware 27784 864 Response: GET /api/movies/1051486/ - 200
+INFO 2025-09-17 16:51:06,713 basehttp 27784 864 "GET /api/movies/1051486/ HTTP/1.1" 200 1219

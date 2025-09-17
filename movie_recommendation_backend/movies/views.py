@@ -661,21 +661,8 @@ class UserMovieRatingListCreateView(generics.ListCreateAPIView):
     
     def perform_create(self, serializer):
         try:
-            # Check if rating already exists
-            movie = serializer.validated_data['movie']
-            existing_rating = UserMovieRating.objects.filter(
-                user=self.request.user,
-                movie=movie
-            ).first()
-            
-            if existing_rating:
-                # Update existing rating
-                existing_rating.rating = serializer.validated_data['rating']
-                existing_rating.save()
-                return existing_rating
-            else:
-                # Create new rating
-                return serializer.save(user=self.request.user)
+            # The serializer handles movie validation and duplicate checking internally
+            return serializer.save(user=self.request.user)
                 
         except Exception as e:
             logger.error(f"Error creating movie rating: {str(e)}")
@@ -789,20 +776,9 @@ class UserMovieWatchlistListCreateView(generics.ListCreateAPIView):
     
     def perform_create(self, serializer):
         try:
-            # Check if movie is already in watchlist
-            movie = serializer.validated_data['movie']
-            existing_watchlist = UserMovieWatchlist.objects.filter(
-                user=self.request.user,
-                movie=movie
-            ).first()
-            
-            if existing_watchlist:
-                raise DuplicateWatchlistException("Movie is already in your watchlist")
-            
+            # The serializer handles movie validation and creation internally
             return serializer.save(user=self.request.user)
             
-        except DuplicateWatchlistException:
-            raise
         except Exception as e:
             logger.error(f"Error adding movie to watchlist: {str(e)}")
             raise MovieNotFoundException("Failed to add movie to watchlist")

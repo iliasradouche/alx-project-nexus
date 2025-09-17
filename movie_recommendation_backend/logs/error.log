@@ -34,3 +34,1075 @@ ERROR 2025-09-17 14:12:31,580 views 27812 30620 Error in UserMovieRatingDetailVi
 ERROR 2025-09-17 14:12:31,583 views 27812 30620 Error in UserMovieRatingDetailView.get_queryset: Field 'id' expected a number but got <django.contrib.auth.models.AnonymousUser object at 0x000002395CFF2AD0>.
 ERROR 2025-09-17 14:12:31,584 views 27812 30620 Error in UserMovieRatingDetailView.get_queryset: Field 'id' expected a number but got <django.contrib.auth.models.AnonymousUser object at 0x000002395CFF2AD0>.
 ERROR 2025-09-17 14:12:31,585 views 27812 30620 Error in UserMovieWatchlistDetailView.get_queryset: Field 'id' expected a number but got <django.contrib.auth.models.AnonymousUser object at 0x000002395CFF2AD0>.
+ERROR 2025-09-17 14:18:26,016 views 27812 29636 Error in UserMovieRatingDetailView.get_queryset: Field 'id' expected a number but got <django.contrib.auth.models.AnonymousUser object at 0x000002395CFF2BF0>.
+ERROR 2025-09-17 14:18:26,020 views 27812 29636 Error in UserMovieWatchlistDetailView.get_queryset: Field 'id' expected a number but got <django.contrib.auth.models.AnonymousUser object at 0x000002395CFF2BF0>.
+ERROR 2025-09-17 14:18:26,023 views 27812 29636 Error in UserMovieRatingDetailView.get_queryset: Field 'id' expected a number but got <django.contrib.auth.models.AnonymousUser object at 0x000002395CFF2BF0>.
+ERROR 2025-09-17 14:18:26,024 views 27812 29636 Error in UserMovieRatingDetailView.get_queryset: Field 'id' expected a number but got <django.contrib.auth.models.AnonymousUser object at 0x000002395CFF2BF0>.
+ERROR 2025-09-17 14:18:26,027 views 27812 29636 Error in UserMovieRatingDetailView.get_queryset: Field 'id' expected a number but got <django.contrib.auth.models.AnonymousUser object at 0x000002395CFF2BF0>.
+ERROR 2025-09-17 14:18:26,028 views 27812 29636 Error in UserMovieWatchlistDetailView.get_queryset: Field 'id' expected a number but got <django.contrib.auth.models.AnonymousUser object at 0x000002395CFF2BF0>.
+ERROR 2025-09-17 14:50:33,887 views 4460 38344 Error in UserMovieRatingDetailView.get_queryset: Field 'id' expected a number but got <django.contrib.auth.models.AnonymousUser object at 0x000001A1DAE61150>.
+ERROR 2025-09-17 14:50:33,888 views 4460 38344 Error in UserMovieWatchlistDetailView.get_queryset: Field 'id' expected a number but got <django.contrib.auth.models.AnonymousUser object at 0x000001A1DAE61150>.
+ERROR 2025-09-17 14:50:33,889 views 4460 38344 Error in UserMovieRatingDetailView.get_queryset: Field 'id' expected a number but got <django.contrib.auth.models.AnonymousUser object at 0x000001A1DAE61150>.
+ERROR 2025-09-17 14:50:33,890 views 4460 38344 Error in UserMovieRatingDetailView.get_queryset: Field 'id' expected a number but got <django.contrib.auth.models.AnonymousUser object at 0x000001A1DAE61150>.
+ERROR 2025-09-17 14:50:33,890 views 4460 38344 Error in UserMovieRatingDetailView.get_queryset: Field 'id' expected a number but got <django.contrib.auth.models.AnonymousUser object at 0x000001A1DAE61150>.
+ERROR 2025-09-17 14:50:33,891 views 4460 38344 Error in UserMovieWatchlistDetailView.get_queryset: Field 'id' expected a number but got <django.contrib.auth.models.AnonymousUser object at 0x000001A1DAE61150>.
+ERROR 2025-09-17 14:51:01,067 exceptions 4460 38344 API Exception: Invalid page.
+Traceback (most recent call last):
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\pagination.py", line 211, in paginate_queryset
+    self.page = paginator.page(page_number)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\django\core\paginator.py", line 89, in page
+    number = self.validate_number(number)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\django\core\paginator.py", line 71, in validate_number
+    raise EmptyPage(self.error_messages["no_results"])
+django.core.paginator.EmptyPage: That page contains no results
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movies\views.py", line 288, in get
+    return super().get(request, *args, **kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\generics.py", line 203, in get
+    return self.list(request, *args, **kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\mixins.py", line 40, in list
+    page = self.paginate_queryset(queryset)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\generics.py", line 175, in paginate_queryset
+    return self.paginator.paginate_queryset(queryset, self.request, view=self)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\pagination.py", line 216, in paginate_queryset
+    raise NotFound(msg)
+rest_framework.exceptions.NotFound: Invalid page.
+ERROR 2025-09-17 14:51:36,405 exceptions 4460 38344 API Exception: Authentication credentials were not provided.
+Traceback (most recent call last):
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\views.py", line 503, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\views.py", line 421, in initial
+    self.check_permissions(request)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\views.py", line 339, in check_permissions
+    self.permission_denied(
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\views.py", line 180, in permission_denied
+    raise exceptions.NotAuthenticated()
+rest_framework.exceptions.NotAuthenticated: Authentication credentials were not provided.
+ERROR 2025-09-17 14:53:10,826 exceptions 4460 40752 API Exception: Authentication credentials were not provided.
+Traceback (most recent call last):
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\views.py", line 503, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\views.py", line 421, in initial
+    self.check_permissions(request)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\views.py", line 339, in check_permissions
+    self.permission_denied(
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\views.py", line 180, in permission_denied
+    raise exceptions.NotAuthenticated()
+rest_framework.exceptions.NotAuthenticated: Authentication credentials were not provided.
+ERROR 2025-09-17 14:53:45,822 exceptions 4460 40752 API Exception: Authentication credentials were not provided.
+Traceback (most recent call last):
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\views.py", line 503, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\views.py", line 421, in initial
+    self.check_permissions(request)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\views.py", line 339, in check_permissions
+    self.permission_denied(
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\views.py", line 180, in permission_denied
+    raise exceptions.NotAuthenticated()
+rest_framework.exceptions.NotAuthenticated: Authentication credentials were not provided.
+ERROR 2025-09-17 14:54:16,706 exceptions 4460 40752 API Exception: Authentication credentials were not provided.
+Traceback (most recent call last):
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\views.py", line 503, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\views.py", line 421, in initial
+    self.check_permissions(request)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\views.py", line 339, in check_permissions
+    self.permission_denied(
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\views.py", line 180, in permission_denied
+    raise exceptions.NotAuthenticated()
+rest_framework.exceptions.NotAuthenticated: Authentication credentials were not provided.
+ERROR 2025-09-17 14:54:50,743 views 4460 40752 TMDb API error in popular_movies: 'CachedTMDbRateLimiter' object has no attribute 'wait_if_needed'
+ERROR 2025-09-17 14:54:50,744 exceptions 4460 40752 API Exception: Failed to fetch popular movies from TMDb API
+Traceback (most recent call last):
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movies\views.py", line 425, in popular_movies
+    popular_data = tmdb_service.get_popular_movies(page)
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movies\services.py", line 103, in get_popular_movies
+    result = self._make_request('movie/popular', params)
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movies\services.py", line 32, in _make_request
+    if not rate_limiter.wait_if_needed(priority=priority, max_wait=30):
+AttributeError: 'CachedTMDbRateLimiter' object has no attribute 'wait_if_needed'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movies\cache_utils.py", line 46, in wrapper
+    result = func(*args, **kwargs)
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movies\views.py", line 428, in popular_movies
+    raise TMDbAPIException("Failed to fetch popular movies from TMDb API")
+movies.exceptions.TMDbAPIException: Failed to fetch popular movies from TMDb API
+ERROR 2025-09-17 15:40:22,747 views 28676 16592 Error in UserMovieRatingDetailView.get_queryset: Field 'id' expected a number but got <django.contrib.auth.models.AnonymousUser object at 0x0000025AEA267F10>.
+ERROR 2025-09-17 15:40:22,748 views 28676 16592 Error in UserMovieWatchlistDetailView.get_queryset: Field 'id' expected a number but got <django.contrib.auth.models.AnonymousUser object at 0x0000025AEA267F10>.
+ERROR 2025-09-17 15:40:22,748 views 28676 16592 Error in UserMovieRatingDetailView.get_queryset: Field 'id' expected a number but got <django.contrib.auth.models.AnonymousUser object at 0x0000025AEA267F10>.
+ERROR 2025-09-17 15:40:22,749 views 28676 16592 Error in UserMovieRatingDetailView.get_queryset: Field 'id' expected a number but got <django.contrib.auth.models.AnonymousUser object at 0x0000025AEA267F10>.
+ERROR 2025-09-17 15:40:22,749 views 28676 16592 Error in UserMovieRatingDetailView.get_queryset: Field 'id' expected a number but got <django.contrib.auth.models.AnonymousUser object at 0x0000025AEA267F10>.
+ERROR 2025-09-17 15:40:22,750 views 28676 16592 Error in UserMovieWatchlistDetailView.get_queryset: Field 'id' expected a number but got <django.contrib.auth.models.AnonymousUser object at 0x0000025AEA267F10>.
+ERROR 2025-09-17 15:46:21,006 exceptions 18084 40188 API Exception: Authentication credentials were not provided.
+Traceback (most recent call last):
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\views.py", line 503, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\views.py", line 421, in initial
+    self.check_permissions(request)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\views.py", line 339, in check_permissions
+    self.permission_denied(
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\views.py", line 180, in permission_denied
+    raise exceptions.NotAuthenticated()
+rest_framework.exceptions.NotAuthenticated: Authentication credentials were not provided.
+ERROR 2025-09-17 15:49:37,820 views 7528 27944 Error in UserMovieRatingDetailView.get_queryset: Field 'id' expected a number but got <django.contrib.auth.models.AnonymousUser object at 0x000001DF2F07C1C0>.
+ERROR 2025-09-17 15:49:37,821 views 7528 27944 Error in UserMovieWatchlistDetailView.get_queryset: Field 'id' expected a number but got <django.contrib.auth.models.AnonymousUser object at 0x000001DF2F07C1C0>.
+ERROR 2025-09-17 15:49:37,821 views 7528 27944 Error in UserMovieRatingDetailView.get_queryset: Field 'id' expected a number but got <django.contrib.auth.models.AnonymousUser object at 0x000001DF2F07C1C0>.
+ERROR 2025-09-17 15:49:37,823 views 7528 27944 Error in UserMovieRatingDetailView.get_queryset: Field 'id' expected a number but got <django.contrib.auth.models.AnonymousUser object at 0x000001DF2F07C1C0>.
+ERROR 2025-09-17 15:49:37,823 views 7528 27944 Error in UserMovieRatingDetailView.get_queryset: Field 'id' expected a number but got <django.contrib.auth.models.AnonymousUser object at 0x000001DF2F07C1C0>.
+ERROR 2025-09-17 15:49:37,823 views 7528 27944 Error in UserMovieWatchlistDetailView.get_queryset: Field 'id' expected a number but got <django.contrib.auth.models.AnonymousUser object at 0x000001DF2F07C1C0>.
+ERROR 2025-09-17 15:51:17,203 exceptions 7528 12636 API Exception: {'detail': ErrorDetail(string='Given token not valid for any token type', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid'), 'messages': [{'token_class': ErrorDetail(string='AccessToken', code='token_not_valid'), 'token_type': ErrorDetail(string='access', code='token_not_valid'), 'message': ErrorDetail(string='Token is invalid', code='token_not_valid')}]}
+Traceback (most recent call last):
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\views.py", line 503, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\views.py", line 420, in initial
+    self.perform_authentication(request)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\views.py", line 330, in perform_authentication
+    request.user
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\request.py", line 232, in user
+    self._authenticate()
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\request.py", line 385, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework_simplejwt\authentication.py", line 49, in authenticate
+    validated_token = self.get_validated_token(raw_token)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework_simplejwt\authentication.py", line 113, in get_validated_token
+    raise InvalidToken(
+rest_framework_simplejwt.exceptions.InvalidToken: {'detail': ErrorDetail(string='Given token not valid for any token type', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid'), 'messages': [{'token_class': ErrorDetail(string='AccessToken', code='token_not_valid'), 'token_type': ErrorDetail(string='access', code='token_not_valid'), 'message': ErrorDetail(string='Token is invalid', code='token_not_valid')}]}
+ERROR 2025-09-17 15:51:17,295 exceptions 7528 12636 API Exception: {'detail': ErrorDetail(string='Given token not valid for any token type', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid'), 'messages': [{'token_class': ErrorDetail(string='AccessToken', code='token_not_valid'), 'token_type': ErrorDetail(string='access', code='token_not_valid'), 'message': ErrorDetail(string='Token is invalid', code='token_not_valid')}]}
+Traceback (most recent call last):
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\views.py", line 503, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\views.py", line 420, in initial
+    self.perform_authentication(request)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\views.py", line 330, in perform_authentication
+    request.user
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\request.py", line 232, in user
+    self._authenticate()
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\request.py", line 385, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework_simplejwt\authentication.py", line 49, in authenticate
+    validated_token = self.get_validated_token(raw_token)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework_simplejwt\authentication.py", line 113, in get_validated_token
+    raise InvalidToken(
+rest_framework_simplejwt.exceptions.InvalidToken: {'detail': ErrorDetail(string='Given token not valid for any token type', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid'), 'messages': [{'token_class': ErrorDetail(string='AccessToken', code='token_not_valid'), 'token_type': ErrorDetail(string='access', code='token_not_valid'), 'message': ErrorDetail(string='Token is invalid', code='token_not_valid')}]}
+ERROR 2025-09-17 15:51:58,768 exceptions 7528 37752 API Exception: {'detail': ErrorDetail(string='Given token not valid for any token type', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid'), 'messages': [{'token_class': ErrorDetail(string='AccessToken', code='token_not_valid'), 'token_type': ErrorDetail(string='access', code='token_not_valid'), 'message': ErrorDetail(string='Token is invalid', code='token_not_valid')}]}
+Traceback (most recent call last):
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\views.py", line 503, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\views.py", line 420, in initial
+    self.perform_authentication(request)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\views.py", line 330, in perform_authentication
+    request.user
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\request.py", line 232, in user
+    self._authenticate()
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\request.py", line 385, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework_simplejwt\authentication.py", line 49, in authenticate
+    validated_token = self.get_validated_token(raw_token)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework_simplejwt\authentication.py", line 113, in get_validated_token
+    raise InvalidToken(
+rest_framework_simplejwt.exceptions.InvalidToken: {'detail': ErrorDetail(string='Given token not valid for any token type', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid'), 'messages': [{'token_class': ErrorDetail(string='AccessToken', code='token_not_valid'), 'token_type': ErrorDetail(string='access', code='token_not_valid'), 'message': ErrorDetail(string='Token is invalid', code='token_not_valid')}]}
+ERROR 2025-09-17 15:51:58,791 exceptions 7528 37752 API Exception: {'detail': ErrorDetail(string='Given token not valid for any token type', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid'), 'messages': [{'token_class': ErrorDetail(string='AccessToken', code='token_not_valid'), 'token_type': ErrorDetail(string='access', code='token_not_valid'), 'message': ErrorDetail(string='Token is invalid', code='token_not_valid')}]}
+Traceback (most recent call last):
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\views.py", line 503, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\views.py", line 420, in initial
+    self.perform_authentication(request)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\views.py", line 330, in perform_authentication
+    request.user
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\request.py", line 232, in user
+    self._authenticate()
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\request.py", line 385, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework_simplejwt\authentication.py", line 49, in authenticate
+    validated_token = self.get_validated_token(raw_token)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework_simplejwt\authentication.py", line 113, in get_validated_token
+    raise InvalidToken(
+rest_framework_simplejwt.exceptions.InvalidToken: {'detail': ErrorDetail(string='Given token not valid for any token type', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid'), 'messages': [{'token_class': ErrorDetail(string='AccessToken', code='token_not_valid'), 'token_type': ErrorDetail(string='access', code='token_not_valid'), 'message': ErrorDetail(string='Token is invalid', code='token_not_valid')}]}
+ERROR 2025-09-17 15:52:19,708 exceptions 7528 27504 API Exception: {'detail': ErrorDetail(string='Given token not valid for any token type', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid'), 'messages': [{'token_class': ErrorDetail(string='AccessToken', code='token_not_valid'), 'token_type': ErrorDetail(string='access', code='token_not_valid'), 'message': ErrorDetail(string='Token is invalid', code='token_not_valid')}]}
+Traceback (most recent call last):
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\views.py", line 503, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\views.py", line 420, in initial
+    self.perform_authentication(request)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\views.py", line 330, in perform_authentication
+    request.user
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\request.py", line 232, in user
+    self._authenticate()
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\request.py", line 385, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework_simplejwt\authentication.py", line 49, in authenticate
+    validated_token = self.get_validated_token(raw_token)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework_simplejwt\authentication.py", line 113, in get_validated_token
+    raise InvalidToken(
+rest_framework_simplejwt.exceptions.InvalidToken: {'detail': ErrorDetail(string='Given token not valid for any token type', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid'), 'messages': [{'token_class': ErrorDetail(string='AccessToken', code='token_not_valid'), 'token_type': ErrorDetail(string='access', code='token_not_valid'), 'message': ErrorDetail(string='Token is invalid', code='token_not_valid')}]}
+ERROR 2025-09-17 15:52:19,736 exceptions 7528 27504 API Exception: {'detail': ErrorDetail(string='Given token not valid for any token type', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid'), 'messages': [{'token_class': ErrorDetail(string='AccessToken', code='token_not_valid'), 'token_type': ErrorDetail(string='access', code='token_not_valid'), 'message': ErrorDetail(string='Token is invalid', code='token_not_valid')}]}
+Traceback (most recent call last):
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\views.py", line 503, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\views.py", line 420, in initial
+    self.perform_authentication(request)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\views.py", line 330, in perform_authentication
+    request.user
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\request.py", line 232, in user
+    self._authenticate()
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\request.py", line 385, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework_simplejwt\authentication.py", line 49, in authenticate
+    validated_token = self.get_validated_token(raw_token)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework_simplejwt\authentication.py", line 113, in get_validated_token
+    raise InvalidToken(
+rest_framework_simplejwt.exceptions.InvalidToken: {'detail': ErrorDetail(string='Given token not valid for any token type', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid'), 'messages': [{'token_class': ErrorDetail(string='AccessToken', code='token_not_valid'), 'token_type': ErrorDetail(string='access', code='token_not_valid'), 'message': ErrorDetail(string='Token is invalid', code='token_not_valid')}]}
+ERROR 2025-09-17 15:53:18,740 exceptions 7528 29056 API Exception: {'detail': ErrorDetail(string='Given token not valid for any token type', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid'), 'messages': [{'token_class': ErrorDetail(string='AccessToken', code='token_not_valid'), 'token_type': ErrorDetail(string='access', code='token_not_valid'), 'message': ErrorDetail(string='Token is invalid', code='token_not_valid')}]}
+Traceback (most recent call last):
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\views.py", line 503, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\views.py", line 420, in initial
+    self.perform_authentication(request)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\views.py", line 330, in perform_authentication
+    request.user
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\request.py", line 232, in user
+    self._authenticate()
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\request.py", line 385, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework_simplejwt\authentication.py", line 49, in authenticate
+    validated_token = self.get_validated_token(raw_token)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework_simplejwt\authentication.py", line 113, in get_validated_token
+    raise InvalidToken(
+rest_framework_simplejwt.exceptions.InvalidToken: {'detail': ErrorDetail(string='Given token not valid for any token type', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid'), 'messages': [{'token_class': ErrorDetail(string='AccessToken', code='token_not_valid'), 'token_type': ErrorDetail(string='access', code='token_not_valid'), 'message': ErrorDetail(string='Token is invalid', code='token_not_valid')}]}
+ERROR 2025-09-17 15:53:18,772 exceptions 7528 29056 API Exception: {'detail': ErrorDetail(string='Given token not valid for any token type', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid'), 'messages': [{'token_class': ErrorDetail(string='AccessToken', code='token_not_valid'), 'token_type': ErrorDetail(string='access', code='token_not_valid'), 'message': ErrorDetail(string='Token is invalid', code='token_not_valid')}]}
+Traceback (most recent call last):
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\views.py", line 503, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\views.py", line 420, in initial
+    self.perform_authentication(request)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\views.py", line 330, in perform_authentication
+    request.user
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\request.py", line 232, in user
+    self._authenticate()
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\request.py", line 385, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework_simplejwt\authentication.py", line 49, in authenticate
+    validated_token = self.get_validated_token(raw_token)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework_simplejwt\authentication.py", line 113, in get_validated_token
+    raise InvalidToken(
+rest_framework_simplejwt.exceptions.InvalidToken: {'detail': ErrorDetail(string='Given token not valid for any token type', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid'), 'messages': [{'token_class': ErrorDetail(string='AccessToken', code='token_not_valid'), 'token_type': ErrorDetail(string='access', code='token_not_valid'), 'message': ErrorDetail(string='Token is invalid', code='token_not_valid')}]}
+ERROR 2025-09-17 15:56:56,673 views 7528 39160 Error in UserMovieRatingDetailView.get_queryset: Field 'id' expected a number but got <django.contrib.auth.models.AnonymousUser object at 0x000001DF2EE27910>.
+ERROR 2025-09-17 15:56:56,675 views 7528 39160 Error in UserMovieWatchlistDetailView.get_queryset: Field 'id' expected a number but got <django.contrib.auth.models.AnonymousUser object at 0x000001DF2EE27910>.
+ERROR 2025-09-17 15:56:56,677 views 7528 39160 Error in UserMovieRatingDetailView.get_queryset: Field 'id' expected a number but got <django.contrib.auth.models.AnonymousUser object at 0x000001DF2EE27910>.
+ERROR 2025-09-17 15:56:56,679 views 7528 39160 Error in UserMovieRatingDetailView.get_queryset: Field 'id' expected a number but got <django.contrib.auth.models.AnonymousUser object at 0x000001DF2EE27910>.
+ERROR 2025-09-17 15:56:56,679 views 7528 39160 Error in UserMovieRatingDetailView.get_queryset: Field 'id' expected a number but got <django.contrib.auth.models.AnonymousUser object at 0x000001DF2EE27910>.
+ERROR 2025-09-17 15:56:56,680 views 7528 39160 Error in UserMovieWatchlistDetailView.get_queryset: Field 'id' expected a number but got <django.contrib.auth.models.AnonymousUser object at 0x000001DF2EE27910>.
+ERROR 2025-09-17 15:57:13,533 views 7528 2244 Unexpected error in MovieDetailView: No Movie matches the given query.
+ERROR 2025-09-17 15:57:13,534 exceptions 7528 2244 API Exception: Movie not found
+Traceback (most recent call last):
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\django\shortcuts.py", line 90, in get_object_or_404
+    return queryset.get(*args, **kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\django\db\models\query.py", line 633, in get
+    raise self.model.DoesNotExist(
+movies.models.Movie.DoesNotExist: Movie matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movies\views.py", line 255, in get_object
+    movie = super().get_object()
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\generics.py", line 100, in get_object
+    obj = get_object_or_404(queryset, **filter_kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\generics.py", line 19, in get_object_or_404
+    return _get_object_or_404(queryset, *filter_args, **filter_kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\django\shortcuts.py", line 92, in get_object_or_404
+    raise Http404(
+django.http.response.Http404: No Movie matches the given query.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movies\views.py", line 240, in get
+    return super().get(request, *args, **kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\generics.py", line 212, in get
+    return self.retrieve(request, *args, **kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\mixins.py", line 54, in retrieve
+    instance = self.get_object()
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movies\views.py", line 270, in get_object
+    raise MovieNotFoundException("Movie not found")
+movies.exceptions.MovieNotFoundException: Movie not found
+ERROR 2025-09-17 15:57:13,562 views 7528 29056 Unexpected error in MovieDetailView: No Movie matches the given query.
+ERROR 2025-09-17 15:57:13,562 exceptions 7528 29056 API Exception: Movie not found
+Traceback (most recent call last):
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\django\shortcuts.py", line 90, in get_object_or_404
+    return queryset.get(*args, **kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\django\db\models\query.py", line 633, in get
+    raise self.model.DoesNotExist(
+movies.models.Movie.DoesNotExist: Movie matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movies\views.py", line 255, in get_object
+    movie = super().get_object()
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\generics.py", line 100, in get_object
+    obj = get_object_or_404(queryset, **filter_kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\generics.py", line 19, in get_object_or_404
+    return _get_object_or_404(queryset, *filter_args, **filter_kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\django\shortcuts.py", line 92, in get_object_or_404
+    raise Http404(
+django.http.response.Http404: No Movie matches the given query.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movies\views.py", line 240, in get
+    return super().get(request, *args, **kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\generics.py", line 212, in get
+    return self.retrieve(request, *args, **kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\mixins.py", line 54, in retrieve
+    instance = self.get_object()
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movies\views.py", line 270, in get_object
+    raise MovieNotFoundException("Movie not found")
+movies.exceptions.MovieNotFoundException: Movie not found
+ERROR 2025-09-17 15:58:04,827 services 30096 23804 Failed to create/update movie 1100842: NOT NULL constraint failed: movies_movie.backdrop_path
+ERROR 2025-09-17 15:58:04,842 services 30096 23804 Failed to create/update movie 1354441: NOT NULL constraint failed: movies_movie.backdrop_path
+ERROR 2025-09-17 15:59:06,499 views 10260 28972 Unexpected error in MovieDetailView: No Movie matches the given query.
+ERROR 2025-09-17 15:59:06,499 exceptions 10260 28972 API Exception: Movie not found
+Traceback (most recent call last):
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\django\shortcuts.py", line 90, in get_object_or_404
+    return queryset.get(*args, **kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\django\db\models\query.py", line 633, in get
+    raise self.model.DoesNotExist(
+movies.models.Movie.DoesNotExist: Movie matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movies\views.py", line 255, in get_object
+    movie = super().get_object()
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\generics.py", line 100, in get_object
+    obj = get_object_or_404(queryset, **filter_kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\generics.py", line 19, in get_object_or_404
+    return _get_object_or_404(queryset, *filter_args, **filter_kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\django\shortcuts.py", line 92, in get_object_or_404
+    raise Http404(
+django.http.response.Http404: No Movie matches the given query.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movies\views.py", line 240, in get
+    return super().get(request, *args, **kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\generics.py", line 212, in get
+    return self.retrieve(request, *args, **kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\mixins.py", line 54, in retrieve
+    instance = self.get_object()
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movies\views.py", line 270, in get_object
+    raise MovieNotFoundException("Movie not found")
+movies.exceptions.MovieNotFoundException: Movie not found
+ERROR 2025-09-17 15:59:06,522 views 10260 28984 Unexpected error in MovieDetailView: No Movie matches the given query.
+ERROR 2025-09-17 15:59:06,522 exceptions 10260 28984 API Exception: Movie not found
+Traceback (most recent call last):
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\django\shortcuts.py", line 90, in get_object_or_404
+    return queryset.get(*args, **kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\django\db\models\query.py", line 633, in get
+    raise self.model.DoesNotExist(
+movies.models.Movie.DoesNotExist: Movie matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movies\views.py", line 255, in get_object
+    movie = super().get_object()
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\generics.py", line 100, in get_object
+    obj = get_object_or_404(queryset, **filter_kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\generics.py", line 19, in get_object_or_404
+    return _get_object_or_404(queryset, *filter_args, **filter_kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\django\shortcuts.py", line 92, in get_object_or_404
+    raise Http404(
+django.http.response.Http404: No Movie matches the given query.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movies\views.py", line 240, in get
+    return super().get(request, *args, **kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\generics.py", line 212, in get
+    return self.retrieve(request, *args, **kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\mixins.py", line 54, in retrieve
+    instance = self.get_object()
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movies\views.py", line 270, in get_object
+    raise MovieNotFoundException("Movie not found")
+movies.exceptions.MovieNotFoundException: Movie not found
+ERROR 2025-09-17 16:00:30,511 views 10260 28984 Unexpected error in MovieDetailView: No Movie matches the given query.
+ERROR 2025-09-17 16:00:30,512 exceptions 10260 28984 API Exception: Movie not found
+Traceback (most recent call last):
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\django\shortcuts.py", line 90, in get_object_or_404
+    return queryset.get(*args, **kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\django\db\models\query.py", line 633, in get
+    raise self.model.DoesNotExist(
+movies.models.Movie.DoesNotExist: Movie matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movies\views.py", line 255, in get_object
+    movie = super().get_object()
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\generics.py", line 100, in get_object
+    obj = get_object_or_404(queryset, **filter_kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\generics.py", line 19, in get_object_or_404
+    return _get_object_or_404(queryset, *filter_args, **filter_kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\django\shortcuts.py", line 92, in get_object_or_404
+    raise Http404(
+django.http.response.Http404: No Movie matches the given query.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movies\views.py", line 240, in get
+    return super().get(request, *args, **kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\generics.py", line 212, in get
+    return self.retrieve(request, *args, **kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\mixins.py", line 54, in retrieve
+    instance = self.get_object()
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movies\views.py", line 270, in get_object
+    raise MovieNotFoundException("Movie not found")
+movies.exceptions.MovieNotFoundException: Movie not found
+ERROR 2025-09-17 16:00:30,532 views 10260 28972 Unexpected error in MovieDetailView: No Movie matches the given query.
+ERROR 2025-09-17 16:00:30,534 exceptions 10260 28972 API Exception: Movie not found
+Traceback (most recent call last):
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\django\shortcuts.py", line 90, in get_object_or_404
+    return queryset.get(*args, **kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\django\db\models\query.py", line 633, in get
+    raise self.model.DoesNotExist(
+movies.models.Movie.DoesNotExist: Movie matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movies\views.py", line 255, in get_object
+    movie = super().get_object()
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\generics.py", line 100, in get_object
+    obj = get_object_or_404(queryset, **filter_kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\generics.py", line 19, in get_object_or_404
+    return _get_object_or_404(queryset, *filter_args, **filter_kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\django\shortcuts.py", line 92, in get_object_or_404
+    raise Http404(
+django.http.response.Http404: No Movie matches the given query.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movies\views.py", line 240, in get
+    return super().get(request, *args, **kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\generics.py", line 212, in get
+    return self.retrieve(request, *args, **kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\mixins.py", line 54, in retrieve
+    instance = self.get_object()
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movies\views.py", line 270, in get_object
+    raise MovieNotFoundException("Movie not found")
+movies.exceptions.MovieNotFoundException: Movie not found
+ERROR 2025-09-17 16:01:50,719 views 10260 8088 Unexpected error in MovieDetailView: No Movie matches the given query.
+ERROR 2025-09-17 16:01:50,719 exceptions 10260 8088 API Exception: Movie not found
+Traceback (most recent call last):
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\django\shortcuts.py", line 90, in get_object_or_404
+    return queryset.get(*args, **kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\django\db\models\query.py", line 633, in get
+    raise self.model.DoesNotExist(
+movies.models.Movie.DoesNotExist: Movie matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movies\views.py", line 255, in get_object
+    movie = super().get_object()
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\generics.py", line 100, in get_object
+    obj = get_object_or_404(queryset, **filter_kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\generics.py", line 19, in get_object_or_404
+    return _get_object_or_404(queryset, *filter_args, **filter_kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\django\shortcuts.py", line 92, in get_object_or_404
+    raise Http404(
+django.http.response.Http404: No Movie matches the given query.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movies\views.py", line 240, in get
+    return super().get(request, *args, **kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\generics.py", line 212, in get
+    return self.retrieve(request, *args, **kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\mixins.py", line 54, in retrieve
+    instance = self.get_object()
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movies\views.py", line 270, in get_object
+    raise MovieNotFoundException("Movie not found")
+movies.exceptions.MovieNotFoundException: Movie not found
+ERROR 2025-09-17 16:01:50,739 views 10260 29644 Unexpected error in MovieDetailView: No Movie matches the given query.
+ERROR 2025-09-17 16:01:50,739 exceptions 10260 29644 API Exception: Movie not found
+Traceback (most recent call last):
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\django\shortcuts.py", line 90, in get_object_or_404
+    return queryset.get(*args, **kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\django\db\models\query.py", line 633, in get
+    raise self.model.DoesNotExist(
+movies.models.Movie.DoesNotExist: Movie matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movies\views.py", line 255, in get_object
+    movie = super().get_object()
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\generics.py", line 100, in get_object
+    obj = get_object_or_404(queryset, **filter_kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\generics.py", line 19, in get_object_or_404
+    return _get_object_or_404(queryset, *filter_args, **filter_kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\django\shortcuts.py", line 92, in get_object_or_404
+    raise Http404(
+django.http.response.Http404: No Movie matches the given query.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movies\views.py", line 240, in get
+    return super().get(request, *args, **kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\generics.py", line 212, in get
+    return self.retrieve(request, *args, **kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\mixins.py", line 54, in retrieve
+    instance = self.get_object()
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movies\views.py", line 270, in get_object
+    raise MovieNotFoundException("Movie not found")
+movies.exceptions.MovieNotFoundException: Movie not found
+ERROR 2025-09-17 16:02:07,252 views 10260 21860 Unexpected error in MovieDetailView: No Movie matches the given query.
+ERROR 2025-09-17 16:02:07,253 exceptions 10260 21860 API Exception: Movie not found
+Traceback (most recent call last):
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\django\shortcuts.py", line 90, in get_object_or_404
+    return queryset.get(*args, **kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\django\db\models\query.py", line 633, in get
+    raise self.model.DoesNotExist(
+movies.models.Movie.DoesNotExist: Movie matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movies\views.py", line 255, in get_object
+    movie = super().get_object()
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\generics.py", line 100, in get_object
+    obj = get_object_or_404(queryset, **filter_kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\generics.py", line 19, in get_object_or_404
+    return _get_object_or_404(queryset, *filter_args, **filter_kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\django\shortcuts.py", line 92, in get_object_or_404
+    raise Http404(
+django.http.response.Http404: No Movie matches the given query.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movies\views.py", line 240, in get
+    return super().get(request, *args, **kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\generics.py", line 212, in get
+    return self.retrieve(request, *args, **kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\mixins.py", line 54, in retrieve
+    instance = self.get_object()
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movies\views.py", line 270, in get_object
+    raise MovieNotFoundException("Movie not found")
+movies.exceptions.MovieNotFoundException: Movie not found
+ERROR 2025-09-17 16:02:07,268 views 10260 28796 Unexpected error in MovieDetailView: No Movie matches the given query.
+ERROR 2025-09-17 16:02:07,268 exceptions 10260 28796 API Exception: Movie not found
+Traceback (most recent call last):
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\django\shortcuts.py", line 90, in get_object_or_404
+    return queryset.get(*args, **kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\django\db\models\query.py", line 633, in get
+    raise self.model.DoesNotExist(
+movies.models.Movie.DoesNotExist: Movie matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movies\views.py", line 255, in get_object
+    movie = super().get_object()
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\generics.py", line 100, in get_object
+    obj = get_object_or_404(queryset, **filter_kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\generics.py", line 19, in get_object_or_404
+    return _get_object_or_404(queryset, *filter_args, **filter_kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\django\shortcuts.py", line 92, in get_object_or_404
+    raise Http404(
+django.http.response.Http404: No Movie matches the given query.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movies\views.py", line 240, in get
+    return super().get(request, *args, **kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\generics.py", line 212, in get
+    return self.retrieve(request, *args, **kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\mixins.py", line 54, in retrieve
+    instance = self.get_object()
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movies\views.py", line 270, in get_object
+    raise MovieNotFoundException("Movie not found")
+movies.exceptions.MovieNotFoundException: Movie not found
+ERROR 2025-09-17 16:02:20,979 views 10260 28796 Unexpected error in MovieDetailView: No Movie matches the given query.
+ERROR 2025-09-17 16:02:20,979 exceptions 10260 28796 API Exception: Movie not found
+Traceback (most recent call last):
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\django\shortcuts.py", line 90, in get_object_or_404
+    return queryset.get(*args, **kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\django\db\models\query.py", line 633, in get
+    raise self.model.DoesNotExist(
+movies.models.Movie.DoesNotExist: Movie matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movies\views.py", line 255, in get_object
+    movie = super().get_object()
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\generics.py", line 100, in get_object
+    obj = get_object_or_404(queryset, **filter_kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\generics.py", line 19, in get_object_or_404
+    return _get_object_or_404(queryset, *filter_args, **filter_kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\django\shortcuts.py", line 92, in get_object_or_404
+    raise Http404(
+django.http.response.Http404: No Movie matches the given query.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movies\views.py", line 240, in get
+    return super().get(request, *args, **kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\generics.py", line 212, in get
+    return self.retrieve(request, *args, **kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\mixins.py", line 54, in retrieve
+    instance = self.get_object()
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movies\views.py", line 270, in get_object
+    raise MovieNotFoundException("Movie not found")
+movies.exceptions.MovieNotFoundException: Movie not found
+ERROR 2025-09-17 16:02:21,016 views 10260 21860 Unexpected error in MovieDetailView: No Movie matches the given query.
+ERROR 2025-09-17 16:02:21,022 exceptions 10260 21860 API Exception: Movie not found
+Traceback (most recent call last):
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\django\shortcuts.py", line 90, in get_object_or_404
+    return queryset.get(*args, **kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\django\db\models\query.py", line 633, in get
+    raise self.model.DoesNotExist(
+movies.models.Movie.DoesNotExist: Movie matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movies\views.py", line 255, in get_object
+    movie = super().get_object()
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\generics.py", line 100, in get_object
+    obj = get_object_or_404(queryset, **filter_kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\generics.py", line 19, in get_object_or_404
+    return _get_object_or_404(queryset, *filter_args, **filter_kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\django\shortcuts.py", line 92, in get_object_or_404
+    raise Http404(
+django.http.response.Http404: No Movie matches the given query.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movies\views.py", line 240, in get
+    return super().get(request, *args, **kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\generics.py", line 212, in get
+    return self.retrieve(request, *args, **kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\mixins.py", line 54, in retrieve
+    instance = self.get_object()
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movies\views.py", line 270, in get_object
+    raise MovieNotFoundException("Movie not found")
+movies.exceptions.MovieNotFoundException: Movie not found
+ERROR 2025-09-17 16:02:36,436 exceptions 10260 29644 API Exception: Method "GET" not allowed.
+Traceback (most recent call last):
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\views.py", line 173, in http_method_not_allowed
+    raise exceptions.MethodNotAllowed(request.method)
+rest_framework.exceptions.MethodNotAllowed: Method "GET" not allowed.
+ERROR 2025-09-17 16:03:52,388 views 10260 25020 Error in UserMovieRatingDetailView.get_queryset: Field 'id' expected a number but got <django.contrib.auth.models.AnonymousUser object at 0x000001F50E5AC430>.
+ERROR 2025-09-17 16:03:52,389 views 10260 25020 Error in UserMovieWatchlistDetailView.get_queryset: Field 'id' expected a number but got <django.contrib.auth.models.AnonymousUser object at 0x000001F50E5AC430>.
+ERROR 2025-09-17 16:03:52,390 views 10260 25020 Error in UserMovieRatingDetailView.get_queryset: Field 'id' expected a number but got <django.contrib.auth.models.AnonymousUser object at 0x000001F50E5AC430>.
+ERROR 2025-09-17 16:03:52,391 views 10260 25020 Error in UserMovieRatingDetailView.get_queryset: Field 'id' expected a number but got <django.contrib.auth.models.AnonymousUser object at 0x000001F50E5AC430>.
+ERROR 2025-09-17 16:03:52,391 views 10260 25020 Error in UserMovieRatingDetailView.get_queryset: Field 'id' expected a number but got <django.contrib.auth.models.AnonymousUser object at 0x000001F50E5AC430>.
+ERROR 2025-09-17 16:03:52,391 views 10260 25020 Error in UserMovieWatchlistDetailView.get_queryset: Field 'id' expected a number but got <django.contrib.auth.models.AnonymousUser object at 0x000001F50E5AC430>.
+ERROR 2025-09-17 16:03:55,650 views 10260 21860 Unexpected error in MovieDetailView: No Movie matches the given query.
+ERROR 2025-09-17 16:03:55,651 exceptions 10260 21860 API Exception: Movie not found
+Traceback (most recent call last):
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\django\shortcuts.py", line 90, in get_object_or_404
+    return queryset.get(*args, **kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\django\db\models\query.py", line 633, in get
+    raise self.model.DoesNotExist(
+movies.models.Movie.DoesNotExist: Movie matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movies\views.py", line 255, in get_object
+    movie = super().get_object()
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\generics.py", line 100, in get_object
+    obj = get_object_or_404(queryset, **filter_kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\generics.py", line 19, in get_object_or_404
+    return _get_object_or_404(queryset, *filter_args, **filter_kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\django\shortcuts.py", line 92, in get_object_or_404
+    raise Http404(
+django.http.response.Http404: No Movie matches the given query.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movies\views.py", line 240, in get
+    return super().get(request, *args, **kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\generics.py", line 212, in get
+    return self.retrieve(request, *args, **kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\mixins.py", line 54, in retrieve
+    instance = self.get_object()
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movies\views.py", line 270, in get_object
+    raise MovieNotFoundException("Movie not found")
+movies.exceptions.MovieNotFoundException: Movie not found
+ERROR 2025-09-17 16:03:55,669 views 10260 28796 Unexpected error in MovieDetailView: No Movie matches the given query.
+ERROR 2025-09-17 16:03:55,671 exceptions 10260 28796 API Exception: Movie not found
+Traceback (most recent call last):
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\django\shortcuts.py", line 90, in get_object_or_404
+    return queryset.get(*args, **kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\django\db\models\query.py", line 633, in get
+    raise self.model.DoesNotExist(
+movies.models.Movie.DoesNotExist: Movie matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movies\views.py", line 255, in get_object
+    movie = super().get_object()
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\generics.py", line 100, in get_object
+    obj = get_object_or_404(queryset, **filter_kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\generics.py", line 19, in get_object_or_404
+    return _get_object_or_404(queryset, *filter_args, **filter_kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\django\shortcuts.py", line 92, in get_object_or_404
+    raise Http404(
+django.http.response.Http404: No Movie matches the given query.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movies\views.py", line 240, in get
+    return super().get(request, *args, **kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\generics.py", line 212, in get
+    return self.retrieve(request, *args, **kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\mixins.py", line 54, in retrieve
+    instance = self.get_object()
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movies\views.py", line 270, in get_object
+    raise MovieNotFoundException("Movie not found")
+movies.exceptions.MovieNotFoundException: Movie not found
+ERROR 2025-09-17 16:04:13,458 views 10260 10764 Error adding movie to watchlist: 'movie'
+ERROR 2025-09-17 16:04:13,458 exceptions 10260 10764 API Exception: Failed to add movie to watchlist
+Traceback (most recent call last):
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movies\views.py", line 793, in perform_create
+    movie = serializer.validated_data['movie']
+KeyError: 'movie'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movies\views.py", line 779, in post
+    return super().post(request, *args, **kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\generics.py", line 246, in post
+    return self.create(request, *args, **kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movies\views.py", line 808, in perform_create
+    raise MovieNotFoundException("Failed to add movie to watchlist")
+movies.exceptions.MovieNotFoundException: Failed to add movie to watchlist
+ERROR 2025-09-17 16:04:42,305 views 10260 10764 Error creating movie rating: 'movie'
+ERROR 2025-09-17 16:04:42,307 exceptions 10260 10764 API Exception: Failed to create movie rating
+Traceback (most recent call last):
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movies\views.py", line 665, in perform_create
+    movie = serializer.validated_data['movie']
+KeyError: 'movie'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movies\views.py", line 651, in post
+    return super().post(request, *args, **kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\generics.py", line 246, in post
+    return self.create(request, *args, **kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movies\views.py", line 682, in perform_create
+    raise InvalidRatingException("Failed to create movie rating")
+movies.exceptions.InvalidRatingException: Failed to create movie rating
+ERROR 2025-09-17 16:05:34,070 views 10260 28796 Unexpected error in MovieDetailView: No Movie matches the given query.
+ERROR 2025-09-17 16:05:34,070 exceptions 10260 28796 API Exception: Movie not found
+Traceback (most recent call last):
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\django\shortcuts.py", line 90, in get_object_or_404
+    return queryset.get(*args, **kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\django\db\models\query.py", line 633, in get
+    raise self.model.DoesNotExist(
+movies.models.Movie.DoesNotExist: Movie matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movies\views.py", line 255, in get_object
+    movie = super().get_object()
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\generics.py", line 100, in get_object
+    obj = get_object_or_404(queryset, **filter_kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\generics.py", line 19, in get_object_or_404
+    return _get_object_or_404(queryset, *filter_args, **filter_kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\django\shortcuts.py", line 92, in get_object_or_404
+    raise Http404(
+django.http.response.Http404: No Movie matches the given query.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movies\views.py", line 240, in get
+    return super().get(request, *args, **kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\generics.py", line 212, in get
+    return self.retrieve(request, *args, **kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\mixins.py", line 54, in retrieve
+    instance = self.get_object()
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movies\views.py", line 270, in get_object
+    raise MovieNotFoundException("Movie not found")
+movies.exceptions.MovieNotFoundException: Movie not found
+ERROR 2025-09-17 16:05:53,747 views 10260 10764 Error adding movie to watchlist: 'movie'
+ERROR 2025-09-17 16:05:53,747 exceptions 10260 10764 API Exception: Failed to add movie to watchlist
+Traceback (most recent call last):
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movies\views.py", line 793, in perform_create
+    movie = serializer.validated_data['movie']
+KeyError: 'movie'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movies\views.py", line 779, in post
+    return super().post(request, *args, **kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\generics.py", line 246, in post
+    return self.create(request, *args, **kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movies\views.py", line 808, in perform_create
+    raise MovieNotFoundException("Failed to add movie to watchlist")
+movies.exceptions.MovieNotFoundException: Failed to add movie to watchlist
+ERROR 2025-09-17 16:06:07,142 views 10260 10764 Error adding movie to watchlist: 'movie'
+ERROR 2025-09-17 16:06:07,142 exceptions 10260 10764 API Exception: Failed to add movie to watchlist
+Traceback (most recent call last):
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movies\views.py", line 793, in perform_create
+    movie = serializer.validated_data['movie']
+KeyError: 'movie'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movies\views.py", line 779, in post
+    return super().post(request, *args, **kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\generics.py", line 246, in post
+    return self.create(request, *args, **kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movies\views.py", line 808, in perform_create
+    raise MovieNotFoundException("Failed to add movie to watchlist")
+movies.exceptions.MovieNotFoundException: Failed to add movie to watchlist
+ERROR 2025-09-17 16:06:59,388 views 10260 10764 Error adding movie to watchlist: 'movie'
+ERROR 2025-09-17 16:06:59,389 exceptions 10260 10764 API Exception: Failed to add movie to watchlist
+Traceback (most recent call last):
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movies\views.py", line 793, in perform_create
+    movie = serializer.validated_data['movie']
+KeyError: 'movie'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movies\views.py", line 779, in post
+    return super().post(request, *args, **kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\generics.py", line 246, in post
+    return self.create(request, *args, **kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movies\views.py", line 808, in perform_create
+    raise MovieNotFoundException("Failed to add movie to watchlist")
+movies.exceptions.MovieNotFoundException: Failed to add movie to watchlist
+ERROR 2025-09-17 16:07:16,267 views 10260 10764 Error adding movie to watchlist: 'movie'
+ERROR 2025-09-17 16:07:16,268 exceptions 10260 10764 API Exception: Failed to add movie to watchlist
+Traceback (most recent call last):
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movies\views.py", line 793, in perform_create
+    movie = serializer.validated_data['movie']
+KeyError: 'movie'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movies\views.py", line 779, in post
+    return super().post(request, *args, **kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\generics.py", line 246, in post
+    return self.create(request, *args, **kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movies\views.py", line 808, in perform_create
+    raise MovieNotFoundException("Failed to add movie to watchlist")
+movies.exceptions.MovieNotFoundException: Failed to add movie to watchlist
+ERROR 2025-09-17 16:07:43,625 views 25588 9248 Error adding movie to watchlist: 'movie'
+ERROR 2025-09-17 16:07:43,625 exceptions 25588 9248 API Exception: Failed to add movie to watchlist
+Traceback (most recent call last):
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movies\views.py", line 793, in perform_create
+    movie = serializer.validated_data['movie']
+KeyError: 'movie'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movies\views.py", line 779, in post
+    return super().post(request, *args, **kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\generics.py", line 246, in post
+    return self.create(request, *args, **kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movies\views.py", line 808, in perform_create
+    raise MovieNotFoundException("Failed to add movie to watchlist")
+movies.exceptions.MovieNotFoundException: Failed to add movie to watchlist
+ERROR 2025-09-17 16:07:53,242 views 25588 9248 Error adding movie to watchlist: 'movie'
+ERROR 2025-09-17 16:07:53,242 exceptions 25588 9248 API Exception: Failed to add movie to watchlist
+Traceback (most recent call last):
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movies\views.py", line 793, in perform_create
+    movie = serializer.validated_data['movie']
+KeyError: 'movie'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movies\views.py", line 779, in post
+    return super().post(request, *args, **kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\generics.py", line 246, in post
+    return self.create(request, *args, **kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movies\views.py", line 808, in perform_create
+    raise MovieNotFoundException("Failed to add movie to watchlist")
+movies.exceptions.MovieNotFoundException: Failed to add movie to watchlist
+ERROR 2025-09-17 16:08:40,060 views 28268 14980 Error creating movie rating: 'movie'
+ERROR 2025-09-17 16:08:40,061 exceptions 28268 14980 API Exception: Failed to create movie rating
+Traceback (most recent call last):
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movies\views.py", line 665, in perform_create
+    movie = serializer.validated_data['movie']
+KeyError: 'movie'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movies\views.py", line 651, in post
+    return super().post(request, *args, **kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\generics.py", line 246, in post
+    return self.create(request, *args, **kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movies\views.py", line 682, in perform_create
+    raise InvalidRatingException("Failed to create movie rating")
+movies.exceptions.InvalidRatingException: Failed to create movie rating
+ERROR 2025-09-17 16:10:37,953 views 15980 20248 Error retrieving watchlist item: No UserMovieWatchlist matches the given query.
+ERROR 2025-09-17 16:10:37,953 exceptions 15980 20248 API Exception: Watchlist item not found
+Traceback (most recent call last):
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\django\shortcuts.py", line 90, in get_object_or_404
+    return queryset.get(*args, **kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\django\db\models\query.py", line 633, in get
+    raise self.model.DoesNotExist(
+movies.models.UserMovieWatchlist.DoesNotExist: UserMovieWatchlist matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movies\views.py", line 827, in get_object
+    return super().get_object()
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\generics.py", line 100, in get_object
+    obj = get_object_or_404(queryset, **filter_kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\generics.py", line 19, in get_object_or_404
+    return _get_object_or_404(queryset, *filter_args, **filter_kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\django\shortcuts.py", line 92, in get_object_or_404
+    raise Http404(
+django.http.response.Http404: No UserMovieWatchlist matches the given query.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movies\views.py", line 816, in delete
+    return super().delete(request, *args, **kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\generics.py", line 275, in delete
+    return self.destroy(request, *args, **kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\mixins.py", line 90, in destroy
+    instance = self.get_object()
+  File "C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movies\views.py", line 833, in get_object
+    raise MovieNotFoundException("Watchlist item not found")
+movies.exceptions.MovieNotFoundException: Watchlist item not found
+ERROR 2025-09-17 16:37:42,409 exceptions 15980 22808 API Exception: Method "GET" not allowed.
+Traceback (most recent call last):
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\rest_framework\views.py", line 173, in http_method_not_allowed
+    raise exceptions.MethodNotAllowed(request.method)
+rest_framework.exceptions.MethodNotAllowed: Method "GET" not allowed.
+ERROR 2025-09-17 16:39:59,237 services 6212 27020 Failed to create/update movie 1286955: NOT NULL constraint failed: movies_movie.poster_path
+ERROR 2025-09-17 16:39:59,287 services 6212 27020 Failed to create/update movie 307156: NOT NULL constraint failed: movies_movie.backdrop_path
+ERROR 2025-09-17 16:39:59,324 services 6212 27020 Failed to create/update movie 1086069: NOT NULL constraint failed: movies_movie.poster_path
+ERROR 2025-09-17 16:39:59,327 services 6212 27020 Failed to create/update movie 441956: NOT NULL constraint failed: movies_movie.backdrop_path
+ERROR 2025-09-17 16:39:59,331 services 6212 27020 Failed to create/update movie 951376: NOT NULL constraint failed: movies_movie.backdrop_path
+ERROR 2025-09-17 16:39:59,334 services 6212 27020 Failed to create/update movie 444057: NOT NULL constraint failed: movies_movie.poster_path
+ERROR 2025-09-17 16:39:59,338 services 6212 27020 Failed to create/update movie 1042951: NOT NULL constraint failed: movies_movie.backdrop_path
+ERROR 2025-09-17 16:39:59,360 services 6212 27020 Failed to create/update movie 706333: NOT NULL constraint failed: movies_movie.backdrop_path
+ERROR 2025-09-17 16:39:59,362 services 6212 27020 Failed to create/update movie 811816: NOT NULL constraint failed: movies_movie.backdrop_path
+ERROR 2025-09-17 16:39:59,390 services 6212 27020 Failed to create/update movie 708047: NOT NULL constraint failed: movies_movie.backdrop_path
+ERROR 2025-09-17 16:39:59,443 services 6212 27020 Failed to create/update movie 622960: NOT NULL constraint failed: movies_movie.backdrop_path
+ERROR 2025-09-17 16:39:59,447 services 6212 27020 Failed to create/update movie 638898: NOT NULL constraint failed: movies_movie.poster_path
+ERROR 2025-09-17 16:40:11,008 services 6212 27020 Failed to create/update movie 508902: NOT NULL constraint failed: movies_movie.backdrop_path
+ERROR 2025-09-17 16:40:11,154 services 6212 27020 Failed to create/update movie 1445997: NOT NULL constraint failed: movies_movie.backdrop_path
+ERROR 2025-09-17 16:40:11,453 services 6212 27020 Failed to create/update movie 1354441: NOT NULL constraint failed: movies_movie.backdrop_path

@@ -12,6 +12,7 @@ from .cache_utils import (
     get_cached_movie_data,
     cache_result
 )
+from .utils.rate_limiter import rate_limiter
 
 logger = logging.getLogger(__name__)
 
@@ -25,19 +26,38 @@ class TMDbAPIService:
         self.session = requests.Session()
         self.session.params = {'api_key': self.api_key}
     
-    def _make_request(self, endpoint: str, params: Dict = None) -> Optional[Dict]:
-        """Make a request to TMDb API with error handling"""
+    def _make_request(self, endpoint: str, params: Dict = None, priority: str = 'medium') -> Optional[Dict]:
+        """Make a request to TMDb API with rate limiting and error handling"""
+        # Check rate limiter before making request
+        if not rate_limiter.wait_if_needed(priority=priority, max_wait=30):
+            logger.error(f"TMDb API rate limit exceeded for endpoint: {endpoint}")
+            return None
+        
         try:
             url = f"{self.base_url}/{endpoint}"
             response = self.session.get(url, params=params, timeout=10)
             response.raise_for_status()
+            
+            # Record successful request
+            rate_limiter.record_success()
             return response.json()
+            
+        except requests.exceptions.HTTPError as e:
+            if response.status_code == 429:  # Too Many Requests
+                rate_limiter.record_error('rate_limit')
+                logger.warning(f"TMDb API rate limit hit: {e}")
+            else:
+                rate_limiter.record_error('http_error')
+                logger.error(f"TMDb API HTTP error: {e}")
+            return None
+            
         except requests.exceptions.RequestException as e:
+            rate_limiter.record_error('request_error')
             logger.error(f"TMDb API request failed: {e}")
             return None
     
-    def search_movies(self, query: str, page: int = 1) -> Optional[Dict]:
-        """Search for movies by title with caching"""
+    def search_movies(self, query: str, page: int = 1, priority: str = 'high') -> Optional[Dict]:
+        """Search for movies by title with caching and priority-based rate limiting"""
         # Check cache first
         cache_params = {'query': query, 'page': page}
         cached_data = get_cached_tmdb_response('search/movie', cache_params)

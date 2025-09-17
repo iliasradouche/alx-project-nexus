@@ -43,6 +43,8 @@ INSTALLED_APPS = [
     "rest_framework_simplejwt",
     "rest_framework_simplejwt.token_blacklist",
     "drf_yasg",
+    "corsheaders",
+    "django_extensions",
     "movies",
 ]
 
@@ -60,6 +62,8 @@ MIDDLEWARE = [
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
     "movies.middleware.ErrorLoggingMiddleware",
+    "movies.middleware.APIResponseCacheMiddleware",
+    "movies.middleware.PerformanceMonitoringMiddleware",
     "movies.middleware.RequestResponseLoggingMiddleware",
     "django.middleware.cache.FetchFromCacheMiddleware",
 ]
@@ -92,6 +96,12 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
+        'OPTIONS': {
+            'timeout': 20,
+            'check_same_thread': False,
+        },
+        'CONN_MAX_AGE': 600,  # Connection pooling - keep connections for 10 minutes
+        'CONN_HEALTH_CHECKS': True,  # Enable connection health checks
     }
 }
 

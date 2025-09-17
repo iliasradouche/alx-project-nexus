@@ -28,6 +28,81 @@ class MoviePagination(PageNumberPagination):
     page_size = 20
     page_size_query_param = 'page_size'
     max_page_size = 100
+    
+    def get_paginated_response(self, data):
+        """Enhanced pagination response with performance metrics"""
+        response = super().get_paginated_response(data)
+        
+        # Add pagination metadata for better client-side handling
+        response.data.update({
+            'page_info': {
+                'current_page': self.page.number,
+                'total_pages': self.page.paginator.num_pages,
+                'page_size': self.page_size,
+                'has_previous': self.page.has_previous(),
+                'has_next': self.page.has_next(),
+                'start_index': self.page.start_index(),
+                'end_index': self.page.end_index(),
+            }
+        })
+        
+        return response
+
+
+class OptimizedMoviePagination(PageNumberPagination):
+    """Optimized pagination for large datasets with cursor-based pagination fallback"""
+    page_size = 50
+    page_size_query_param = 'page_size'
+    max_page_size = 200
+    
+    def paginate_queryset(self, queryset, request, view=None):
+        """Optimize pagination for large datasets"""
+        # Use cursor pagination for very large datasets
+        total_count = queryset.count()
+        
+        if total_count > 10000:  # Switch to cursor-based for large datasets
+            return self._cursor_paginate(queryset, request)
+        
+        return super().paginate_queryset(queryset, request, view)
+    
+    def _cursor_paginate(self, queryset, request):
+        """Simple cursor-based pagination for large datasets"""
+        cursor = request.GET.get('cursor')
+        page_size = self.get_page_size(request)
+        
+        if cursor:
+            try:
+                cursor_id = int(cursor)
+                queryset = queryset.filter(id__gt=cursor_id)
+            except (ValueError, TypeError):
+                pass
+        
+        # Get one extra item to determine if there's a next page
+        items = list(queryset[:page_size + 1])
+        has_next = len(items) > page_size
+        
+        if has_next:
+            items = items[:-1]
+        
+        # Set pagination metadata
+        self.cursor_data = {
+            'has_next': has_next,
+            'next_cursor': items[-1].id if items and has_next else None,
+            'page_size': page_size,
+            'is_cursor_paginated': True
+        }
+        
+        return items
+    
+    def get_paginated_response(self, data):
+        """Return appropriate response based on pagination type"""
+        if hasattr(self, 'cursor_data'):
+            return Response({
+                'results': data,
+                'pagination': self.cursor_data
+            })
+        
+        return super().get_paginated_response(data)
 
 
 class MovieListView(generics.ListAPIView):

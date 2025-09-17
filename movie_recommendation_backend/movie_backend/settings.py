@@ -160,7 +160,7 @@ STATIC_URL = "static/"
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 # TMDb API Configuration
-TMDB_API_KEY = config('TMDB_API_KEY')
+TMDB_API_KEY = config('TMDB_API_KEY', default='dummy-key-for-build')
 TMDB_BASE_URL = config('TMDB_BASE_URL', default='https://api.themoviedb.org/3')
 
 # Django REST Framework Configuration

@@ -2285,3 +2285,5 @@ INFO 2025-09-17 16:51:06,711 middleware 27784 864 Response: GET /api/movies/1051
 INFO 2025-09-17 16:51:06,713 basehttp 27784 864 "GET /api/movies/1051486/ HTTP/1.1" 200 1219
 INFO 2025-09-17 17:21:06,445 autoreload 27784 14984 C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movies\serializers.py changed, reloading.
 INFO 2025-09-17 17:21:07,905 autoreload 27236 8956 Watching for file changes with StatReloader
+INFO 2025-09-17 18:35:12,712 autoreload 27236 8956 C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movie_backend\settings.py changed, reloading.
+INFO 2025-09-17 18:35:14,197 autoreload 19956 5580 Watching for file changes with StatReloader

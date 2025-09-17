@@ -17,6 +17,7 @@ Including another URLconf
 
 from django.contrib import admin
 from django.urls import path, include, re_path
+from django.shortcuts import redirect
 from rest_framework import permissions
 from drf_yasg.views import get_schema_view
 from drf_yasg import openapi
@@ -35,6 +36,9 @@ schema_view = get_schema_view(
 )
 
 urlpatterns = [
+    # Root redirect to API documentation
+    path('', lambda request: redirect('schema-swagger-ui'), name='root-redirect'),
+    
     path('admin/', admin.site.urls),
     path('api/movies/', include('movies.urls')),
     

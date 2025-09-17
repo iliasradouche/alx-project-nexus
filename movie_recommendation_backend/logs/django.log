@@ -101,3 +101,396 @@ INFO 2025-09-16 22:29:30,141 autoreload 40176 9156 C:\Users\medrp\OneDrive\Burea
 INFO 2025-09-16 22:29:32,025 autoreload 17848 31864 Watching for file changes with StatReloader
 INFO 2025-09-16 23:08:37,109 autoreload 17848 31864 C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movies\models.py changed, reloading.
 INFO 2025-09-16 23:08:38,735 autoreload 20016 26620 Watching for file changes with StatReloader
+INFO 2025-09-17 14:06:22,707 autoreload 6728 35540 Watching for file changes with StatReloader
+ERROR 2025-09-17 14:06:41,369 log 6728 38796 Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\django_redis\cache.py", line 29, in _decorator
+    return method(self, *args, **kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\django_redis\cache.py", line 99, in _get
+    return self.client.get(key, default=default, version=version, client=client)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\django_redis\client\default.py", line 260, in get
+    raise ConnectionInterrupted(connection=client) from e
+django_redis.exceptions.ConnectionInterrupted: Redis ConnectionError: Error 10061 connecting to localhost:6379. Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\django\middleware\cache.py", line 161, in process_request
+    cache_key = get_cache_key(request, self.key_prefix, "GET", cache=self.cache)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\django\utils\cache.py", line 392, in get_cache_key
+    headerlist = cache.get(cache_key)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\django_redis\cache.py", line 92, in get
+    value = self._get(key, default, version, client)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\django_redis\cache.py", line 36, in _decorator
+    raise e.__cause__
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\django_redis\client\default.py", line 258, in get
+    value = client.get(key)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\redis\commands\core.py", line 1829, in get
+    return self.execute_command("GET", name)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\redis\client.py", line 533, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\redis\connection.py", line 1086, in get_connection
+    connection.connect()
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\redis\connection.py", line 270, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 10061 connecting to localhost:6379. Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée.
+WARNING 2025-09-17 14:06:41,375 middleware 6728 38796 Slow request: GET / took 4.184s (User: None)
+ERROR 2025-09-17 14:06:41,376 basehttp 6728 38796 "GET / HTTP/1.1" 500 125774
+ERROR 2025-09-17 14:06:46,328 log 6728 38796 Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\django_redis\cache.py", line 29, in _decorator
+    return method(self, *args, **kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\django_redis\cache.py", line 99, in _get
+    return self.client.get(key, default=default, version=version, client=client)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\django_redis\client\default.py", line 260, in get
+    raise ConnectionInterrupted(connection=client) from e
+django_redis.exceptions.ConnectionInterrupted: Redis ConnectionError: Error 10061 connecting to localhost:6379. Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\django\middleware\cache.py", line 161, in process_request
+    cache_key = get_cache_key(request, self.key_prefix, "GET", cache=self.cache)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\django\utils\cache.py", line 392, in get_cache_key
+    headerlist = cache.get(cache_key)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\django_redis\cache.py", line 92, in get
+    value = self._get(key, default, version, client)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\django_redis\cache.py", line 36, in _decorator
+    raise e.__cause__
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\django_redis\client\default.py", line 258, in get
+    value = client.get(key)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\redis\commands\core.py", line 1829, in get
+    return self.execute_command("GET", name)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\redis\client.py", line 533, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\redis\connection.py", line 1086, in get_connection
+    connection.connect()
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\redis\connection.py", line 270, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 10061 connecting to localhost:6379. Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée.
+WARNING 2025-09-17 14:06:46,367 middleware 6728 38796 Slow request: GET /favicon.ico took 4.260s (User: None)
+ERROR 2025-09-17 14:06:46,377 basehttp 6728 38796 "GET /favicon.ico HTTP/1.1" 500 125699
+ERROR 2025-09-17 14:06:46,446 log 6728 38996 Internal Server Error: /swagger/
+Traceback (most recent call last):
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\django_redis\cache.py", line 29, in _decorator
+    return method(self, *args, **kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\django_redis\cache.py", line 99, in _get
+    return self.client.get(key, default=default, version=version, client=client)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\django_redis\client\default.py", line 260, in get
+    raise ConnectionInterrupted(connection=client) from e
+django_redis.exceptions.ConnectionInterrupted: Redis ConnectionError: Error 10061 connecting to localhost:6379. Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\django\middleware\cache.py", line 161, in process_request
+    cache_key = get_cache_key(request, self.key_prefix, "GET", cache=self.cache)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\django\utils\cache.py", line 392, in get_cache_key
+    headerlist = cache.get(cache_key)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\django_redis\cache.py", line 92, in get
+    value = self._get(key, default, version, client)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\django_redis\cache.py", line 36, in _decorator
+    raise e.__cause__
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\django_redis\client\default.py", line 258, in get
+    value = client.get(key)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\redis\commands\core.py", line 1829, in get
+    return self.execute_command("GET", name)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\redis\client.py", line 533, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\redis\connection.py", line 1086, in get_connection
+    connection.connect()
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\redis\connection.py", line 270, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 10061 connecting to localhost:6379. Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée.
+WARNING 2025-09-17 14:06:46,451 middleware 6728 38996 Slow request: GET /swagger/ took 4.229s (User: None)
+ERROR 2025-09-17 14:06:46,454 basehttp 6728 38996 "GET /swagger/?ide_webview_request_time=1758114402119 HTTP/1.1" 500 126049
+ERROR 2025-09-17 14:06:50,933 log 6728 38996 Internal Server Error: /@vite/client
+Traceback (most recent call last):
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\django_redis\cache.py", line 29, in _decorator
+    return method(self, *args, **kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\django_redis\cache.py", line 99, in _get
+    return self.client.get(key, default=default, version=version, client=client)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\django_redis\client\default.py", line 260, in get
+    raise ConnectionInterrupted(connection=client) from e
+django_redis.exceptions.ConnectionInterrupted: Redis ConnectionError: Error 10061 connecting to localhost:6379. Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\django\middleware\cache.py", line 161, in process_request
+    cache_key = get_cache_key(request, self.key_prefix, "GET", cache=self.cache)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\django\utils\cache.py", line 392, in get_cache_key
+    headerlist = cache.get(cache_key)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\django_redis\cache.py", line 92, in get
+    value = self._get(key, default, version, client)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\django_redis\cache.py", line 36, in _decorator
+    raise e.__cause__
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\django_redis\client\default.py", line 258, in get
+    value = client.get(key)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\redis\commands\core.py", line 1829, in get
+    return self.execute_command("GET", name)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\redis\client.py", line 533, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\redis\connection.py", line 1086, in get_connection
+    connection.connect()
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\redis\connection.py", line 270, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 10061 connecting to localhost:6379. Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée.
+WARNING 2025-09-17 14:06:50,934 middleware 6728 38996 Slow request: GET /@vite/client took 4.169s (User: None)
+ERROR 2025-09-17 14:06:50,937 basehttp 6728 38996 "GET /@vite/client HTTP/1.1" 500 125794
+INFO 2025-09-17 14:07:09,979 autoreload 6728 35540 C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movies\auth_views.py changed, reloading.
+INFO 2025-09-17 14:07:11,243 autoreload 35748 38592 Watching for file changes with StatReloader
+INFO 2025-09-17 14:07:28,843 autoreload 35748 38592 C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movies\auth_views.py changed, reloading.
+INFO 2025-09-17 14:07:30,223 autoreload 36152 6860 Watching for file changes with StatReloader
+INFO 2025-09-17 14:07:50,063 autoreload 36152 6860 C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movies\auth_views.py changed, reloading.
+INFO 2025-09-17 14:07:51,518 autoreload 21416 23664 Watching for file changes with StatReloader
+INFO 2025-09-17 14:08:23,827 autoreload 21416 23664 C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movies\auth_views.py changed, reloading.
+INFO 2025-09-17 14:08:25,179 autoreload 15672 26848 Watching for file changes with StatReloader
+INFO 2025-09-17 14:08:36,084 autoreload 15672 26848 C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movies\auth_views.py changed, reloading.
+INFO 2025-09-17 14:08:37,403 autoreload 40092 1560 Watching for file changes with StatReloader
+ERROR 2025-09-17 14:08:53,078 log 40092 30184 Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\django_redis\cache.py", line 29, in _decorator
+    return method(self, *args, **kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\django_redis\cache.py", line 99, in _get
+    return self.client.get(key, default=default, version=version, client=client)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\django_redis\client\default.py", line 260, in get
+    raise ConnectionInterrupted(connection=client) from e
+django_redis.exceptions.ConnectionInterrupted: Redis ConnectionError: Error 10061 connecting to localhost:6379. Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\django\middleware\cache.py", line 161, in process_request
+    cache_key = get_cache_key(request, self.key_prefix, "GET", cache=self.cache)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\django\utils\cache.py", line 392, in get_cache_key
+    headerlist = cache.get(cache_key)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\django_redis\cache.py", line 92, in get
+    value = self._get(key, default, version, client)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\django_redis\cache.py", line 36, in _decorator
+    raise e.__cause__
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\django_redis\client\default.py", line 258, in get
+    value = client.get(key)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\redis\commands\core.py", line 1829, in get
+    return self.execute_command("GET", name)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\redis\client.py", line 533, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\redis\connection.py", line 1086, in get_connection
+    connection.connect()
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\redis\connection.py", line 270, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 10061 connecting to localhost:6379. Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée.
+WARNING 2025-09-17 14:08:53,101 middleware 40092 30184 Slow request: GET / took 4.291s (User: None)
+ERROR 2025-09-17 14:08:53,106 basehttp 40092 30184 "GET / HTTP/1.1" 500 125911
+ERROR 2025-09-17 14:08:56,704 log 40092 31296 Internal Server Error: /swagger/
+Traceback (most recent call last):
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\django_redis\cache.py", line 29, in _decorator
+    return method(self, *args, **kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\django_redis\cache.py", line 99, in _get
+    return self.client.get(key, default=default, version=version, client=client)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\django_redis\client\default.py", line 260, in get
+    raise ConnectionInterrupted(connection=client) from e
+django_redis.exceptions.ConnectionInterrupted: Redis ConnectionError: Error 10061 connecting to localhost:6379. Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\django\middleware\cache.py", line 161, in process_request
+    cache_key = get_cache_key(request, self.key_prefix, "GET", cache=self.cache)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\django\utils\cache.py", line 392, in get_cache_key
+    headerlist = cache.get(cache_key)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\django_redis\cache.py", line 92, in get
+    value = self._get(key, default, version, client)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\django_redis\cache.py", line 36, in _decorator
+    raise e.__cause__
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\django_redis\client\default.py", line 258, in get
+    value = client.get(key)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\redis\commands\core.py", line 1829, in get
+    return self.execute_command("GET", name)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\redis\client.py", line 533, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\redis\connection.py", line 1086, in get_connection
+    connection.connect()
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\redis\connection.py", line 270, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 10061 connecting to localhost:6379. Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée.
+WARNING 2025-09-17 14:08:56,710 middleware 40092 31296 Slow request: GET /swagger/ took 4.210s (User: None)
+ERROR 2025-09-17 14:08:56,714 basehttp 40092 31296 "GET /swagger/?ide_webview_request_time=1758114532481 HTTP/1.1" 500 126049
+ERROR 2025-09-17 14:08:58,194 log 40092 30184 Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\django_redis\cache.py", line 29, in _decorator
+    return method(self, *args, **kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\django_redis\cache.py", line 99, in _get
+    return self.client.get(key, default=default, version=version, client=client)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\django_redis\client\default.py", line 260, in get
+    raise ConnectionInterrupted(connection=client) from e
+django_redis.exceptions.ConnectionInterrupted: Redis ConnectionError: Error 10061 connecting to localhost:6379. Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\django\middleware\cache.py", line 161, in process_request
+    cache_key = get_cache_key(request, self.key_prefix, "GET", cache=self.cache)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\django\utils\cache.py", line 392, in get_cache_key
+    headerlist = cache.get(cache_key)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\django_redis\cache.py", line 92, in get
+    value = self._get(key, default, version, client)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\django_redis\cache.py", line 36, in _decorator
+    raise e.__cause__
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\django_redis\client\default.py", line 258, in get
+    value = client.get(key)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\redis\commands\core.py", line 1829, in get
+    return self.execute_command("GET", name)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\redis\client.py", line 533, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\redis\connection.py", line 1086, in get_connection
+    connection.connect()
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\redis\connection.py", line 270, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 10061 connecting to localhost:6379. Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée.
+WARNING 2025-09-17 14:08:58,199 middleware 40092 30184 Slow request: GET /favicon.ico took 4.177s (User: None)
+ERROR 2025-09-17 14:08:58,201 basehttp 40092 30184 "GET /favicon.ico HTTP/1.1" 500 125699
+ERROR 2025-09-17 14:09:01,342 log 40092 31296 Internal Server Error: /@vite/client
+Traceback (most recent call last):
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\django_redis\cache.py", line 29, in _decorator
+    return method(self, *args, **kwargs)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\django_redis\cache.py", line 99, in _get
+    return self.client.get(key, default=default, version=version, client=client)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\django_redis\client\default.py", line 260, in get
+    raise ConnectionInterrupted(connection=client) from e
+django_redis.exceptions.ConnectionInterrupted: Redis ConnectionError: Error 10061 connecting to localhost:6379. Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\django\middleware\cache.py", line 161, in process_request
+    cache_key = get_cache_key(request, self.key_prefix, "GET", cache=self.cache)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\django\utils\cache.py", line 392, in get_cache_key
+    headerlist = cache.get(cache_key)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\django_redis\cache.py", line 92, in get
+    value = self._get(key, default, version, client)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\django_redis\cache.py", line 36, in _decorator
+    raise e.__cause__
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\django_redis\client\default.py", line 258, in get
+    value = client.get(key)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\redis\commands\core.py", line 1829, in get
+    return self.execute_command("GET", name)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\redis\client.py", line 533, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\redis\connection.py", line 1086, in get_connection
+    connection.connect()
+  File "C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\redis\connection.py", line 270, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 10061 connecting to localhost:6379. Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée.
+WARNING 2025-09-17 14:09:01,345 middleware 40092 31296 Slow request: GET /@vite/client took 4.155s (User: None)
+ERROR 2025-09-17 14:09:01,345 basehttp 40092 31296 "GET /@vite/client HTTP/1.1" 500 125794
+INFO 2025-09-17 14:09:35,902 autoreload 40092 1560 C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movie_backend\settings.py changed, reloading.
+INFO 2025-09-17 14:09:37,005 autoreload 10960 5748 Watching for file changes with StatReloader
+WARNING 2025-09-17 14:09:43,640 log 10960 9836 Not Found: /
+WARNING 2025-09-17 14:09:43,642 basehttp 10960 9836 "GET / HTTP/1.1" 404 2872
+WARNING 2025-09-17 14:09:43,785 log 10960 9836 Not Found: /favicon.ico
+WARNING 2025-09-17 14:09:43,786 basehttp 10960 9836 "GET /favicon.ico HTTP/1.1" 404 2923
+WARNING 2025-09-17 14:09:54,689 log 10960 9836 Not Found: /
+WARNING 2025-09-17 14:09:54,690 basehttp 10960 9836 "GET / HTTP/1.1" 404 2872
+INFO 2025-09-17 14:09:54,920 basehttp 10960 36080 "GET /swagger/?ide_webview_request_time=1758114594871 HTTP/1.1" 200 1671
+ERROR 2025-09-17 14:09:56,144 views 10960 36080 Error in UserMovieRatingDetailView.get_queryset: Field 'id' expected a number but got <django.contrib.auth.models.AnonymousUser object at 0x000001C1A4B06AD0>.
+ERROR 2025-09-17 14:09:56,146 views 10960 36080 Error in UserMovieWatchlistDetailView.get_queryset: Field 'id' expected a number but got <django.contrib.auth.models.AnonymousUser object at 0x000001C1A4B06AD0>.
+ERROR 2025-09-17 14:09:56,146 views 10960 36080 Error in UserMovieRatingDetailView.get_queryset: Field 'id' expected a number but got <django.contrib.auth.models.AnonymousUser object at 0x000001C1A4B06AD0>.
+ERROR 2025-09-17 14:09:56,148 views 10960 36080 Error in UserMovieRatingDetailView.get_queryset: Field 'id' expected a number but got <django.contrib.auth.models.AnonymousUser object at 0x000001C1A4B06AD0>.
+ERROR 2025-09-17 14:09:56,149 views 10960 36080 Error in UserMovieRatingDetailView.get_queryset: Field 'id' expected a number but got <django.contrib.auth.models.AnonymousUser object at 0x000001C1A4B06AD0>.
+ERROR 2025-09-17 14:09:56,149 views 10960 36080 Error in UserMovieWatchlistDetailView.get_queryset: Field 'id' expected a number but got <django.contrib.auth.models.AnonymousUser object at 0x000001C1A4B06AD0>.
+INFO 2025-09-17 14:09:56,198 basehttp 10960 36080 "GET /swagger/?format=openapi&ide_webview_request_time=1758114594871 HTTP/1.1" 200 21692
+WARNING 2025-09-17 14:09:56,205 log 10960 25932 Not Found: /@vite/client
+WARNING 2025-09-17 14:09:56,208 basehttp 10960 25932 "GET /@vite/client HTTP/1.1" 404 2926
+WARNING 2025-09-17 14:10:01,131 log 10960 9836 Not Found: /
+WARNING 2025-09-17 14:10:01,133 basehttp 10960 9836 "GET / HTTP/1.1" 404 2872
+INFO 2025-09-17 14:10:08,546 basehttp 10960 35164 "GET /swagger/ HTTP/1.1" 200 1671
+INFO 2025-09-17 14:10:08,739 basehttp 10960 35164 "GET /static/drf-yasg/style.css HTTP/1.1" 200 1047
+INFO 2025-09-17 14:10:08,741 basehttp 10960 22684 "GET /static/drf-yasg/swagger-ui-dist/swagger-ui.css HTTP/1.1" 200 145206
+INFO 2025-09-17 14:10:08,780 basehttp 10960 35164 "GET /static/drf-yasg/swagger-ui-dist/swagger-ui-bundle.js HTTP/1.1" 200 1046583
+INFO 2025-09-17 14:10:08,795 basehttp 10960 40356 "GET /static/drf-yasg/insQ.min.js HTTP/1.1" 200 2093
+INFO 2025-09-17 14:10:08,796 basehttp 10960 22684 "GET /static/drf-yasg/swagger-ui-dist/swagger-ui-standalone-preset.js HTTP/1.1" 200 322863
+INFO 2025-09-17 14:10:08,904 basehttp 10960 40356 "GET /static/drf-yasg/immutable.min.js HTTP/1.1" 200 56904
+INFO 2025-09-17 14:10:08,945 basehttp 10960 29040 "GET /static/drf-yasg/swagger-ui-init.js HTTP/1.1" 200 15480
+ERROR 2025-09-17 14:10:09,783 views 10960 35164 Error in UserMovieRatingDetailView.get_queryset: Field 'id' expected a number but got <django.contrib.auth.models.AnonymousUser object at 0x000001C1A4C91BD0>.
+ERROR 2025-09-17 14:10:09,784 views 10960 35164 Error in UserMovieWatchlistDetailView.get_queryset: Field 'id' expected a number but got <django.contrib.auth.models.AnonymousUser object at 0x000001C1A4C91BD0>.
+ERROR 2025-09-17 14:10:09,785 views 10960 35164 Error in UserMovieRatingDetailView.get_queryset: Field 'id' expected a number but got <django.contrib.auth.models.AnonymousUser object at 0x000001C1A4C91BD0>.
+ERROR 2025-09-17 14:10:09,786 views 10960 35164 Error in UserMovieRatingDetailView.get_queryset: Field 'id' expected a number but got <django.contrib.auth.models.AnonymousUser object at 0x000001C1A4C91BD0>.
+ERROR 2025-09-17 14:10:09,787 views 10960 35164 Error in UserMovieRatingDetailView.get_queryset: Field 'id' expected a number but got <django.contrib.auth.models.AnonymousUser object at 0x000001C1A4C91BD0>.
+ERROR 2025-09-17 14:10:09,789 views 10960 35164 Error in UserMovieWatchlistDetailView.get_queryset: Field 'id' expected a number but got <django.contrib.auth.models.AnonymousUser object at 0x000001C1A4C91BD0>.
+INFO 2025-09-17 14:10:09,831 basehttp 10960 35164 "GET /swagger/?format=openapi HTTP/1.1" 200 21692
+INFO 2025-09-17 14:10:10,008 basehttp 10960 35164 "GET /static/drf-yasg/swagger-ui-dist/favicon-32x32.png HTTP/1.1" 200 628
+INFO 2025-09-17 14:11:05,282 autoreload 10960 5748 C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movie_backend\urls.py changed, reloading.
+INFO 2025-09-17 14:11:06,474 autoreload 27812 10804 Watching for file changes with StatReloader
+INFO 2025-09-17 14:11:26,286 basehttp 27812 6892 "GET /?ide_webview_request_time=1758114686210 HTTP/1.1" 302 0
+INFO 2025-09-17 14:11:26,347 basehttp 27812 6892 "GET /swagger/ HTTP/1.1" 200 1671
+ERROR 2025-09-17 14:11:26,620 views 27812 6892 Error in UserMovieRatingDetailView.get_queryset: Field 'id' expected a number but got <django.contrib.auth.models.AnonymousUser object at 0x000002395D19CC40>.
+ERROR 2025-09-17 14:11:26,624 views 27812 6892 Error in UserMovieWatchlistDetailView.get_queryset: Field 'id' expected a number but got <django.contrib.auth.models.AnonymousUser object at 0x000002395D19CC40>.
+ERROR 2025-09-17 14:11:26,626 views 27812 6892 Error in UserMovieRatingDetailView.get_queryset: Field 'id' expected a number but got <django.contrib.auth.models.AnonymousUser object at 0x000002395D19CC40>.
+ERROR 2025-09-17 14:11:26,628 views 27812 6892 Error in UserMovieRatingDetailView.get_queryset: Field 'id' expected a number but got <django.contrib.auth.models.AnonymousUser object at 0x000002395D19CC40>.
+ERROR 2025-09-17 14:11:26,630 views 27812 6892 Error in UserMovieRatingDetailView.get_queryset: Field 'id' expected a number but got <django.contrib.auth.models.AnonymousUser object at 0x000002395D19CC40>.
+ERROR 2025-09-17 14:11:26,631 views 27812 6892 Error in UserMovieWatchlistDetailView.get_queryset: Field 'id' expected a number but got <django.contrib.auth.models.AnonymousUser object at 0x000002395D19CC40>.
+INFO 2025-09-17 14:11:26,772 basehttp 27812 6892 "GET /swagger/?format=openapi HTTP/1.1" 200 21692
+WARNING 2025-09-17 14:11:26,774 log 27812 9872 Not Found: /@vite/client
+WARNING 2025-09-17 14:11:26,778 basehttp 27812 9872 "GET /@vite/client HTTP/1.1" 404 3091
+INFO 2025-09-17 14:11:27,734 middleware 27812 19584 Incoming request: POST /api/movies/auth/login/
+INFO 2025-09-17 14:11:29,128 middleware 27812 19584 Response: POST /api/movies/auth/login/ - 401
+WARNING 2025-09-17 14:11:29,129 middleware 27812 19584 Slow request: POST /api/movies/auth/login/ took 1.395s (User: None)
+WARNING 2025-09-17 14:11:29,131 log 27812 19584 Unauthorized: /api/movies/auth/login/
+WARNING 2025-09-17 14:11:29,134 basehttp 27812 19584 "POST /api/movies/auth/login/ HTTP/1.1" 401 31
+INFO 2025-09-17 14:12:01,697 basehttp 27812 19584 "GET / HTTP/1.1" 302 0
+INFO 2025-09-17 14:12:02,326 basehttp 27812 6892 "GET /swagger/?ide_webview_request_time=1758114722283 HTTP/1.1" 200 1671
+ERROR 2025-09-17 14:12:02,591 views 27812 6892 Error in UserMovieRatingDetailView.get_queryset: Field 'id' expected a number but got <django.contrib.auth.models.AnonymousUser object at 0x000002395CFF2B60>.
+ERROR 2025-09-17 14:12:02,597 views 27812 6892 Error in UserMovieWatchlistDetailView.get_queryset: Field 'id' expected a number but got <django.contrib.auth.models.AnonymousUser object at 0x000002395CFF2B60>.
+ERROR 2025-09-17 14:12:02,604 views 27812 6892 Error in UserMovieRatingDetailView.get_queryset: Field 'id' expected a number but got <django.contrib.auth.models.AnonymousUser object at 0x000002395CFF2B60>.
+ERROR 2025-09-17 14:12:02,618 views 27812 6892 Error in UserMovieRatingDetailView.get_queryset: Field 'id' expected a number but got <django.contrib.auth.models.AnonymousUser object at 0x000002395CFF2B60>.
+ERROR 2025-09-17 14:12:02,626 views 27812 6892 Error in UserMovieRatingDetailView.get_queryset: Field 'id' expected a number but got <django.contrib.auth.models.AnonymousUser object at 0x000002395CFF2B60>.
+ERROR 2025-09-17 14:12:02,632 views 27812 6892 Error in UserMovieWatchlistDetailView.get_queryset: Field 'id' expected a number but got <django.contrib.auth.models.AnonymousUser object at 0x000002395CFF2B60>.
+INFO 2025-09-17 14:12:02,766 basehttp 27812 6892 "GET /swagger/?format=openapi&ide_webview_request_time=1758114722283 HTTP/1.1" 200 21692
+WARNING 2025-09-17 14:12:02,975 log 27812 6892 Not Found: /@vite/client
+WARNING 2025-09-17 14:12:02,979 basehttp 27812 6892 "GET /@vite/client HTTP/1.1" 404 3091
+INFO 2025-09-17 14:12:11,499 basehttp 27812 6892 "GET /?ide_webview_request_time=1758114731491 HTTP/1.1" 302 0
+WARNING 2025-09-17 14:12:11,659 log 27812 6892 Not Found: /@vite/client
+WARNING 2025-09-17 14:12:11,660 basehttp 27812 6892 "GET /@vite/client HTTP/1.1" 404 3091
+INFO 2025-09-17 14:12:13,749 basehttp 27812 6892 "GET /swagger/?ide_webview_request_time=1758114733734 HTTP/1.1" 200 1671
+ERROR 2025-09-17 14:12:13,845 views 27812 6892 Error in UserMovieRatingDetailView.get_queryset: Field 'id' expected a number but got <django.contrib.auth.models.AnonymousUser object at 0x000002395CFF1AE0>.
+ERROR 2025-09-17 14:12:13,846 views 27812 6892 Error in UserMovieWatchlistDetailView.get_queryset: Field 'id' expected a number but got <django.contrib.auth.models.AnonymousUser object at 0x000002395CFF1AE0>.
+ERROR 2025-09-17 14:12:13,848 views 27812 6892 Error in UserMovieRatingDetailView.get_queryset: Field 'id' expected a number but got <django.contrib.auth.models.AnonymousUser object at 0x000002395CFF1AE0>.
+ERROR 2025-09-17 14:12:13,849 views 27812 6892 Error in UserMovieRatingDetailView.get_queryset: Field 'id' expected a number but got <django.contrib.auth.models.AnonymousUser object at 0x000002395CFF1AE0>.
+ERROR 2025-09-17 14:12:13,850 views 27812 6892 Error in UserMovieRatingDetailView.get_queryset: Field 'id' expected a number but got <django.contrib.auth.models.AnonymousUser object at 0x000002395CFF1AE0>.
+ERROR 2025-09-17 14:12:13,851 views 27812 6892 Error in UserMovieWatchlistDetailView.get_queryset: Field 'id' expected a number but got <django.contrib.auth.models.AnonymousUser object at 0x000002395CFF1AE0>.
+WARNING 2025-09-17 14:12:13,894 log 27812 9872 Not Found: /@vite/client
+INFO 2025-09-17 14:12:13,895 basehttp 27812 6892 "GET /swagger/?format=openapi&ide_webview_request_time=1758114733734 HTTP/1.1" 200 21692
+WARNING 2025-09-17 14:12:13,896 basehttp 27812 9872 "GET /@vite/client HTTP/1.1" 404 3091

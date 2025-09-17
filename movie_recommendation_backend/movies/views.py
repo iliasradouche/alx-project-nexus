@@ -5,6 +5,8 @@ from rest_framework.pagination import PageNumberPagination
 from django.db.models import Q, Avg
 from django.core.cache import cache
 from django.core.exceptions import ValidationError
+from drf_yasg.utils import swagger_auto_schema
+from drf_yasg import openapi
 from .models import Movie, Genre, UserMovieRating, UserMovieWatchlist
 from .serializers import (
     MovieListSerializer, MovieDetailSerializer, GenreSerializer,
@@ -111,6 +113,50 @@ class MovieListView(generics.ListAPIView):
     pagination_class = MoviePagination
     permission_classes = [permissions.AllowAny]
     
+    @swagger_auto_schema(
+        operation_description="Retrieve a paginated list of movies with optional filtering",
+        operation_summary="List Movies",
+        manual_parameters=[
+            openapi.Parameter(
+                'genre', openapi.IN_QUERY,
+                description="Filter movies by genre name (case-insensitive)",
+                type=openapi.TYPE_STRING
+            ),
+            openapi.Parameter(
+                'year', openapi.IN_QUERY,
+                description="Filter movies by release year",
+                type=openapi.TYPE_INTEGER
+            ),
+            openapi.Parameter(
+                'min_rating', openapi.IN_QUERY,
+                description="Filter movies with minimum rating (0.0-10.0)",
+                type=openapi.TYPE_NUMBER
+            ),
+            openapi.Parameter(
+                'search', openapi.IN_QUERY,
+                description="Search movies by title or overview",
+                type=openapi.TYPE_STRING
+            ),
+            openapi.Parameter(
+                'page', openapi.IN_QUERY,
+                description="Page number for pagination",
+                type=openapi.TYPE_INTEGER
+            ),
+            openapi.Parameter(
+                'page_size', openapi.IN_QUERY,
+                description="Number of results per page (max 100)",
+                type=openapi.TYPE_INTEGER
+            ),
+        ],
+        responses={
+            200: MovieListSerializer(many=True),
+            400: "Bad Request - Invalid parameters"
+        },
+        tags=['Movies']
+    )
+    def get(self, request, *args, **kwargs):
+        return super().get(request, *args, **kwargs)
+    
     def get_queryset(self):
         try:
             queryset = Movie.objects.select_related().prefetch_related('genres')
@@ -180,6 +226,19 @@ class MovieDetailView(generics.RetrieveAPIView):
     permission_classes = [permissions.AllowAny]
     lookup_field = 'tmdb_id'
     
+    @swagger_auto_schema(
+        operation_description="Retrieve detailed information about a specific movie",
+        operation_summary="Get Movie Details",
+        responses={
+            200: MovieDetailSerializer(),
+            404: "Movie not found",
+            400: "Invalid TMDb ID"
+        },
+        tags=['Movies']
+    )
+    def get(self, request, *args, **kwargs):
+        return super().get(request, *args, **kwargs)
+    
     def get_object(self):
         try:
             tmdb_id = self.kwargs['tmdb_id']
@@ -216,8 +275,44 @@ class GenreListView(generics.ListAPIView):
     queryset = Genre.objects.all()
     serializer_class = GenreSerializer
     permission_classes = [permissions.AllowAny]
+    
+    @swagger_auto_schema(
+        operation_description="Retrieve a list of all available movie genres",
+        operation_summary="List Genres",
+        responses={
+            200: GenreSerializer(many=True)
+        },
+        tags=['Genres']
+    )
+    def get(self, request, *args, **kwargs):
+        return super().get(request, *args, **kwargs)
 
 
+@swagger_auto_schema(
+    method='post',
+    operation_description="Search for movies using the TMDb API",
+    operation_summary="Search Movies",
+    request_body=MovieSearchSerializer,
+    responses={
+        200: openapi.Response(
+            description="Search results",
+            schema=openapi.Schema(
+                type=openapi.TYPE_OBJECT,
+                properties={
+                    'results': openapi.Schema(
+                        type=openapi.TYPE_ARRAY,
+                        items=openapi.Schema(type=openapi.TYPE_OBJECT)
+                    ),
+                    'total_results': openapi.Schema(type=openapi.TYPE_INTEGER),
+                    'total_pages': openapi.Schema(type=openapi.TYPE_INTEGER)
+                }
+            )
+        ),
+        400: "Bad Request - Invalid search parameters",
+        401: "Authentication required"
+    },
+    tags=['Movies']
+)
 @api_view(['POST'])
 @permission_classes([permissions.IsAuthenticated])
 def search_movies(request):
@@ -276,6 +371,37 @@ def search_movies(request):
         raise TMDbAPIException("An unexpected error occurred while searching movies")
 
 
+@swagger_auto_schema(
+    method='get',
+    operation_description="Get popular movies from TMDb API",
+    operation_summary="Get Popular Movies",
+    manual_parameters=[
+        openapi.Parameter(
+            'page', openapi.IN_QUERY,
+            description="Page number for pagination",
+            type=openapi.TYPE_INTEGER
+        ),
+    ],
+    responses={
+        200: openapi.Response(
+            description="Popular movies",
+            schema=openapi.Schema(
+                type=openapi.TYPE_OBJECT,
+                properties={
+                    'results': openapi.Schema(
+                        type=openapi.TYPE_ARRAY,
+                        items=openapi.Schema(type=openapi.TYPE_OBJECT)
+                    ),
+                    'total_results': openapi.Schema(type=openapi.TYPE_INTEGER),
+                    'total_pages': openapi.Schema(type=openapi.TYPE_INTEGER),
+                    'page': openapi.Schema(type=openapi.TYPE_INTEGER)
+                }
+            )
+        ),
+        400: "Bad Request - Invalid parameters"
+    },
+    tags=['Movies']
+)
 @api_view(['GET'])
 @permission_classes([permissions.AllowAny])
 @cache_result('popular_movies', timeout=3600)
@@ -337,6 +463,37 @@ def popular_movies(request):
         raise TMDbAPIException("An unexpected error occurred while fetching popular movies")
 
 
+@swagger_auto_schema(
+    method='get',
+    operation_description="Get top rated movies from TMDb API",
+    operation_summary="Get Top Rated Movies",
+    manual_parameters=[
+        openapi.Parameter(
+            'page', openapi.IN_QUERY,
+            description="Page number for pagination",
+            type=openapi.TYPE_INTEGER
+        ),
+    ],
+    responses={
+        200: openapi.Response(
+            description="Top rated movies",
+            schema=openapi.Schema(
+                type=openapi.TYPE_OBJECT,
+                properties={
+                    'results': openapi.Schema(
+                        type=openapi.TYPE_ARRAY,
+                        items=openapi.Schema(type=openapi.TYPE_OBJECT)
+                    ),
+                    'total_results': openapi.Schema(type=openapi.TYPE_INTEGER),
+                    'total_pages': openapi.Schema(type=openapi.TYPE_INTEGER),
+                    'page': openapi.Schema(type=openapi.TYPE_INTEGER)
+                }
+            )
+        ),
+        400: "Bad Request - Invalid parameters"
+    },
+    tags=['Movies']
+)
 @api_view(['GET'])
 @permission_classes([permissions.AllowAny])
 @cache_result('top_rated_movies', timeout=3600)
@@ -467,6 +624,32 @@ class UserMovieRatingListCreateView(generics.ListCreateAPIView):
     permission_classes = [permissions.IsAuthenticated]
     pagination_class = MoviePagination
     
+    @swagger_auto_schema(
+        operation_description="Retrieve a paginated list of user's movie ratings",
+        operation_summary="List User Ratings",
+        responses={
+            200: UserMovieRatingSerializer(many=True),
+            401: "Authentication required"
+        },
+        tags=['User Ratings']
+    )
+    def get(self, request, *args, **kwargs):
+        return super().get(request, *args, **kwargs)
+    
+    @swagger_auto_schema(
+        operation_description="Create a new movie rating or update existing rating",
+        operation_summary="Rate Movie",
+        request_body=UserMovieRatingSerializer,
+        responses={
+            201: UserMovieRatingSerializer(),
+            400: "Bad Request - Invalid rating data",
+            401: "Authentication required"
+        },
+        tags=['User Ratings']
+    )
+    def post(self, request, *args, **kwargs):
+        return super().post(request, *args, **kwargs)
+    
     def get_queryset(self):
         try:
             return UserMovieRating.objects.filter(
@@ -504,6 +687,47 @@ class UserMovieRatingDetailView(generics.RetrieveUpdateDestroyAPIView):
     serializer_class = UserMovieRatingSerializer
     permission_classes = [permissions.IsAuthenticated]
     
+    @swagger_auto_schema(
+        operation_description="Retrieve a specific movie rating",
+        operation_summary="Get Rating Details",
+        responses={
+            200: UserMovieRatingSerializer(),
+            404: "Rating not found",
+            401: "Authentication required"
+        },
+        tags=['User Ratings']
+    )
+    def get(self, request, *args, **kwargs):
+        return super().get(request, *args, **kwargs)
+    
+    @swagger_auto_schema(
+        operation_description="Update a movie rating",
+        operation_summary="Update Rating",
+        request_body=UserMovieRatingSerializer,
+        responses={
+            200: UserMovieRatingSerializer(),
+            404: "Rating not found",
+            400: "Bad Request - Invalid rating data",
+            401: "Authentication required"
+        },
+        tags=['User Ratings']
+    )
+    def put(self, request, *args, **kwargs):
+        return super().put(request, *args, **kwargs)
+    
+    @swagger_auto_schema(
+        operation_description="Delete a movie rating",
+        operation_summary="Delete Rating",
+        responses={
+            204: "Rating deleted successfully",
+            404: "Rating not found",
+            401: "Authentication required"
+        },
+        tags=['User Ratings']
+    )
+    def delete(self, request, *args, **kwargs):
+        return super().delete(request, *args, **kwargs)
+    
     def get_queryset(self):
         try:
             return UserMovieRating.objects.filter(user=self.request.user)
@@ -527,6 +751,32 @@ class UserMovieWatchlistListCreateView(generics.ListCreateAPIView):
     serializer_class = UserMovieWatchlistSerializer
     permission_classes = [permissions.IsAuthenticated]
     pagination_class = MoviePagination
+    
+    @swagger_auto_schema(
+        operation_description="Retrieve a paginated list of user's watchlist movies",
+        operation_summary="List User Watchlist",
+        responses={
+            200: UserMovieWatchlistSerializer(many=True),
+            401: "Authentication required"
+        },
+        tags=['User Watchlist']
+    )
+    def get(self, request, *args, **kwargs):
+        return super().get(request, *args, **kwargs)
+    
+    @swagger_auto_schema(
+        operation_description="Add a movie to user's watchlist",
+        operation_summary="Add to Watchlist",
+        request_body=UserMovieWatchlistSerializer,
+        responses={
+            201: UserMovieWatchlistSerializer(),
+            400: "Bad Request - Movie already in watchlist or invalid data",
+            401: "Authentication required"
+        },
+        tags=['User Watchlist']
+    )
+    def post(self, request, *args, **kwargs):
+        return super().post(request, *args, **kwargs)
     
     def get_queryset(self):
         try:
@@ -562,6 +812,32 @@ class UserMovieWatchlistDetailView(generics.RetrieveDestroyAPIView):
     """Remove movie from watchlist"""
     serializer_class = UserMovieWatchlistSerializer
     permission_classes = [permissions.IsAuthenticated]
+    
+    @swagger_auto_schema(
+        operation_description="Retrieve a specific watchlist entry",
+        operation_summary="Get Watchlist Entry",
+        responses={
+            200: UserMovieWatchlistSerializer(),
+            404: "Watchlist entry not found",
+            401: "Authentication required"
+        },
+        tags=['User Watchlist']
+    )
+    def get(self, request, *args, **kwargs):
+        return super().get(request, *args, **kwargs)
+    
+    @swagger_auto_schema(
+        operation_description="Remove a movie from user's watchlist",
+        operation_summary="Remove from Watchlist",
+        responses={
+            204: "Movie removed from watchlist successfully",
+            404: "Watchlist entry not found",
+            401: "Authentication required"
+        },
+        tags=['User Watchlist']
+    )
+    def delete(self, request, *args, **kwargs):
+        return super().delete(request, *args, **kwargs)
     
     def get_queryset(self):
         try:

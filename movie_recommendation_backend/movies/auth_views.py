@@ -10,34 +10,26 @@ from django.db import IntegrityError
 from rest_framework_simplejwt.token_blacklist.models import BlacklistedToken
 from drf_yasg.utils import swagger_auto_schema
 from drf_yasg import openapi
+from .schemas import (
+    REGISTER_REQUEST_SCHEMA,
+    LOGIN_REQUEST_SCHEMA,
+    JWT_TOKEN_RESPONSE_SCHEMA,
+    ERROR_RESPONSE_SCHEMA,
+    VALIDATION_ERROR_SCHEMA
+)
 
 
 @swagger_auto_schema(
     method='post',
     operation_description="Register a new user account",
-    request_body=openapi.Schema(
-        type=openapi.TYPE_OBJECT,
-        required=['username', 'email', 'password'],
-        properties={
-            'username': openapi.Schema(type=openapi.TYPE_STRING, description='Username'),
-            'email': openapi.Schema(type=openapi.TYPE_STRING, format=openapi.FORMAT_EMAIL, description='Email address'),
-            'password': openapi.Schema(type=openapi.TYPE_STRING, description='Password'),
-            'first_name': openapi.Schema(type=openapi.TYPE_STRING, description='First name (optional)'),
-            'last_name': openapi.Schema(type=openapi.TYPE_STRING, description='Last name (optional)'),
-        }
-    ),
+    operation_summary="User Registration",
+    request_body=REGISTER_REQUEST_SCHEMA,
     responses={
-        201: openapi.Response('User created successfully', openapi.Schema(
-            type=openapi.TYPE_OBJECT,
-            properties={
-                'message': openapi.Schema(type=openapi.TYPE_STRING),
-                'user_id': openapi.Schema(type=openapi.TYPE_INTEGER),
-                'access': openapi.Schema(type=openapi.TYPE_STRING),
-                'refresh': openapi.Schema(type=openapi.TYPE_STRING),
-            }
-        )),
-        400: 'Bad request - validation errors'
-    }
+        201: openapi.Response('User created successfully', JWT_TOKEN_RESPONSE_SCHEMA),
+        400: openapi.Response('Bad request - validation errors', VALIDATION_ERROR_SCHEMA),
+        409: openapi.Response('User already exists', ERROR_RESPONSE_SCHEMA)
+    },
+    tags=['Authentication']
 )
 @api_view(['POST'])
 @permission_classes([AllowAny])
@@ -109,32 +101,14 @@ def register(request):
 @swagger_auto_schema(
     method='post',
     operation_description="Login with username and password",
-    request_body=openapi.Schema(
-        type=openapi.TYPE_OBJECT,
-        required=['username', 'password'],
-        properties={
-            'username': openapi.Schema(type=openapi.TYPE_STRING, description='Username'),
-            'password': openapi.Schema(type=openapi.TYPE_STRING, description='Password'),
-        }
-    ),
+    operation_summary="User Login",
+    request_body=LOGIN_REQUEST_SCHEMA,
     responses={
-        200: openapi.Response('Login successful', openapi.Schema(
-            type=openapi.TYPE_OBJECT,
-            properties={
-                'access': openapi.Schema(type=openapi.TYPE_STRING),
-                'refresh': openapi.Schema(type=openapi.TYPE_STRING),
-                'user': openapi.Schema(
-                    type=openapi.TYPE_OBJECT,
-                    properties={
-                        'id': openapi.Schema(type=openapi.TYPE_INTEGER),
-                        'username': openapi.Schema(type=openapi.TYPE_STRING),
-                        'email': openapi.Schema(type=openapi.TYPE_STRING),
-                    }
-                ),
-            }
-        )),
-        401: 'Invalid credentials'
-    }
+        200: openapi.Response('Login successful', JWT_TOKEN_RESPONSE_SCHEMA),
+        400: openapi.Response('Bad request - validation errors', VALIDATION_ERROR_SCHEMA),
+        401: openapi.Response('Invalid credentials', ERROR_RESPONSE_SCHEMA)
+    },
+    tags=['Authentication']
 )
 @api_view(['POST'])
 @permission_classes([AllowAny])

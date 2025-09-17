@@ -218,25 +218,33 @@ SIMPLE_JWT = {
 # Cache Configuration
 import sys
 
-if 'test' in sys.argv:
-    # Use dummy cache for testing
-    CACHES = {
-        'default': {
-            'BACKEND': 'django.core.cache.backends.dummy.DummyCache',
-        }
+# Temporarily use dummy cache to avoid Redis dependency for development
+CACHES = {
+    'default': {
+        'BACKEND': 'django.core.cache.backends.dummy.DummyCache',
     }
-else:
-    CACHES = {
-        'default': {
-            'BACKEND': 'django_redis.cache.RedisCache',
-            'LOCATION': config('REDIS_URL', default='redis://127.0.0.1:6379/1'),
-            'OPTIONS': {
-                'CLIENT_CLASS': 'django_redis.client.DefaultClient',
-            },
-            'KEY_PREFIX': 'movie_rec',
-            'TIMEOUT': 300,  # 5 minutes default timeout
-        }
-    }
+}
+
+# Uncomment below for Redis caching when Redis is available
+# if 'test' in sys.argv:
+#     # Use dummy cache for testing
+#     CACHES = {
+#         'default': {
+#             'BACKEND': 'django.core.cache.backends.dummy.DummyCache',
+#         }
+#     }
+# else:
+#     CACHES = {
+#         'default': {
+#             'BACKEND': 'django_redis.cache.RedisCache',
+#             'LOCATION': config('REDIS_URL', default='redis://127.0.0.1:6379/1'),
+#             'OPTIONS': {
+#                 'CLIENT_CLASS': 'django_redis.client.DefaultClient',
+#             },
+#             'KEY_PREFIX': 'movie_rec',
+#             'TIMEOUT': 300,  # 5 minutes default timeout
+#         }
+#     }
 
 # Cache key prefixes
 CACHE_MIDDLEWARE_ALIAS = 'default'

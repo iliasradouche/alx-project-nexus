@@ -4,7 +4,7 @@
     "builder": "NIXPACKS"
   },
   "deploy": {
-    "startCommand": "python manage.py migrate --settings=movie_backend.production_settings && (python manage.py shell --settings=movie_backend.production_settings -c \"from movies.models import Movie; import sys; sys.exit(0 if Movie.objects.count() > 0 else 1)\" || python manage.py loaddata --settings=movie_backend.production_settings movies/fixtures/sample_movies.json) && gunicorn movie_backend.wsgi:application --bind 0.0.0.0:$PORT --env DJANGO_SETTINGS_MODULE=movie_backend.production_settings",
+    "startCommand": "python manage.py migrate --settings=movie_backend.production_settings && (python manage.py shell --settings=movie_backend.production_settings -c \"from movies.models import Movie; import sys; sys.exit(0 if Movie.objects.count() > 0 else 1)\" || python manage.py populate_movies --settings=movie_backend.production_settings --pages 3) && gunicorn movie_backend.wsgi:application --bind 0.0.0.0:$PORT --env DJANGO_SETTINGS_MODULE=movie_backend.production_settings",
     "restartPolicyType": "ON_FAILURE",
     "restartPolicyMaxRetries": 10
   }

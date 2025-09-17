@@ -34,8 +34,9 @@ This guide explains how to connect your Django backend deployed on Railway with 
    - Updated `wsgi.py` to use `production_settings`
    - Created proper `Procfile` for Railway deployment
    - Verified `railway.json` configuration
+   - **CRITICAL FIX**: Disabled `SECURE_SSL_REDIRECT` in production settings (Railway handles SSL at proxy level)
    
-   **🔄 Next Steps**: Redeploy your Railway app to apply these fixes.
+   **🔄 URGENT**: You must redeploy your Railway app immediately to apply the SSL redirect fix!
 
 ## 🔧 Step 2: Update Backend CORS Settings
 

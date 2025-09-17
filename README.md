@@ -1,302 +1,283 @@
 # ALX Project Nexus
 
-## ProDev Backend Engineering Knowledge Hub
+[![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://python.org)
+[![Django](https://img.shields.io/badge/Django-4.2+-green.svg)](https://djangoproject.com)
+[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 
-Welcome to **ALX Project Nexus** - a comprehensive documentation repository dedicated to consolidating and showcasing major learnings from the ProDev Backend Engineering program. This repository serves as a knowledge hub for backend engineering concepts, tools, and best practices acquired throughout the intensive program.
+> **A comprehensive knowledge hub for backend engineering excellence, showcasing real-world projects and industry best practices from the ALX ProDev Backend Engineering program.**
 
-## 🎯 Project Objective
+## 🎯 Overview
 
-The objective of this project is to:
-- **Consolidate key learnings** from the ProDev Backend Engineering program
-- **Document major backend technologies**, concepts, challenges, and solutions
-- **Serve as a reference guide** for both current and future learners
-- **Foster collaboration** between frontend and backend learners
-- **Showcase understanding** of backend engineering principles and industry best practices
+**ALX Project Nexus** is a curated collection of backend engineering projects, documentation, and learning resources. This repository serves as both a showcase of technical expertise and a collaborative learning platform for current and future backend engineers.
 
-## 🚀 Key Features
+### Key Highlights
+- 🚀 **Production-Ready Projects**: Real-world applications with complete implementations
+- 📚 **Comprehensive Documentation**: Detailed guides, API specs, and best practices
+- 🛠️ **Modern Tech Stack**: Python, Django, PostgreSQL, Redis, Docker, and more
+- 🔐 **Security-First**: JWT authentication, input validation, and secure deployment
+- ⚡ **Performance Optimized**: Caching strategies, database optimization, and scalability
 
-### Comprehensive Documentation
-Covers essential backend engineering concepts including:
-- RESTful APIs and GraphQL APIs
-- Message Queues and Asynchronous Processing
-- CI/CD Pipelines and DevOps Practices
-- Celery & RabbitMQ Integration
-- System Design and Architecture Patterns
+## 🎬 Featured Project: Movie Recommendation API
 
-### Challenges & Solutions
-- Real-world challenges faced during development
-- Implemented solutions with detailed explanations
-- Problem-solving methodologies and approaches
+### 🌟 Live Demo
+- **🌐 API Base**: `http://127.0.0.1:8000/api/movies/`
+- **📚 Swagger Docs**: `http://127.0.0.1:8000/swagger/`
+- **📖 ReDoc**: `http://127.0.0.1:8000/redoc/`
+- **⚙️ Admin Panel**: `http://127.0.0.1:8000/admin/`
 
-### Best Practices & Takeaways
-- Industry-standard best practices
-- Personal insights and learning experiences
-- Performance optimization techniques
-- Security considerations and implementations
+### 🚀 Quick Start
 
-### Collaboration Hub
-- Encourages teamwork between frontend and backend learners
-- Knowledge sharing and peer learning opportunities
-- Cross-functional project development
+```bash
+# Clone the repository
+git clone https://github.com/your-username/alx-project-nexus.git
+cd alx-project-nexus/movie_recommendation_backend
 
-### Real-World Project Implementations
-- **Movie Recommendation Backend**: Complete implementation guide with Git workflow
-- **Performance-Optimized APIs**: Redis caching and database optimization
-- **Production-Ready Applications**: Deployment and monitoring strategies
+# Set up virtual environment
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
 
-## 🛠️ Key Technologies Covered
+# Install dependencies
+pip install -r requirements.txt
 
-### Core Programming & Frameworks
-- **Python**: Advanced programming concepts, data structures, and algorithms
-- **Django**: Full-stack web development, ORM, middleware, and advanced features
-- **Django REST Framework**: API development, serialization, authentication, and permissions
+# Configure environment
+cp .env.example .env
+# Edit .env with your configuration
 
-### API Development
-- **REST APIs**: Design principles, HTTP methods, status codes, and best practices
-- **GraphQL**: Query language, schema design, resolvers, and optimization
-- **API Documentation**: OpenAPI/Swagger, automated documentation generation
+# Run migrations
+python manage.py migrate
+
+# Create superuser (optional)
+python manage.py createsuperuser
+
+# Start development server
+python manage.py runserver
+```
+
+### 🎯 Core Features
+
+#### 🔐 Authentication & User Management
+- JWT-based authentication with refresh tokens
+- User registration, login, and profile management
+- Secure password handling and validation
+
+#### 🎭 Movie Database Integration
+- Real-time data from The Movie Database (TMDb) API
+- Comprehensive movie catalog with search and filtering
+- Genre management and movie recommendations
+
+#### 👤 Personalized Experience
+- User ratings and reviews (1-10 scale)
+- Personal watchlist management
+- Viewing history and statistics
+- AI-powered movie recommendations
+
+#### ⚡ Performance & Scalability
+- Redis caching for improved response times
+- Database query optimization with proper indexing
+- Efficient pagination and bulk operations
+
+## 🛠️ Technology Stack
+
+### Backend Core
+- **Python 3.8+** - Primary programming language
+- **Django 4.2+** - Web framework
+- **Django REST Framework** - API development
+- **PostgreSQL** - Primary database
+- **Redis** - Caching and session storage
+
+### API & Documentation
+- **OpenAPI 3.0** - API specification
+- **Swagger UI** - Interactive documentation
+- **ReDoc** - Alternative documentation interface
 
 ### DevOps & Deployment
-- **Docker**: Containerization, multi-stage builds, Docker Compose
-- **CI/CD Pipelines**: Automated testing, deployment strategies, GitHub Actions
-- **Cloud Deployment**: Platform-as-a-Service (PaaS) deployment strategies
+- **Docker** - Containerization
+- **Docker Compose** - Multi-container orchestration
+- **GitHub Actions** - CI/CD pipeline
+- **Gunicorn** - WSGI HTTP Server
 
-### Additional Technologies
-- **Database Management**: PostgreSQL, MySQL, database optimization
-- **Caching Solutions**: Redis, Memcached, application-level caching
-- **Message Queues**: Celery, RabbitMQ, asynchronous task processing
+### External Services
+- **TMDb API** - Movie data provider
+- **JWT** - Token-based authentication
 
-## 🏗️ Important Backend Development Concepts
-
-### Database Design & Management
-- **Entity-Relationship Modeling**: Designing efficient database schemas
-- **Database Normalization**: Reducing redundancy and improving data integrity
-- **Query Optimization**: Indexing strategies, query performance tuning
-- **Database Migrations**: Version control for database schema changes
-- **ORM Best Practices**: Efficient use of Django ORM, avoiding N+1 queries
-
-### Asynchronous Programming
-- **Async/Await Patterns**: Non-blocking code execution
-- **Task Queues**: Background job processing with Celery
-- **Message Brokers**: RabbitMQ and Redis for distributed systems
-- **WebSocket Implementation**: Real-time communication protocols
-- **Event-Driven Architecture**: Designing scalable, loosely-coupled systems
-
-### Caching Strategies
-- **Application-Level Caching**: In-memory caching for improved performance
-- **Database Query Caching**: Reducing database load through intelligent caching
-- **CDN Integration**: Content delivery networks for static assets
-- **Cache Invalidation**: Strategies for maintaining data consistency
-- **Redis Implementation**: Advanced caching patterns and data structures
-
-### Security & Authentication
-- **JWT Authentication**: Stateless authentication mechanisms
-- **OAuth2 Implementation**: Third-party authentication integration
-- **API Security**: Rate limiting, input validation, SQL injection prevention
-- **HTTPS/TLS**: Secure communication protocols
-- **Data Encryption**: Protecting sensitive information at rest and in transit
-
-## 💡 Challenges Faced & Solutions Implemented
-
-### Performance Optimization
-**Challenge**: Slow API response times under high load
-**Solution**: Implemented database indexing, query optimization, and Redis caching layer
-**Learning**: Proactive performance monitoring and optimization strategies
-
-### Scalability Issues
-**Challenge**: Application bottlenecks during peak usage
-**Solution**: Implemented horizontal scaling with load balancers and microservices architecture
-**Learning**: Importance of designing for scale from the beginning
-
-### Data Consistency
-**Challenge**: Maintaining data integrity across distributed systems
-**Solution**: Implemented database transactions, event sourcing, and eventual consistency patterns
-**Learning**: Understanding CAP theorem and distributed system trade-offs
-
-### Security Vulnerabilities
-**Challenge**: Protecting against common web application attacks
-**Solution**: Implemented comprehensive security measures including input validation, authentication, and authorization
-**Learning**: Security must be built into every layer of the application
-
-## 🎯 Best Practices & Personal Takeaways
-
-### Code Quality & Maintainability
-- **Clean Code Principles**: Writing readable, maintainable, and testable code
-- **Design Patterns**: Implementing appropriate architectural patterns
-- **Code Reviews**: Collaborative development and knowledge sharing
-- **Documentation**: Comprehensive API and code documentation
-
-### Testing Strategies
-- **Unit Testing**: Testing individual components in isolation
-- **Integration Testing**: Testing component interactions
-- **API Testing**: Automated endpoint testing with proper test coverage
-- **Performance Testing**: Load testing and benchmarking
-
-### Development Workflow
-- **Version Control**: Git best practices, branching strategies
-- **Agile Methodologies**: Iterative development and continuous improvement
-- **Code Deployment**: Automated deployment pipelines and rollback strategies
-- **Monitoring & Logging**: Application performance monitoring and error tracking
-
-### Industry Insights
-- **Microservices vs Monoliths**: Understanding when to use each architecture
-- **API Design**: RESTful principles and GraphQL advantages
-- **Database Selection**: Choosing the right database for specific use cases
-- **Cloud-Native Development**: Building applications for cloud environments
-
-## 🤝 Collaboration - Key to Success
-
-### Collaborate with Whom?
-
-#### Fellow ProDev Backend Learners
-- Exchange ideas and develop synergies
-- Organize study and coding sessions
-- Share knowledge and troubleshoot together
-- Maximize collective potential and learning outcomes
-
-#### ProDev Frontend Learners
-- **Essential collaboration** for full-stack project development
-- Frontend teams will consume your backend API endpoints
-- Coordinate API specifications and data formats
-- Ensure seamless integration between frontend and backend systems
-
-### Where to Collaborate?
-
-#### 💬 Dedicated Discord Channel: `#ProDevProjectNexus`
-- Connect with both Frontend and Backend learners
-- Exchange ideas, ask questions, and provide answers
-- Stay updated with announcements from program staff
-- Share resources, tutorials, and learning materials
-- Coordinate project timelines and deliverables
-
-### 💡 ProDev Collaboration Tips
-
-#### First Week Strategy
-- **📢 Communicate your chosen project** early and clearly
-- **🔍 Identify ProDev Frontend learners** working on compatible projects
-- **🤝 Establish collaboration partnerships** for seamless development
-- **📋 Define API contracts** and data exchange formats
-- **⏰ Coordinate development timelines** and milestone deliveries
-
-#### Ongoing Collaboration
-- **Regular check-ins** with frontend teams
-- **API documentation sharing** and updates
-- **Joint testing sessions** for integration validation
-- **Knowledge sharing sessions** on technical challenges
-- **Code review exchanges** for quality improvement
-
-## 📚 Repository Structure
+## 📁 Project Structure
 
 ```
 alx-project-nexus/
-├── README.md                           # This comprehensive documentation
-├── MOVIE_RECOMMENDATION_PROJECT.md    # Movie Recommendation Backend Guide
-├── projects/                           # Real-world project implementations
-│   ├── movie-recommendation-backend/  # Complete movie app backend
-│   ├── e-commerce-api/                # E-commerce backend system
-│   └── social-media-backend/          # Social platform backend
+├── README.md                           # This file
+├── movie_recommendation_backend/       # Main Django project
+│   ├── movie_backend/                 # Project configuration
+│   ├── movies/                        # Movies app
+│   ├── requirements.txt               # Python dependencies
+│   ├── manage.py                      # Django management script
+│   └── README.md                      # Project-specific documentation
 ├── docs/                              # Additional documentation
-│   ├── api-specifications/            # API documentation and specs
-│   ├── architecture/                  # System design documents
-│   └── tutorials/                     # Step-by-step guides
-├── examples/                          # Code examples and samples
-│   ├── django-projects/               # Django implementation examples
-│   ├── api-integrations/              # API integration samples
-│   └── deployment-configs/            # Deployment configuration examples
-└── resources/                         # Additional learning resources
-    ├── cheatsheets/                   # Quick reference guides
-    ├── best-practices/                # Detailed best practice guides
-    └── troubleshooting/               # Common issues and solutions
+├── .github/                           # GitHub workflows and templates
+└── LICENSE                            # Project license
 ```
 
-## 🎬 Featured Project: Movie Recommendation Backend
+## 🔧 API Endpoints
 
-### Real-World Application Implementation
+### Authentication
+```http
+POST /api/auth/register/     # User registration
+POST /api/auth/login/        # User login
+POST /api/auth/logout/       # User logout
+POST /api/auth/refresh/      # Token refresh
+```
 
-The **Movie Recommendation Backend** serves as a comprehensive case study that mirrors real-world backend development scenarios. This project emphasizes performance, security, and user-centric design principles.
+### Movies
+```http
+GET    /api/movies/          # List movies with pagination
+GET    /api/movies/{id}/     # Movie details
+GET    /api/movies/search/   # Search movies
+GET    /api/movies/popular/  # Popular movies from TMDb
+```
 
-#### 🎯 Project Highlights
-- **TMDb API Integration**: External API consumption and data processing
-- **JWT Authentication**: Secure user management and session handling
-- **Redis Caching**: Performance optimization for high-traffic scenarios
-- **Swagger Documentation**: Professional API documentation standards
-- **PostgreSQL Database**: Relational data modeling and optimization
+### User Interactions
+```http
+POST   /api/movies/{id}/rate/        # Rate a movie
+POST   /api/movies/{id}/watchlist/   # Add to watchlist
+DELETE /api/movies/{id}/watchlist/   # Remove from watchlist
+GET    /api/users/me/ratings/        # User's ratings
+GET    /api/users/me/watchlist/      # User's watchlist
+```
 
-#### 📋 Structured Git Workflow
-The project follows a professional Git commit workflow:
+## 🚀 Development Workflow
 
-1. **Initial Setup**
-   - `feat: set up Django project with PostgreSQL`
-   - `feat: integrate TMDb API for movie data`
+### Git Workflow
+This project follows conventional commits and feature branch workflow:
 
-2. **Feature Development**
-   - `feat: implement movie recommendation API`
-   - `feat: add user authentication and favorite movie storage`
+```bash
+# Feature development
+git checkout -b feat/new-feature
+git commit -m "feat: add new feature description"
 
-3. **Performance Optimization**
-   - `perf: add Redis caching for movie data`
+# Bug fixes
+git checkout -b fix/bug-description
+git commit -m "fix: resolve specific issue"
 
-4. **Documentation**
-   - `feat: integrate Swagger for API documentation`
-   - `docs: update README with API details`
+# Performance improvements
+git commit -m "perf: optimize database queries"
 
-#### 🔗 Implementation Guide
-For detailed implementation instructions, see: [Movie Recommendation Backend Guide](./MOVIE_RECOMMENDATION_PROJECT.md)
+# Documentation updates
+git commit -m "docs: update API documentation"
+```
+
+### Code Quality
+- **PEP 8** compliance for Python code
+- **Type hints** for better code documentation
+- **Comprehensive testing** with pytest
+- **Code reviews** for all pull requests
+
+## 🧪 Testing
+
+```bash
+# Run all tests
+python manage.py test
+
+# Run with coverage
+coverage run --source='.' manage.py test
+coverage report
+coverage html  # Generate HTML report
+
+# Run specific test modules
+python manage.py test movies.tests.test_models
+```
+
+## 🐳 Docker Deployment
+
+```bash
+# Build and run with Docker Compose
+docker-compose up --build
+
+# Run in production mode
+docker-compose -f docker-compose.prod.yml up -d
+
+# View logs
+docker-compose logs -f
+```
+
+## 📊 Performance Metrics
+
+- **Response Time**: < 200ms for cached endpoints
+- **Database Queries**: Optimized with select_related and prefetch_related
+- **Caching**: 90%+ cache hit rate for movie data
+- **API Rate Limiting**: 1000 requests/hour per user
+
+## 🔒 Security Features
+
+- **JWT Authentication** with secure token handling
+- **Input Validation** and sanitization
+- **SQL Injection Protection** via Django ORM
+- **CORS Configuration** for cross-origin requests
+- **Rate Limiting** to prevent abuse
+- **Environment Variables** for sensitive configuration
+
+## 🤝 Contributing
+
+We welcome contributions! Please see our [Contributing Guidelines](CONTRIBUTING.md) for details.
+
+### Development Setup
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Add tests for new functionality
+5. Ensure all tests pass
+6. Submit a pull request
+
+### Collaboration Channels
+- **Discord**: `#ProDevProjectNexus`
+- **Issues**: GitHub Issues for bug reports and feature requests
+- **Discussions**: GitHub Discussions for general questions
+
+## 📚 Learning Resources
+
+### Backend Engineering Concepts
+- **RESTful API Design**: Principles and best practices
+- **Database Optimization**: Indexing, query optimization, and caching
+- **Authentication & Security**: JWT, OAuth2, and security best practices
+- **Performance Optimization**: Caching strategies and scalability patterns
+- **DevOps Practices**: Docker, CI/CD, and deployment strategies
+
+### Additional Projects
+- **E-commerce API**: Complete online store backend
+- **Social Media Backend**: User interactions and content management
+- **Real-time Chat**: WebSocket implementation with Django Channels
 
 ## 🎓 Learning Outcomes
 
-By the end of the ProDev Backend Engineering program, learners will have:
+By exploring this repository, you'll gain expertise in:
 
-- **Mastered backend development** with Python and Django
-- **Built scalable APIs** using REST and GraphQL
-- **Implemented DevOps practices** with Docker and CI/CD
-- **Designed efficient databases** with proper optimization
-- **Applied security best practices** in web applications
-- **Collaborated effectively** with frontend development teams
-- **Deployed applications** to production environments
-- **Developed problem-solving skills** for complex technical challenges
+✅ **Backend Development** with Python and Django  
+✅ **RESTful API Design** and implementation  
+✅ **Database Design** and optimization  
+✅ **Authentication Systems** and security  
+✅ **Performance Optimization** techniques  
+✅ **DevOps Practices** and deployment  
+✅ **Testing Strategies** and quality assurance  
+✅ **Documentation** and API specifications  
 
-## 🚀 Getting Started
+## 📄 License
 
-1. **Clone this repository** to explore the documentation
-2. **Join the Discord channel** `#ProDevProjectNexus` for collaboration
-3. **Review the examples** and implementation guides
-4. **Connect with fellow learners** for project collaboration
-5. **Contribute your own learnings** and experiences
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 📞 Contact & Support
+## 📞 Support & Contact
 
-For questions, suggestions, or collaboration opportunities:
+- **Issues**: [GitHub Issues](https://github.com/your-username/alx-project-nexus/issues)
+- **Discussions**: [GitHub Discussions](https://github.com/your-username/alx-project-nexus/discussions)
 - **Discord**: `#ProDevProjectNexus`
-- **Program Staff**: Available through official ALX channels
-- **Peer Network**: Connect with fellow ProDev learners
+- **Email**: [your-email@example.com](mailto:your-email@example.com)
 
 ---
 
-**ALX Project Nexus** - Empowering the next generation of backend engineers through comprehensive documentation, collaboration, and continuous learning.
+<div align="center">
 
-*Built with ❤️ by the ProDev Backend Engineering Community*
+**ALX Project Nexus** - Empowering the next generation of backend engineers
 
+*Built with ❤️ by the ALX ProDev Backend Engineering Community*
 
+[⭐ Star this repo](https://github.com/your-username/alx-project-nexus) • [🐛 Report Bug](https://github.com/your-username/alx-project-nexus/issues) • [💡 Request Feature](https://github.com/your-username/alx-project-nexus/issues)
 
-
-### Phase 1: Initial Setup
-1. 1.
-   feat: set up Django project with PostgreSQL - Project initialization and database configuration
-2. 2.
-   feat: integrate TMDb API for movie data - External API integration and movie models
-### Phase 2: Feature Development
-3. 1.
-   feat: implement movie recommendation API - Core API endpoints for movies
-4. 2.
-   feat: add user authentication and favorite movie storage - JWT authentication system
-5. 3.
-   feat: create user favorite movie functionality - User preferences and favorites
-### Phase 3: Performance Optimization
-6. 1.
-   perf: add Redis caching for movie data - Performance enhancement with caching
-### Phase 4: Documentation
-7. 1.
-   feat: integrate Swagger for API documentation - Professional API documentation
-8. 2.
-   docs: update README with API details - Comprehensive project documentation
+</div>

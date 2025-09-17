@@ -494,3 +494,20 @@ ERROR 2025-09-17 14:12:13,851 views 27812 6892 Error in UserMovieWatchlistDetail
 WARNING 2025-09-17 14:12:13,894 log 27812 9872 Not Found: /@vite/client
 INFO 2025-09-17 14:12:13,895 basehttp 27812 6892 "GET /swagger/?format=openapi&ide_webview_request_time=1758114733734 HTTP/1.1" 200 21692
 WARNING 2025-09-17 14:12:13,896 basehttp 27812 9872 "GET /@vite/client HTTP/1.1" 404 3091
+INFO 2025-09-17 14:12:30,060 basehttp 27812 35904 "GET / HTTP/1.1" 302 0
+INFO 2025-09-17 14:12:30,075 basehttp 27812 35904 "GET /swagger/ HTTP/1.1" 200 1671
+INFO 2025-09-17 14:12:30,340 basehttp 27812 35904 "GET /static/drf-yasg/style.css HTTP/1.1" 200 1047
+INFO 2025-09-17 14:12:30,347 basehttp 27812 15220 "GET /static/drf-yasg/swagger-ui-dist/swagger-ui.css HTTP/1.1" 200 145206
+INFO 2025-09-17 14:12:30,354 basehttp 27812 39208 "GET /static/drf-yasg/swagger-ui-dist/swagger-ui-standalone-preset.js HTTP/1.1" 200 322863
+INFO 2025-09-17 14:12:30,355 basehttp 27812 29684 "GET /static/drf-yasg/insQ.min.js HTTP/1.1" 200 2093
+INFO 2025-09-17 14:12:30,357 basehttp 27812 40500 "GET /static/drf-yasg/immutable.min.js HTTP/1.1" 200 56904
+INFO 2025-09-17 14:12:30,358 basehttp 27812 35904 "GET /static/drf-yasg/swagger-ui-init.js HTTP/1.1" 200 15480
+INFO 2025-09-17 14:12:30,364 basehttp 27812 30620 "GET /static/drf-yasg/swagger-ui-dist/swagger-ui-bundle.js HTTP/1.1" 200 1046583
+ERROR 2025-09-17 14:12:31,578 views 27812 30620 Error in UserMovieRatingDetailView.get_queryset: Field 'id' expected a number but got <django.contrib.auth.models.AnonymousUser object at 0x000002395CFF2AD0>.
+ERROR 2025-09-17 14:12:31,579 views 27812 30620 Error in UserMovieWatchlistDetailView.get_queryset: Field 'id' expected a number but got <django.contrib.auth.models.AnonymousUser object at 0x000002395CFF2AD0>.
+ERROR 2025-09-17 14:12:31,580 views 27812 30620 Error in UserMovieRatingDetailView.get_queryset: Field 'id' expected a number but got <django.contrib.auth.models.AnonymousUser object at 0x000002395CFF2AD0>.
+ERROR 2025-09-17 14:12:31,583 views 27812 30620 Error in UserMovieRatingDetailView.get_queryset: Field 'id' expected a number but got <django.contrib.auth.models.AnonymousUser object at 0x000002395CFF2AD0>.
+ERROR 2025-09-17 14:12:31,584 views 27812 30620 Error in UserMovieRatingDetailView.get_queryset: Field 'id' expected a number but got <django.contrib.auth.models.AnonymousUser object at 0x000002395CFF2AD0>.
+ERROR 2025-09-17 14:12:31,585 views 27812 30620 Error in UserMovieWatchlistDetailView.get_queryset: Field 'id' expected a number but got <django.contrib.auth.models.AnonymousUser object at 0x000002395CFF2AD0>.
+INFO 2025-09-17 14:12:31,675 basehttp 27812 30620 "GET /swagger/?format=openapi HTTP/1.1" 200 21692
+INFO 2025-09-17 14:12:31,730 basehttp 27812 30620 "GET /static/drf-yasg/swagger-ui-dist/favicon-32x32.png HTTP/1.1" 200 628

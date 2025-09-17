@@ -37,7 +37,6 @@
       "vote_count": 26280,
       "popularity": 61.416,
       "adult": false,
-      "video": false,
       "original_language": "en",
       "original_title": "Fight Club"
     }
@@ -56,7 +55,6 @@
       "vote_count": 24870,
       "popularity": 75.321,
       "adult": false,
-      "video": false,
       "original_language": "en",
       "original_title": "Forrest Gump"
     }
@@ -75,7 +73,6 @@
       "vote_count": 18967,
       "popularity": 131.752,
       "adult": false,
-      "video": false,
       "original_language": "en",
       "original_title": "The Godfather"
     }
@@ -94,7 +91,6 @@
       "vote_count": 14505,
       "popularity": 56.826,
       "adult": false,
-      "video": false,
       "original_language": "en",
       "original_title": "Schindler's List"
     }
@@ -113,7 +109,6 @@
       "vote_count": 26312,
       "popularity": 67.929,
       "adult": false,
-      "video": false,
       "original_language": "en",
       "original_title": "Pulp Fiction"
     }

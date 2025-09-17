@@ -28,11 +28,19 @@ SECRET_KEY = config('SECRET_KEY')
 DEBUG = config('DEBUG', default=True, cast=bool)
 
 ALLOWED_HOSTS = [
-    'localhost',
-    '127.0.0.1',
-    '*.railway.app',  # Railway domain
-    'project-nexus-alx.netlify.app',  # Netlify frontend
+    "localhost",
+    "127.0.0.1",
+    ".railway.app",  # ✅ leading dot = any subdomain of railway.app
+    "alx-project-nexus-production-f78f.up.railway.app",  # ✅ explicit host (belt & suspenders)
+    "project-nexus-alx.netlify.app",
 ]
+
+
+CSRF_TRUSTED_ORIGINS = [
+    "https://project-nexus-alx.netlify.app",
+    "https://*.netlify.app",
+]
+
 
 
 # Application definition
@@ -224,6 +232,15 @@ SIMPLE_JWT = {
 # Cache Configuration
 import sys
 
+
+
+# CORS settings for frontend integration
+CORS_ALLOWED_ORIGINS = [
+    "http://localhost:3000",
+    "http://127.0.0.1:3000",
+    "https://project-nexus-alx.netlify.app",  # Netlify frontend
+]
+
 # Temporarily use dummy cache to avoid Redis dependency for development
 CACHES = {
     'default': {
@@ -361,12 +378,6 @@ REDOC_SETTINGS = {
     'LAZY_RENDERING': False,
 }
 
-# CORS settings for frontend integration
-CORS_ALLOWED_ORIGINS = [
-    "http://localhost:3000",
-    "http://127.0.0.1:3000",
-    "https://project-nexus-alx.netlify.app",  # Netlify frontend
-]
 
 CORS_ALLOW_CREDENTIALS = True
 

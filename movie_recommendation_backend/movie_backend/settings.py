@@ -27,7 +27,12 @@ SECRET_KEY = config('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = config('DEBUG', default=True, cast=bool)
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'localhost',
+    '127.0.0.1',
+    '*.railway.app',  # Railway domain
+    'project-nexus-alx.netlify.app',  # Netlify frontend
+]
 
 
 # Application definition
@@ -49,13 +54,13 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
+    "corsheaders.middleware.CorsMiddleware",  # Must be at the top
     "django.middleware.security.SecurityMiddleware",
     "movies.middleware.SecurityHeadersMiddleware",
     "movies.middleware.RequestValidationMiddleware",
     "movies.middleware.RateLimitMiddleware",
     "django.middleware.cache.UpdateCacheMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
-    "corsheaders.middleware.CorsMiddleware",
     "django.middleware.common.CommonMiddleware",
     "django.middleware.csrf.CsrfViewMiddleware",
     "django.contrib.auth.middleware.AuthenticationMiddleware",
@@ -385,3 +390,11 @@ CORS_ALLOW_METHODS = [
     'POST',
     'PUT',
 ]
+
+# Cookie Security Settings for CORS Authentication
+SESSION_COOKIE_SECURE = not DEBUG  # True in production
+CSRF_COOKIE_SECURE = not DEBUG  # True in production
+SESSION_COOKIE_SAMESITE = 'None' if not DEBUG else 'Lax'  # None for cross-origin in production
+CSRF_COOKIE_SAMESITE = 'None' if not DEBUG else 'Lax'  # None for cross-origin in production
+SESSION_COOKIE_HTTPONLY = True  # Prevent XSS attacks
+CSRF_COOKIE_HTTPONLY = False  # Must be False for frontend access

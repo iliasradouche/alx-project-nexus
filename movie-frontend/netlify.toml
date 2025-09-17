@@ -1,3 +1,4 @@
+# Updated to fix CORS issues - Force new deployment
 [build]
   base = "movie-frontend"
   command = "npm run build"

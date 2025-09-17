@@ -1,0 +1,131 @@
+[
+{
+  "model": "movies.movie",
+  "pk": 1,
+  "fields": {
+    "tmdb_id": 550,
+    "title": "Fight Club",
+    "original_title": "Fight Club",
+    "overview": "A ticking-time-bomb insomniac and a slippery soap salesman channel primal male aggression into a shocking new form of therapy. Their concept catches on, with underground \"fight clubs\" forming in every town, until an eccentric gets in the way and ignites an out-of-control spiral toward oblivion.",
+    "release_date": "1999-10-15",
+    "runtime": null,
+    "vote_average": 8.438,
+    "vote_count": 30748,
+    "popularity": 20.1432,
+    "poster_path": "/jSziioSwPVrOy9Yow3XhWIBDjq1.jpg",
+    "backdrop_path": "/hZkgoQYus5vegHoetLkCJzb17zJ.jpg",
+    "adult": false,
+    "original_language": "en",
+    "created_at": "2025-09-17T14:54:38.712Z",
+    "updated_at": "2025-09-17T14:58:05.704Z",
+    "genres": [
+      3
+    ]
+  }
+},
+{
+  "model": "movies.movie",
+  "pk": 2,
+  "fields": {
+    "tmdb_id": 13,
+    "title": "Forrest Gump",
+    "original_title": "Forrest Gump",
+    "overview": "A man with a low IQ has accomplished great things in his life and been present during significant historic events—in each case, far exceeding what anyone imagined he could do. But despite all he has achieved, his one true love eludes him.",
+    "release_date": "1994-06-23",
+    "runtime": null,
+    "vote_average": 8.466,
+    "vote_count": 28630,
+    "popularity": 18.1877,
+    "poster_path": "/arw2vcBveWOVZr6pxd9XTd1TdQa.jpg",
+    "backdrop_path": "/67HggiWaP9ZLv5sPYmyRV37yAJM.jpg",
+    "adult": false,
+    "original_language": "en",
+    "created_at": "2025-09-17T14:54:38.727Z",
+    "updated_at": "2025-09-17T14:58:05.287Z",
+    "genres": [
+      2,
+      3
+    ]
+  }
+},
+{
+  "model": "movies.movie",
+  "pk": 3,
+  "fields": {
+    "tmdb_id": 680,
+    "title": "Pulp Fiction",
+    "original_title": "Pulp Fiction",
+    "overview": "A burger-loving hit man, his philosophical partner, a drug-addled gangster's moll and a washed-up boxer converge in this sprawling, comedic crime caper. Their adventures unfurl in three stories that ingeniously trip back and forth in time.",
+    "release_date": "1994-09-10",
+    "runtime": null,
+    "vote_average": 8.487,
+    "vote_count": 29075,
+    "popularity": 19.6779,
+    "poster_path": "/vQWk5YBFWF4bZaofAbv0tShwBvQ.jpg",
+    "backdrop_path": "/suaEOtk1N1sgg2MTM7oZd2cfVp3.jpg",
+    "adult": false,
+    "original_language": "en",
+    "created_at": "2025-09-17T14:54:38.741Z",
+    "updated_at": "2025-09-17T14:58:05.283Z",
+    "genres": [
+      2,
+      3
+    ]
+  }
+},
+{
+  "model": "movies.movie",
+  "pk": 4,
+  "fields": {
+    "tmdb_id": 155,
+    "title": "The Dark Knight",
+    "original_title": "The Dark Knight",
+    "overview": "Batman raises the stakes in his war on crime. With the help of Lt. Jim Gordon and District Attorney Harvey Dent, Batman sets out to dismantle the remaining criminal organizations that plague the streets. The partnership proves to be effective, but they soon find themselves prey to a reign of chaos unleashed by a rising criminal mastermind known to the terrified citizens of Gotham as the Joker.",
+    "release_date": "2008-07-16",
+    "runtime": null,
+    "vote_average": 8.523,
+    "vote_count": 34374,
+    "popularity": 36.8175,
+    "poster_path": "/qJ2tW6WMUDux911r6m7haRef0WH.jpg",
+    "backdrop_path": "/enNubozHn9pXi0ycTVYUWfpHZm.jpg",
+    "adult": false,
+    "original_language": "en",
+    "created_at": "2025-09-17T14:54:38.753Z",
+    "updated_at": "2025-09-17T14:58:05.274Z",
+    "genres": [
+      1,
+      3
+    ]
+  }
+},
+{
+  "model": "movies.movie",
+  "pk": 5,
+  "fields": {
+    "tmdb_id": 497,
+    "title": "The Green Mile",
+    "original_title": "The Green Mile",
+    "overview": "A supernatural tale set on death row in a Southern prison, where gentle giant John Coffey possesses the mysterious power to heal people's ailments. When the cell block's head guard, Paul Edgecomb, recognizes Coffey's miraculous gift, he tries desperately to help stave off the condemned man's execution.",
+    "release_date": "1999-12-10",
+    "runtime": null,
+    "vote_average": 8.504,
+    "vote_count": 18369,
+    "popularity": 18.5289,
+    "poster_path": "/8VG8fDNiy50H4FedGwdSVUPoaJe.jpg",
+    "backdrop_path": "/vxJ08SvwomfKbpboCWynC3uqUg4.jpg",
+    "adult": false,
+    "original_language": "en",
+    "created_at": "2025-09-17T14:54:38.766Z",
+    "updated_at": "2025-09-17T14:58:05.278Z",
+    "genres": [
+      3
+    ]
+  }
+},
+{
+  "model": "movies.movie",
+  "pk": 6,
+  "fields": {
+    "tmdb_id": 1311031,
+    "title": "Demon Slayer: Kimetsu no Yaiba Infinity Castle",
+    "original_title": 

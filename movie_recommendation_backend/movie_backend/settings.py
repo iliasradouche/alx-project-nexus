@@ -67,7 +67,7 @@ MIDDLEWARE = [
     "movies.middleware.SecurityHeadersMiddleware",
     "movies.middleware.RequestValidationMiddleware",
     "movies.middleware.RateLimitMiddleware",
-    "django.middleware.cache.UpdateCacheMiddleware",
+    #"django.middleware.cache.UpdateCacheMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
     "django.middleware.common.CommonMiddleware",
     "django.middleware.csrf.CsrfViewMiddleware",
@@ -78,7 +78,7 @@ MIDDLEWARE = [
     "movies.middleware.APIResponseCacheMiddleware",
     "movies.middleware.PerformanceMonitoringMiddleware",
     "movies.middleware.RequestResponseLoggingMiddleware",
-    "django.middleware.cache.FetchFromCacheMiddleware",
+    #"django.middleware.cache.FetchFromCacheMiddleware",
 ]
 
 ROOT_URLCONF = "movie_backend.urls"

@@ -49,7 +49,7 @@ MIDDLEWARE.insert(2, 'whitenoise.middleware.WhiteNoiseMiddleware')
 
 # CORS settings for production
 CORS_ALLOWED_ORIGINS = [
-    "https://project-nexus-alx.netlify.app",  # Update with your Netlify URL
+    "https://project-nexus-alx.netlify.app",  # Netlify URL
     "http://localhost:3000",  # For local development
     "http://127.0.0.1:3000",  # For local development
 ]
@@ -60,6 +60,28 @@ if config('FRONTEND_URL', default=None):
 
 CORS_ALLOW_CREDENTIALS = True
 CORS_ALLOW_ALL_ORIGINS = False  # Set to True only for development
+
+# Additional CORS headers
+CORS_ALLOW_HEADERS = [
+    'accept',
+    'accept-encoding',
+    'authorization',
+    'content-type',
+    'dnt',
+    'origin',
+    'user-agent',
+    'x-csrftoken',
+    'x-requested-with',
+]
+
+CORS_ALLOW_METHODS = [
+    'DELETE',
+    'GET',
+    'OPTIONS',
+    'PATCH',
+    'POST',
+    'PUT',
+]
 
 # Cache configuration (if using Redis)
 if config('REDIS_URL', default=None):

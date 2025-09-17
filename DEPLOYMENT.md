@@ -2,85 +2,118 @@
 
 This guide covers deploying both the React frontend and Django backend of the Movie Recommendation application.
 
-## 🚀 Frontend Deployment (Vercel)
+## 🚀 Frontend Deployment
 
-### Prerequisites
-- Node.js 16+ installed
-- Vercel account (free tier available)
-- Git repository
+### Option 1: Vercel Deployment
 
-### Step 1: Prepare Your Frontend
+#### Prerequisites
+- Node.js 18+ installed
+- Vercel CLI installed: `npm i -g vercel`
+- GitHub/GitLab account (for automatic deployments)
 
-1. **Navigate to the frontend directory:**
+#### Deploy via Vercel CLI
+
+1. **Navigate to frontend directory**:
    ```bash
    cd movie-frontend
    ```
 
-2. **Install dependencies:**
+2. **Install dependencies**:
    ```bash
    npm install
    ```
 
-3. **Test the build locally:**
+3. **Build the project**:
    ```bash
-   npm run build:prod
+   npm run build
    ```
 
-### Step 2: Deploy to Vercel
-
-#### Option A: Vercel CLI (Recommended)
-
-1. **Install Vercel CLI:**
+4. **Deploy to Vercel**:
    ```bash
-   npm install -g vercel
+   vercel --prod
    ```
 
-2. **Login to Vercel:**
-   ```bash
-   vercel login
-   ```
+#### Deploy via Vercel Dashboard
 
-3. **Deploy from the frontend directory:**
+1. **Push your code to GitHub/GitLab**
+2. **Connect your repository to Vercel**:
+   - Go to [vercel.com](https://vercel.com)
+   - Click "New Project"
+   - Import your repository
+   - Set root directory to `movie-frontend`
+   - Deploy
+
+### Option 2: Netlify Deployment
+
+#### Prerequisites
+- Node.js 18+ installed
+- Netlify CLI installed: `npm i -g netlify-cli`
+- GitHub/GitLab account (for automatic deployments)
+
+#### Deploy via Netlify CLI
+
+1. **Navigate to frontend directory**:
    ```bash
    cd movie-frontend
-   vercel
    ```
 
-4. **Follow the prompts:**
-   - Link to existing project? **N**
-   - Project name: `movie-recommendation-frontend`
-   - Directory: `./` (current directory)
-   - Override settings? **N**
-
-#### Option B: Vercel Dashboard
-
-1. **Push your code to GitHub/GitLab/Bitbucket**
-
-2. **Go to [Vercel Dashboard](https://vercel.com/dashboard)**
-
-3. **Click "New Project"**
-
-4. **Import your repository**
-
-5. **Configure project settings:**
-   - Framework Preset: **Create React App**
-   - Root Directory: `movie-frontend`
-   - Build Command: `npm run build:prod`
-   - Output Directory: `build`
-
-### Step 3: Configure Environment Variables
-
-In your Vercel dashboard:
-
-1. Go to **Project Settings** → **Environment Variables**
-
-2. Add the following variables:
-   ```
-   REACT_APP_API_URL = https://your-backend-url.herokuapp.com/api
-   GENERATE_SOURCEMAP = false
+2. **Install dependencies**:
+   ```bash
+   npm install
    ```
 
-3. **Redeploy** after adding environment variables
+3. **Build the project**:
+   ```bash
+   npm run build
+   ```
+
+4. **Deploy to Netlify**:
+   ```bash
+   netlify deploy --prod --dir=build
+   ```
+
+#### Deploy via Netlify Dashboard
+
+1. **Push your code to GitHub/GitLab**
+2. **Connect your repository to Netlify**:
+   - Go to [netlify.com](https://netlify.com)
+   - Click "New site from Git"
+   - Choose your repository
+   - Set build command: `npm run build`
+   - Set publish directory: `build`
+   - Set base directory: `movie-frontend`
+   - Deploy
+
+#### Netlify Configuration
+
+Create `movie-frontend/netlify.toml`:
+```toml
+[build]
+  base = "movie-frontend"
+  command = "npm run build"
+  publish = "build"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+[build.environment]
+  NODE_VERSION = "18"
+```
+
+### Environment Variables (Both Platforms)
+
+Set these in your deployment platform dashboard:
+
+```bash
+# Required
+REACT_APP_API_URL=https://your-backend-url.herokuapp.com/api
+
+# Optional
+REACT_APP_ANALYTICS_ID=your-analytics-id
+REACT_APP_ENVIRONMENT=production
+```
 
 ---
 
@@ -88,20 +121,55 @@ In your Vercel dashboard:
 
 Since Vercel is primarily for frontend/serverless functions, you'll need a separate service for your Django backend.
 
-### Option 1: Heroku (Recommended for beginners)
+### Option 1: Heroku (Recommended)
 
 #### Prerequisites
-- Heroku account
 - Heroku CLI installed
+- Git repository
+- Heroku account (free tier available)
 
-#### Steps:
+#### Step-by-Step Heroku Deployment
 
-1. **Navigate to backend directory:**
+1. **Install Heroku CLI** (if not already installed):
+   ```bash
+   # Windows
+   winget install Heroku.CLI
+   
+   # macOS
+   brew tap heroku/brew && brew install heroku
+   
+   # Linux
+   curl https://cli-assets.heroku.com/install.sh | sh
+   ```
+
+2. **Login to Heroku**:
+   ```bash
+   heroku login
+   ```
+
+3. **Navigate to backend directory**:
    ```bash
    cd movie_recommendation_backend
    ```
 
-2. **Create additional files for Heroku:**
+4. **Initialize Git repository** (if not already done):
+   ```bash
+   git init
+   git add .
+   git commit -m "Initial commit"
+   ```
+
+5. **Create Heroku app**:
+   ```bash
+   heroku create your-movie-backend-app
+   ```
+
+6. **Add PostgreSQL addon**:
+   ```bash
+   heroku addons:create heroku-postgresql:essential-0
+   ```
+
+7. **Create additional files for Heroku:**
 
    **Procfile:**
    ```
@@ -118,9 +186,10 @@ Since Vercel is primarily for frontend/serverless functions, you'll need a separ
    echo "gunicorn==21.2.0" >> requirements.txt
    echo "whitenoise==6.6.0" >> requirements.txt
    echo "dj-database-url==2.1.0" >> requirements.txt
+   echo "psycopg2-binary==2.9.7" >> requirements.txt
    ```
 
-3. **Update Django settings for production:**
+8. **Update Django settings for production:**
    
    Add to `movie_backend/settings.py`:
    ```python
@@ -143,45 +212,213 @@ Since Vercel is primarily for frontend/serverless functions, you'll need a separ
        MIDDLEWARE.insert(1, 'whitenoise.middleware.WhiteNoiseMiddleware')
    ```
 
-4. **Deploy to Heroku:**
+9. **Set environment variables**:
    ```bash
-   heroku login
-   heroku create your-movie-backend
-   git add .
-   git commit -m "Prepare for Heroku deployment"
-   git push heroku main
-   ```
-
-5. **Set environment variables:**
-   ```bash
-   heroku config:set SECRET_KEY="your-secret-key"
+   heroku config:set DJANGO_SETTINGS_MODULE=movie_backend.production_settings
+   heroku config:set SECRET_KEY="$(python -c 'from django.core.management.utils import get_random_secret_key; print(get_random_secret_key())')"
    heroku config:set DEBUG=False
-   heroku config:set DATABASE_URL="your-database-url"
+   heroku config:set ALLOWED_HOSTS="your-movie-backend-app.herokuapp.com"
+   heroku config:set CORS_ALLOWED_ORIGINS="https://your-frontend-url.vercel.app,https://your-frontend-url.netlify.app"
    ```
 
-6. **Run migrations:**
-   ```bash
-   heroku run python manage.py migrate
-   heroku run python manage.py createsuperuser
-   ```
+10. **Deploy to Heroku**:
+    ```bash
+    git add .
+    git commit -m "Prepare for Heroku deployment"
+    git push heroku main
+    ```
+
+11. **Run database migrations**:
+    ```bash
+    heroku run python manage.py migrate
+    heroku run python manage.py collectstatic --noinput
+    ```
+
+12. **Create superuser** (optional):
+    ```bash
+    heroku run python manage.py createsuperuser
+    ```
+
+#### Heroku Environment Variables
+
+Set these in Heroku dashboard or via CLI:
+
+```bash
+# Core Django Settings
+DJANGO_SETTINGS_MODULE=movie_backend.production_settings
+SECRET_KEY=your-generated-secret-key
+DEBUG=False
+ALLOWED_HOSTS=your-app-name.herokuapp.com
+
+# CORS Settings
+CORS_ALLOWED_ORIGINS=https://your-frontend-url.vercel.app,https://your-frontend-url.netlify.app
+CORS_ALLOW_CREDENTIALS=True
+
+# Database (automatically set by Heroku PostgreSQL addon)
+DATABASE_URL=postgres://...
+
+# Optional: Email Configuration
+EMAIL_HOST=smtp.gmail.com
+EMAIL_PORT=587
+EMAIL_HOST_USER=your-email@gmail.com
+EMAIL_HOST_PASSWORD=your-app-password
+
+# Optional: Redis (if using caching)
+REDIS_URL=redis://...
+```
 
 ### Option 2: Railway
 
-1. **Go to [Railway](https://railway.app/)**
-2. **Connect your GitHub repository**
-3. **Select the backend directory**
-4. **Railway will auto-detect Django and deploy**
-5. **Add environment variables in Railway dashboard**
+#### Prerequisites
+- Railway account (free tier available)
+- GitHub repository
+
+#### Steps
+
+1. **Create Railway account** at [railway.app](https://railway.app)
+
+2. **Create new project**:
+   - Click "New Project"
+   - Select "Deploy from GitHub repo"
+   - Choose your repository
+   - Select the backend directory
+
+3. **Add PostgreSQL database**:
+   - Click "New" → "Database" → "PostgreSQL"
+   - Railway will automatically provide DATABASE_URL
+
+4. **Configure environment variables**:
+   ```bash
+   DJANGO_SETTINGS_MODULE=movie_backend.production_settings
+   SECRET_KEY=your-secret-key
+   DEBUG=False
+   ALLOWED_HOSTS=your-app-name.up.railway.app
+   CORS_ALLOWED_ORIGINS=https://your-frontend-url.vercel.app
+   ```
+
+5. **Configure build settings**:
+   - Build Command: `pip install -r requirements.txt`
+   - Start Command: `gunicorn movie_backend.wsgi:application --bind 0.0.0.0:$PORT`
+
+6. **Deploy**: Railway will automatically deploy on git push
 
 ### Option 3: Render
 
-1. **Go to [Render](https://render.com/)**
-2. **Create a new Web Service**
-3. **Connect your repository**
-4. **Configure:**
-   - Build Command: `pip install -r requirements.txt`
-   - Start Command: `gunicorn movie_backend.wsgi:application`
-   - Environment: `Python 3`
+#### Prerequisites
+- Render account (free tier available)
+- GitHub repository
+
+#### Steps
+
+1. **Create Render account** at [render.com](https://render.com)
+
+2. **Create new Web Service**:
+   - Click "New" → "Web Service"
+   - Connect your GitHub repository
+   - Select your backend repository
+
+3. **Configure service settings**:
+   ```bash
+   # Build Command
+   pip install -r requirements.txt
+   
+   # Start Command
+   gunicorn movie_backend.wsgi:application --bind 0.0.0.0:$PORT
+   
+   # Environment
+   Python 3.11
+   ```
+
+4. **Add PostgreSQL database**:
+   - Go to Dashboard → "New" → "PostgreSQL"
+   - Copy the database URL
+
+5. **Set environment variables**:
+   ```bash
+   DJANGO_SETTINGS_MODULE=movie_backend.production_settings
+   SECRET_KEY=your-secret-key
+   DEBUG=False
+   DATABASE_URL=your-postgres-url
+   ALLOWED_HOSTS=your-app-name.onrender.com
+   CORS_ALLOWED_ORIGINS=https://your-frontend-url.vercel.app
+   ```
+
+6. **Deploy**: Render will automatically build and deploy
+
+### Option 4: DigitalOcean App Platform
+
+#### Prerequisites
+- DigitalOcean account
+- GitHub repository
+
+#### Steps
+
+1. **Create DigitalOcean account** at [digitalocean.com](https://digitalocean.com)
+
+2. **Create new App**:
+   - Go to Apps → "Create App"
+   - Connect GitHub repository
+   - Select backend directory
+
+3. **Configure app settings**:
+   ```bash
+   # Build Command
+   pip install -r requirements.txt
+   
+   # Run Command
+   gunicorn movie_backend.wsgi:application --bind 0.0.0.0:$PORT
+   ```
+
+4. **Add managed database**:
+   - Add PostgreSQL database component
+   - DigitalOcean will provide DATABASE_URL
+
+5. **Set environment variables**:
+   ```bash
+   DJANGO_SETTINGS_MODULE=movie_backend.production_settings
+   SECRET_KEY=your-secret-key
+   DEBUG=False
+   ALLOWED_HOSTS=your-app-name.ondigitalocean.app
+   CORS_ALLOWED_ORIGINS=https://your-frontend-url.vercel.app
+   ```
+
+---
+
+## 📊 Platform Comparison
+
+### Frontend Hosting Comparison
+
+| Feature | Vercel | Netlify |
+|---------|--------|----------|
+| **Free Tier** | 100GB bandwidth/month | 100GB bandwidth/month |
+| **Build Minutes** | 6,000 minutes/month | 300 minutes/month |
+| **Custom Domains** | ✅ Unlimited | ✅ Unlimited |
+| **SSL Certificates** | ✅ Automatic | ✅ Automatic |
+| **Edge Functions** | ✅ Yes | ✅ Yes |
+| **Analytics** | ✅ Built-in | ✅ Built-in |
+| **Git Integration** | ✅ GitHub, GitLab, Bitbucket | ✅ GitHub, GitLab, Bitbucket |
+| **Preview Deployments** | ✅ Yes | ✅ Yes |
+| **Best For** | React/Next.js apps | Static sites, JAMstack |
+
+### Backend Hosting Comparison
+
+| Feature | Heroku | Railway | Render | DigitalOcean |
+|---------|--------|---------|--------|--------------|
+| **Free Tier** | Limited (sleeps after 30min) | $5/month minimum | Limited (sleeps after 15min) | $5/month minimum |
+| **Database** | PostgreSQL add-on | Built-in PostgreSQL | Built-in PostgreSQL | Managed databases |
+| **Deployment** | Git-based | Git-based | Git-based | Git-based |
+| **Scaling** | Easy horizontal scaling | Auto-scaling | Auto-scaling | Manual scaling |
+| **Custom Domains** | ✅ Yes | ✅ Yes | ✅ Yes | ✅ Yes |
+| **SSL Certificates** | ✅ Automatic | ✅ Automatic | ✅ Automatic | ✅ Automatic |
+| **Monitoring** | Basic (paid plans) | Built-in | Built-in | Advanced |
+| **Best For** | Beginners, prototypes | Modern apps | Full-stack apps | Production apps |
+
+### Recommended Combinations
+
+1. **For Beginners**: Netlify (Frontend) + Heroku (Backend)
+2. **For Modern Stack**: Vercel (Frontend) + Railway (Backend)
+3. **For Production**: Vercel (Frontend) + DigitalOcean (Backend)
+4. **For Budget-Conscious**: Netlify (Frontend) + Render (Backend)
 
 ---
 

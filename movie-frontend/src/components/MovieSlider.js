@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import { moviesAPI } from '../services/api';
 import './MovieSlider.css';
 
@@ -26,11 +26,11 @@ const MovieSlider = () => {
     }
   };
 
-  const nextSlide = () => {
+  const nextSlide = useCallback(() => {
     setCurrentIndex((prevIndex) => 
       prevIndex === movies.length - 1 ? 0 : prevIndex + 1
     );
-  };
+  }, [movies.length]);
 
   const prevSlide = () => {
     setCurrentIndex((prevIndex) => 
@@ -48,7 +48,7 @@ const MovieSlider = () => {
       const interval = setInterval(nextSlide, 5000); // Change slide every 5 seconds
       return () => clearInterval(interval);
     }
-  }, [movies.length]);
+  }, [movies.length, nextSlide]);
 
   const extractYear = (dateString) => {
     if (!dateString) return 'Unknown Year';

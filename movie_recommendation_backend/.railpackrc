@@ -1,0 +1,8 @@
+{
+  "type": "python",
+  "framework": "django",
+  "buildCommand": "pip install -r requirements.txt && python manage.py collectstatic --noinput",
+  "startCommand": "python manage.py migrate && gunicorn movie_backend.wsgi:application --bind 0.0.0.0:$PORT",
+  "pythonVersion": "3.11",
+  "workingDirectory": "."
+}

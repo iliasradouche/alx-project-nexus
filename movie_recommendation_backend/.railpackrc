@@ -1,8 +1,8 @@
 {
   "type": "python",
   "framework": "django",
-  "buildCommand": "pip install -r requirements.txt && python manage.py collectstatic --noinput",
-  "startCommand": "python manage.py migrate && gunicorn movie_backend.wsgi:application --bind 0.0.0.0:$PORT",
-  "pythonVersion": "3.11",
+  "buildCommand": "pip install -r requirements.txt && DJANGO_SETTINGS_MODULE=movie_backend.production_settings python manage.py collectstatic --noinput",
+  "startCommand": "DJANGO_SETTINGS_MODULE=movie_backend.production_settings python manage.py migrate && DJANGO_SETTINGS_MODULE=movie_backend.production_settings gunicorn movie_backend.wsgi:application --bind 0.0.0.0:$PORT",
+  "pythonVersion": "3.12",
   "workingDirectory": "."
 }

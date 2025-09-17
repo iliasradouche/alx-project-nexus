@@ -11,7 +11,7 @@
 [build.environment]
   NODE_VERSION = "18"
   NPM_VERSION = "9"
-  REACT_APP_API_URL = "https://alx-project-nexus-production-f78f.up.railway.app/api"
+  REACT_APP_API_URL = "https://alx-project-nexus-production-f78f.up.railway.app"
   CI = "false"
   GENERATE_SOURCEMAP = "false"
 

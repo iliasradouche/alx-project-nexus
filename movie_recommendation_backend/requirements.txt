@@ -21,3 +21,7 @@ dj-database-url==2.1.0
 djangorestframework==3.14.0
 djangorestframework-simplejwt==5.3.0
 drf-yasg==1.21.7
+
+# Additional dependencies for deployment
+Pillow==10.1.0
+requests==2.31.0

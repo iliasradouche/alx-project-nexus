@@ -21,11 +21,14 @@ X_FRAME_OPTIONS = 'DENY'
 ALLOWED_HOSTS = [
     'localhost',
     '127.0.0.1',
-    '.herokuapp.com',
+    '.onrender.com',  # Render hosting
     '.railway.app',
-    '.render.com',
-    '.vercel.app',  # If using Vercel for backend
+    '.vercel.app',
 ]
+
+# Add your specific Render URL when deployed
+if config('RENDER_EXTERNAL_HOSTNAME', default=None):
+    ALLOWED_HOSTS.append(config('RENDER_EXTERNAL_HOSTNAME'))
 
 # Database configuration for production
 DATABASES = {
@@ -44,9 +47,14 @@ MIDDLEWARE.insert(1, 'whitenoise.middleware.WhiteNoiseMiddleware')
 
 # CORS settings for production
 CORS_ALLOWED_ORIGINS = [
-    "https://your-frontend-url.vercel.app",  # Update with your Vercel URL
+    "https://project-nexus-alx.netlify.app",  # Update with your Netlify URL
     "http://localhost:3000",  # For local development
+    "http://127.0.0.1:3000",  # For local development
 ]
+
+# Add frontend URL from environment if available
+if config('FRONTEND_URL', default=None):
+    CORS_ALLOWED_ORIGINS.append(config('FRONTEND_URL'))
 
 CORS_ALLOW_CREDENTIALS = True
 CORS_ALLOW_ALL_ORIGINS = False  # Set to True only for development

@@ -124,11 +124,32 @@ Since Vercel is primarily for frontend/serverless functions, you'll need a separ
 ### Option 1: Heroku (Recommended)
 
 #### Prerequisites
-- Heroku CLI installed
-- Git repository
-- Heroku account (free tier available)
+- **Heroku CLI installed** - [Download here](https://devcenter.heroku.com/articles/heroku-cli)
+- **Git installed** - [Download here](https://git-scm.com/downloads)
+- **Heroku account** - [Sign up here](https://signup.heroku.com/)
+- **Python 3.11+** installed
+- **PostgreSQL** (for local development - optional) (free tier available)
 
 #### Step-by-Step Heroku Deployment
+
+##### Option 1: Automated Deployment (Recommended)
+
+We've created deployment scripts to automate the process:
+
+**For Windows:**
+```cmd
+cd movie_recommendation_backend
+.\deploy_heroku.bat
+```
+
+**For Linux/Mac:**
+```bash
+cd movie_recommendation_backend
+chmod +x deploy_heroku.sh
+./deploy_heroku.sh
+```
+
+##### Option 2: Manual Deployment
 
 1. **Install Heroku CLI** (if not already installed):
    ```bash

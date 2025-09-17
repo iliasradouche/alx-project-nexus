@@ -35,8 +35,14 @@ This guide explains how to connect your Django backend deployed on Railway with 
    - Created proper `Procfile` for Railway deployment
    - Verified `railway.json` configuration
    - **CRITICAL FIX**: Disabled `SECURE_SSL_REDIRECT` in production settings (Railway handles SSL at proxy level)
+   - **CORS Configuration**: Added Netlify domain to allowed origins and corrected middleware order
+   - **API Functionality**: Backend now returns 200 OK with proper CORS headers
    
-   **🔄 URGENT**: You must redeploy your Railway app immediately to apply the SSL redirect fix!
+   **✅ Railway Backend is NOW WORKING!**
+   - API endpoint: `https://alx-project-nexus-production-f78f.up.railway.app/api/movies/`
+   - CORS headers properly configured for Netlify frontend
+   - SSL redirect loop issue resolved
+   - Preflight requests working correctly
 
 ## 🔧 Step 2: Update Backend CORS Settings
 

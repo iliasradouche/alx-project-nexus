@@ -2287,3 +2287,5 @@ INFO 2025-09-17 17:21:06,445 autoreload 27784 14984 C:\Users\medrp\OneDrive\Bure
 INFO 2025-09-17 17:21:07,905 autoreload 27236 8956 Watching for file changes with StatReloader
 INFO 2025-09-17 18:35:12,712 autoreload 27236 8956 C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movie_backend\settings.py changed, reloading.
 INFO 2025-09-17 18:35:14,197 autoreload 19956 5580 Watching for file changes with StatReloader
+INFO 2025-09-17 18:39:23,420 autoreload 19956 5580 C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movie_backend\settings.py changed, reloading.
+INFO 2025-09-17 18:39:24,409 autoreload 17692 36608 Watching for file changes with StatReloader

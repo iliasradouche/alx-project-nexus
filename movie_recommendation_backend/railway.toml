@@ -1,0 +1,14 @@
+[build]
+builder = "railpack"
+buildCommand = "pip install -r requirements.txt && python manage.py collectstatic --noinput"
+
+[deploy]
+startCommand = "python manage.py migrate && gunicorn movie_backend.wsgi:application --bind 0.0.0.0:$PORT"
+restartPolicyType = "ON_FAILURE"
+restartPolicyMaxRetries = 10
+
+[environments.production]
+RAILWAY_STATIC_URL = "/static/"
+DJANGO_SETTINGS_MODULE = "movie_backend.production_settings"
+PYTHONPATH = "."
+PORT = "8000"

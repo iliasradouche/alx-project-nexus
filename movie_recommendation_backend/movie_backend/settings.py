@@ -7,6 +7,7 @@ import os
 from decouple import config
 from datetime import timedelta
 import sys
+from corsheaders.defaults import default_headers
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -174,19 +175,10 @@ CORS_ALLOWED_ORIGINS = [
 # Allow Netlify preview subdomains too (e.g., https://deploy-preview-123--*.netlify.app)
 CORS_ALLOWED_ORIGIN_REGEXES = [r"^https://.*\.netlify\.app$"]
 
-CORS_ALLOW_CREDENTIALS = True  # keep True only if you actually use cookies
+CORS_ALLOW_CREDENTIALS = False  # keep True only if you actually use cookies
 
-CORS_ALLOW_HEADERS = [
-    'accept',
-    'accept-encoding',
-    'authorization',
-    'content-type',
-    'dnt',
-    'origin',
-    'user-agent',
-    'x-csrftoken',
-    'x-requested-with',
-]
+CORS_ALLOW_HEADERS = (*default_headers, "authorization")
+
 
 CORS_ALLOW_METHODS = ['DELETE', 'GET', 'OPTIONS', 'PATCH', 'POST', 'PUT']
 

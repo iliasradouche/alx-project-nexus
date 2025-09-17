@@ -1,17 +1,16 @@
 from django.db import models
 from django.contrib.auth.models import User
 from django.core.validators import MinValueValidator, MaxValueValidator
-from django.core.exceptions import ValidationError
 
 
 class Genre(models.Model):
     """Model for movie genres"""
     tmdb_id = models.IntegerField(unique=True)
     name = models.CharField(max_length=100)
-    
+
     def __str__(self):
         return self.name
-    
+
     class Meta:
         ordering = ['name']
 
@@ -41,28 +40,29 @@ class Movie(models.Model):
     adult = models.BooleanField(default=False)
     original_language = models.CharField(max_length=10, blank=True)
     genres = models.ManyToManyField(Genre, blank=True)
-    
+
     # Metadata
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
-    
+
     def __str__(self):
-        return f"{self.title} ({self.release_date.year if self.release_date else 'Unknown'})"
-    
+        year = self.release_date.year if self.release_date else 'Unknown'
+        return f"{self.title} ({year})"
+
     @property
     def poster_url(self):
         """Get full poster URL"""
         if self.poster_path:
             return f"https://image.tmdb.org/t/p/w500{self.poster_path}"
         return None
-    
+
     @property
     def backdrop_url(self):
         """Get full backdrop URL"""
         if self.backdrop_path:
             return f"https://image.tmdb.org/t/p/w1280{self.backdrop_path}"
         return None
-    
+
     class Meta:
         ordering = ['-popularity', '-vote_average']
         indexes = [
@@ -83,14 +83,14 @@ class UserMovieRating(models.Model):
     )  # 0-10 scale
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
-    
+
     class Meta:
         unique_together = ['user', 'movie']
         indexes = [
             models.Index(fields=['user', 'rating']),
             models.Index(fields=['movie', 'rating']),
         ]
-    
+
     def __str__(self):
         return f"{self.user.username} rated {self.movie.title}: {self.rating}"
 
@@ -100,12 +100,12 @@ class UserMovieWatchlist(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     movie = models.ForeignKey(Movie, on_delete=models.CASCADE)
     added_at = models.DateTimeField(auto_now_add=True)
-    
+
     class Meta:
         unique_together = ['user', 'movie']
         indexes = [
             models.Index(fields=['user', 'added_at']),
         ]
-    
+
     def __str__(self):
         return f"{self.user.username} - {self.movie.title}"

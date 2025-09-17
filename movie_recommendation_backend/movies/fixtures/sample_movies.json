@@ -38,7 +38,10 @@
       "popularity": 61.416,
       "adult": false,
       "original_language": "en",
-      "original_title": "Fight Club"
+      "original_title": "Fight Club",
+      "genres": [1, 3],
+      "created_at": "2025-01-01T00:00:00Z",
+      "updated_at": "2025-01-01T00:00:00Z"
     }
   },
   {
@@ -56,7 +59,10 @@
       "popularity": 75.321,
       "adult": false,
       "original_language": "en",
-      "original_title": "Forrest Gump"
+      "original_title": "Forrest Gump",
+      "genres": [2, 3],
+      "created_at": "2025-01-01T00:00:00Z",
+      "updated_at": "2025-01-01T00:00:00Z"
     }
   },
   {
@@ -74,7 +80,10 @@
       "popularity": 131.752,
       "adult": false,
       "original_language": "en",
-      "original_title": "The Godfather"
+      "original_title": "The Godfather",
+      "genres": [1, 3],
+      "created_at": "2025-01-01T00:00:00Z",
+      "updated_at": "2025-01-01T00:00:00Z"
     }
   },
   {
@@ -92,7 +101,10 @@
       "popularity": 56.826,
       "adult": false,
       "original_language": "en",
-      "original_title": "Schindler's List"
+      "original_title": "Schindler's List",
+      "genres": [3],
+      "created_at": "2025-01-01T00:00:00Z",
+      "updated_at": "2025-01-01T00:00:00Z"
     }
   },
   {
@@ -110,7 +122,10 @@
       "popularity": 67.929,
       "adult": false,
       "original_language": "en",
-      "original_title": "Pulp Fiction"
+      "original_title": "Pulp Fiction",
+      "genres": [1, 2],
+      "created_at": "2025-01-01T00:00:00Z",
+      "updated_at": "2025-01-01T00:00:00Z"
     }
   }
 ]

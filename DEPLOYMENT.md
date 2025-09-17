@@ -130,7 +130,7 @@ Since Vercel is primarily for frontend/serverless functions, you'll need a separ
 - **Python 3.11+** installed
 - **PostgreSQL** (for local development - optional) (free tier available)
 
-#### Step-by-Step Heroku Deployment
+#### Step-by-Step Heroku Deployment 
 
 ##### Option 1: Automated Deployment (Recommended)
 

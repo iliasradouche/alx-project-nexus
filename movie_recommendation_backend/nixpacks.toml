@@ -1,0 +1,11 @@
+[phases.build]
+cmds = [
+  "pip install -r requirements.txt",
+  "python manage.py collectstatic --noinput --settings=movie_backend.production_settings"
+]
+
+[phases.start]
+cmd = "python manage.py migrate --settings=movie_backend.production_settings && gunicorn movie_backend.wsgi:application --bind 0.0.0.0:$PORT"
+
+[variables]
+DJANGO_SETTINGS_MODULE = "movie_backend.production_settings"

@@ -2293,3 +2293,7 @@ INFO 2025-09-17 18:42:18,541 autoreload 17692 36608 C:\Users\medrp\AppData\Roami
 INFO 2025-09-17 18:42:19,536 autoreload 21428 9960 Watching for file changes with StatReloader
 INFO 2025-09-17 18:42:22,719 autoreload 21428 9960 C:\Users\medrp\AppData\Roaming\Python\Python310\site-packages\drf_yasg\generators.py changed, reloading.
 INFO 2025-09-17 18:42:24,886 autoreload 34696 12520 Watching for file changes with StatReloader
+INFO 2025-09-17 18:52:39,139 autoreload 34696 12520 C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movie_backend\settings.py changed, reloading.
+INFO 2025-09-17 18:52:40,817 autoreload 12820 25808 Watching for file changes with StatReloader
+INFO 2025-09-17 19:08:30,693 autoreload 12820 25808 C:\Users\medrp\OneDrive\Bureau\COURSES\AWS Cloud Computing - ALX 2025\3 - BackEnd Pro Dev\alx-project-nexus\movie_recommendation_backend\movie_backend\wsgi.py changed, reloading.
+INFO 2025-09-17 19:08:34,991 autoreload 34392 6440 Watching for file changes with StatReloader

@@ -22,8 +22,9 @@ ALLOWED_HOSTS = [
     'localhost',
     '127.0.0.1',
     '.onrender.com',  # Render hosting
-    '.railway.app',
+    '.railway.app',   # Railway hosting
     '.vercel.app',
+    '.netlify.app',   # Netlify hosting
 ]
 
 # Add your specific Render URL when deployed
